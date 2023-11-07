@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bfme:block/gondorian_cracked_pillar_slab"
+    },
+    "type=double": {
+      "model": "bfme:block/gondorian_cracked_pillar"
+    },
+    "type=top": {
+      "model": "bfme:block/gondorian_cracked_pillar_slab_top"
+    }
+  }
+}

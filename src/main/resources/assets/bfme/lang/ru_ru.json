@@ -1,0 +1,635 @@
+{
+  "block.bfme.gondorian_stone" : "Гондорский камень",
+  "block.bfme.gondorian_overgrown_stone" : "Гондорский заросший камень",
+  "block.bfme.gondorian_mossy_stone" : "Гондорский замшелый камень",
+  "block.bfme.gondorian_cracked_stone" : "Гондорский потрескавшийся камень",
+  "block.bfme.gondorian_cobblestone" : "Гондорский булыжник",
+  "block.bfme.gondorian_overgrown_cobblestone" : "Гондорский заросший булыжник",
+  "block.bfme.gondorian_mossy_cobblestone" : "Гондорский замшелый булыжник",
+  "block.bfme.gondorian_brick" : "Гондорский кирпич",
+  "block.bfme.gondorian_brickwork" : "Гондорская кирпичная кладка",
+  "block.bfme.gondorian_overgrown_brick" : "Гондорский заросший кирпич",
+  "block.bfme.gondorian_mossy_brick" : "Гондорский замшелый кирпич",
+  "block.bfme.gondorian_overgrown_brickwork" : "Гондорская заросшая кирпичная кладка",
+  "block.bfme.gondorian_mossy_brickwork" : "Гондорская замшелая кирпичная кладка",
+  "block.bfme.gondorian_cracked_brick" : "Гондорский потрескавшийся кирпич",
+  "block.bfme.gondorian_cracked_brickwork" : "Гондорская потрескавшаяся кирпичная кладка",
+  "block.bfme.gondorian_chiseled_brick" : "Резной гондорский кирпич",
+  "block.bfme.gondorian_overgrown_chiseled_brick" : "Резной гондорский заросший кирпич",
+  "block.bfme.gondorian_mossy_chiseled_brick" : "Резной гондорский замшелый кирпич",
+  "block.bfme.gondorian_chiseled_cracked_brick" : "Резной гондорский потрескавшийся кирпич",
+
+  "block.bfme.gondorian_pillar" : "Гондорская колонна",
+  "block.bfme.gondorian_thin_pillar" : "Гондорская тонкая колонна",
+  "block.bfme.gondorian_overgrown_pillar" : "Гондорская заросшая колонна",
+  "block.bfme.gondorian_overgrown_thin_pillar" : "Гондорская заросшая тонкая колонна",
+  "block.bfme.gondorian_mossy_pillar" : "Гондорская замшелая колонна",
+  "block.bfme.gondorian_mossy_thin_pillar" : "Гондорская замшелая тонкая колонна",
+  "block.bfme.gondorian_cracked_pillar" : "Гондорская потрескавшаяся колонна",
+  "block.bfme.gondorian_cracked_thin_pillar" : "Гондорская потрескавшаяся тонкая колонна",
+
+  "block.bfme.gondorian_stone_slab" : "Плита из гондорского камня",
+  "block.bfme.gondorian_overgrown_stone_slab" : "Плита из заросшего гондорского камня",
+  "block.bfme.gondorian_mossy_stone_slab" : "Плита из замшелого гондорского камня",
+  "block.bfme.gondorian_cracked_stone_slab" : "Плита из потрескавшегося гондорского камня",
+  "block.bfme.gondorian_cobblestone_slab" : "Плита из гондорского булыжника",
+  "block.bfme.gondorian_overgrown_cobblestone_slab" : "Плита из заросшего гондорского булыжника",
+  "block.bfme.gondorian_mossy_cobblestone_slab" : "Плита из замшелого гондорского булыжника",
+  "block.bfme.gondorian_brick_slab" : "Плита из гондорского кирпича",
+  "block.bfme.gondorian_brickwork_slab" : "Плита из гондорской кирпичной кладки",
+  "block.bfme.gondorian_overgrown_brick_slab" : "Плита из заросшего гондорского кирпича",
+  "block.bfme.gondorian_mossy_brick_slab" : "Плита из замшелого гондорского кирпича",
+  "block.bfme.gondorian_overgrown_brickwork_slab" : "Плита из заросшей гондорской кирпичной кладки",
+  "block.bfme.gondorian_mossy_brickwork_slab" : "Плита из замшелой гондорской кирпичной кладки",
+  "block.bfme.gondorian_pillar_slab" : "Плита из гондорской колонны",
+  "block.bfme.gondorian_overgrown_pillar_slab" : "Плита из заросшей гондорской колонны",
+  "block.bfme.gondorian_mossy_pillar_slab" : "Плита из замшелой гондорской колонны",
+  "block.bfme.gondorian_cracked_pillar_slab" : "Плита из гондорской потрескавшейся колонны",
+
+  "block.bfme.gondorian_stone_stairs" : "Ступеньки из гондорского камня",
+  "block.bfme.gondorian_overgrown_stone_stairs" : "Ступеньки из заросшего гондорского камня",
+  "block.bfme.gondorian_mossy_stone_stairs" : "Ступеньки из замшелого гондорского камня",
+  "block.bfme.gondorian_cracked_stone_stairs" : "Ступеньки из потрескавшегося гондорского камня",
+  "block.bfme.gondorian_cobblestone_stairs" : "Ступеньки из гондорского булыжника",
+  "block.bfme.gondorian_overgrown_cobblestone_stairs" : "Ступеньки из заросшего гондорского булыжника",
+  "block.bfme.gondorian_mossy_cobblestone_stairs" : "Ступеньки из замшелого гондорского булыжника",
+  "block.bfme.gondorian_brick_stairs" : "Ступеньки из гондорского кирпича",
+  "block.bfme.gondorian_brickwork_stairs" : "Ступеньки из гондорской кирпичной кладки",
+  "block.bfme.gondorian_overgrown_brick_stairs" : "Ступеньки из заросшего гондорского кирпича",
+  "block.bfme.gondorian_overgrown_brickwork_stairs" : "Ступеньки из заросшей гондорской кирпичной кладки",
+  "block.bfme.gondorian_mossy_brick_stairs" : "Ступеньки из замшелого гондорского кирпича",
+  "block.bfme.gondorian_mossy_brickwork_stairs" : "Ступеньки из замшелой гондорской кирпичной кладки",
+  "block.bfme.gondorian_cracked_brick_stairs" : "Ступеньки из потрескавшегося гондорского кирпича",
+  "block.bfme.gondorian_cracked_brickwork_stairs" : "Ступеньки из потрескавшейся гондорской кирпичной кладки",
+
+  "block.bfme.gondorian_stone_wall" : "Ограда из гондорского камня",
+  "block.bfme.gondorian_overgrown_stone_wall" : "Ограда из заросшего гондорского камня",
+  "block.bfme.gondorian_mossy_stone_wall" : "Ограда из замшелого гондорского камня",
+  "block.bfme.gondorian_cracked_stone_wall" : "Ограда из потрескавшегося гондорского камня",
+  "block.bfme.gondorian_cobblestone_wall" : "Ограда из гондорского булыжника",
+  "block.bfme.gondorian_overgrown_cobblestone_wall" : "Ограда из заросшего гондорского булыжника",
+  "block.bfme.gondorian_mossy_cobblestone_wall" : "Ограда из замшелого гондорского булыжника",
+  "block.bfme.gondorian_brick_wall" : "Ограда из гондорского кирпича",
+  "block.bfme.gondorian_brickwork_wall" : "Ограда из гондорской кирпичной кладки",
+  "block.bfme.gondorian_overgrown_brick_wall" : "Ограда из заросшего гондорского кирпича",
+  "block.bfme.gondorian_overgrown_brickwork_wall" : "Ограда из заросшей гондорской кирпичной кладки",
+  "block.bfme.gondorian_mossy_brick_wall" : "Ограда из замшелого гондорского кирпича",
+  "block.bfme.gondorian_mossy_brickwork_wall" : "Ограда из замшелой гондорской кирпичной кладки",
+  "block.bfme.gondorian_cracked_brick_wall" : "Ограда из потрескавшегося гондорского кирпича",
+  "block.bfme.gondorian_cracked_brickwork_wall" : "Ограда из потрескавшейся гондорской кирпичной кладки",
+
+
+
+  "creativetab.gondorian_tab" : "Гондор"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

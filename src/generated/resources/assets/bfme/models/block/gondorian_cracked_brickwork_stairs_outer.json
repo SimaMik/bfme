@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "bfme:block/gondorian_cracked_brickwork",
+    "side": "bfme:block/gondorian_cracked_brickwork",
+    "top": "bfme:block/gondorian_cracked_brickwork"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "bfme:block/gondorian_cracked_brick"
+  }
+}
