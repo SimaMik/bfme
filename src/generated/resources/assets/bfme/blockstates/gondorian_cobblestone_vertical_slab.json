@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "type=double,waterlogged=false": {
+      "model": "bfme:block/gondorian_cobblestone"
+    },
+    "type=double,waterlogged=true": {
+      "model": "bfme:block/gondorian_cobblestone"
+    },
+    "type=east,waterlogged=false": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_east"
+    },
+    "type=east,waterlogged=true": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_east"
+    },
+    "type=north,waterlogged=false": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_north"
+    },
+    "type=north,waterlogged=true": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_north"
+    },
+    "type=south,waterlogged=false": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_south"
+    },
+    "type=south,waterlogged=true": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_south"
+    },
+    "type=west,waterlogged=false": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_west"
+    },
+    "type=west,waterlogged=true": {
+      "model": "bfme:block/gondorian_cobblestone_vertical_slab_west"
+    }
+  }
+}

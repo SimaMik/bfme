@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "bfme:block/gondorian_mossy_cobblestone"
+  }
+}

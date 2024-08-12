@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/opal_ore"
+      },
+      {
+        "model": "bfme:block/opal_ore0"
+      },
+      {
+        "model": "bfme:block/opal_ore1"
+      }
+    ]
+  }
+}

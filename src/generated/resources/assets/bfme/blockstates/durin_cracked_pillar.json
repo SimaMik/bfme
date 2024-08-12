@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bfme:block/durin_cracked_pillar_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bfme:block/durin_cracked_pillar"
+    },
+    "axis=z": {
+      "model": "bfme:block/durin_cracked_pillar_horizontal",
+      "x": 90
+    }
+  }
+}

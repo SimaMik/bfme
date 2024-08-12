@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bfme:block/gondorian_brickwork_slab"
+    },
+    "type=double": {
+      "model": "bfme:block/gondorian_brickwork"
+    },
+    "type=top": {
+      "model": "bfme:block/gondorian_brickwork_slab_top"
+    }
+  }
+}

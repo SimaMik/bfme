@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/deepslate_silver_ore"
+      },
+      {
+        "model": "bfme:block/deepslate_silver_ore0"
+      },
+      {
+        "model": "bfme:block/deepslate_silver_ore1"
+      }
+    ]
+  }
+}

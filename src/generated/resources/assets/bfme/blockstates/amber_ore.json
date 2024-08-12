@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/amber_ore"
+      },
+      {
+        "model": "bfme:block/amber_ore0"
+      },
+      {
+        "model": "bfme:block/amber_ore1"
+      }
+    ]
+  }
+}

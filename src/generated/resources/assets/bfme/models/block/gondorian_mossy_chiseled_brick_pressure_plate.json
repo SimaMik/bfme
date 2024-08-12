@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/pressure_plate_up",
+  "textures": {
+    "texture": "bfme:block/gondorian_mossy_chiseled_brick"
+  }
+}

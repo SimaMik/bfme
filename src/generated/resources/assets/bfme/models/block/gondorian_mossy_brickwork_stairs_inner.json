@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "bfme:block/gondorian_mossy_brickwork",
+    "side": "bfme:block/gondorian_mossy_brickwork",
+    "top": "bfme:block/gondorian_mossy_brickwork"
+  }
+}

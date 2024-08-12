@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/mithril_ore"
+      },
+      {
+        "model": "bfme:block/mithril_ore0"
+      },
+      {
+        "model": "bfme:block/mithril_ore1"
+      }
+    ]
+  }
+}

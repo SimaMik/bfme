@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/deepslate_amethyst_ore"
+      },
+      {
+        "model": "bfme:block/deepslate_amethyst_ore0"
+      },
+      {
+        "model": "bfme:block/deepslate_amethyst_ore1"
+      }
+    ]
+  }
+}

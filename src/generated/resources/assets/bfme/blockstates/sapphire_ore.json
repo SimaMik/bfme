@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/sapphire_ore"
+      },
+      {
+        "model": "bfme:block/sapphire_ore0"
+      },
+      {
+        "model": "bfme:block/sapphire_ore1"
+      }
+    ]
+  }
+}

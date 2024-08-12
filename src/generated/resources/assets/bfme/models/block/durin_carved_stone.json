@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bfme:block/durin_carved_stone_end",
+    "side": "bfme:block/durin_carved_stone"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "bfme:block/gondorian_stone",
+    "east": "bfme:block/gondorian_workbench_side",
+    "north": "bfme:block/gondorian_workbench_side",
+    "south": "bfme:block/gondorian_workbench_side",
+    "up": "bfme:block/gondorian_workbench_top",
+    "west": "bfme:block/gondorian_workbench_side"
+  }
+}

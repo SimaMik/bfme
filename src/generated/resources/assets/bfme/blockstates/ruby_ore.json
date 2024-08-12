@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/ruby_ore"
+      },
+      {
+        "model": "bfme:block/ruby_ore0"
+      },
+      {
+        "model": "bfme:block/ruby_ore1"
+      }
+    ]
+  }
+}

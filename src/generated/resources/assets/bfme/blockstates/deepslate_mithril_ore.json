@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/deepslate_mithril_ore"
+      },
+      {
+        "model": "bfme:block/deepslate_mithril_ore0"
+      },
+      {
+        "model": "bfme:block/deepslate_mithril_ore1"
+      }
+    ]
+  }
+}

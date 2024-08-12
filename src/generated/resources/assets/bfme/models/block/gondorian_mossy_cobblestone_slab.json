@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "bfme:block/gondorian_mossy_cobblestone",
+    "side": "bfme:block/gondorian_mossy_cobblestone",
+    "top": "bfme:block/gondorian_mossy_cobblestone"
+  }
+}

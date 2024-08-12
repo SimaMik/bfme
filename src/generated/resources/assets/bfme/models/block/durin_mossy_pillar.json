@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bfme:block/durin_mossy_pillar_end",
+    "side": "bfme:block/durin_mossy_pillar"
+  }
+}

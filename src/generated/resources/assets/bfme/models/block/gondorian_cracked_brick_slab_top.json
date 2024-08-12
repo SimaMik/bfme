@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "bfme:block/gondorian_cracked_brick",
+    "side": "bfme:block/gondorian_cracked_brick",
+    "top": "bfme:block/gondorian_cracked_brick"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "bfme:block/gondorian_column_bottom"
+    },
+    "part=middle": {
+      "model": "bfme:block/gondorian_column_middle"
+    },
+    "part=single": {
+      "model": "bfme:block/gondorian_column_single"
+    },
+    "part=top": {
+      "model": "bfme:block/gondorian_column_top"
+    }
+  }
+}

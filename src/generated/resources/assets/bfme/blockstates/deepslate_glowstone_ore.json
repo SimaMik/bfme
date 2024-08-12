@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/deepslate_glowstone_ore"
+      },
+      {
+        "model": "bfme:block/deepslate_glowstone_ore0"
+      },
+      {
+        "model": "bfme:block/deepslate_glowstone_ore1"
+      }
+    ]
+  }
+}

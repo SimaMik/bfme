@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/topaz_ore"
+      },
+      {
+        "model": "bfme:block/topaz_ore0"
+      },
+      {
+        "model": "bfme:block/topaz_ore1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "bfme:gondor_crafting_serializer",
+  "id": "bfme:gondorian_brickwork",
+  "ingredients": [
+    {
+      "item": "bfme:gondorian_brick"
+    }
+  ],
+  "key": {
+    "A": {
+      "item": "bfme:gondorian_brick"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 4,
+    "id": "bfme:gondorian_brickwork"
+  }
+}

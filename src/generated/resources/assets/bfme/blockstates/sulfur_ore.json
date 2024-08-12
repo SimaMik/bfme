@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/sulfur_ore"
+      },
+      {
+        "model": "bfme:block/sulfur_ore0"
+      },
+      {
+        "model": "bfme:block/sulfur_ore1"
+      }
+    ]
+  }
+}

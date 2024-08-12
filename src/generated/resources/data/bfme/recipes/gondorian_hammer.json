@@ -1,0 +1,29 @@
+{
+  "type": "bfme:gondor_crafting_serializer",
+  "id": "bfme:gondorian_hammer",
+  "ingredients": [
+    {
+      "item": "bfme:amber"
+    },
+    {
+      "item": "bfme:diamond"
+    }
+  ],
+  "key": {
+    "A": {
+      "item": "bfme:amber"
+    },
+    "B": {
+      "item": "bfme:diamond"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "bfme:gondorian_hammer"
+  }
+}

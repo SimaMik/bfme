@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "part=bottom": {
+      "model": "bfme:block/durin_mossy_column_bottom"
+    },
+    "part=middle": {
+      "model": "bfme:block/durin_mossy_column_middle"
+    },
+    "part=single": {
+      "model": "bfme:block/durin_mossy_column_single"
+    },
+    "part=top": {
+      "model": "bfme:block/durin_mossy_column_top"
+    }
+  }
+}

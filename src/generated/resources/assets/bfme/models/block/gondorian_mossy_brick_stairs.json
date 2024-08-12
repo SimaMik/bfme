@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bfme:block/gondorian_mossy_brick",
+    "side": "bfme:block/gondorian_mossy_brick",
+    "top": "bfme:block/gondorian_mossy_brick"
+  }
+}

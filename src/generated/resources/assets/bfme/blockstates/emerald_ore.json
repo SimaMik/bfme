@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/emerald_ore"
+      },
+      {
+        "model": "bfme:block/emerald_ore0"
+      },
+      {
+        "model": "bfme:block/emerald_ore1"
+      }
+    ]
+  }
+}

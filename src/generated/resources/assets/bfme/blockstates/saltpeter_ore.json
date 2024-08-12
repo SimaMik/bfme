@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/saltpeter_ore"
+      },
+      {
+        "model": "bfme:block/saltpeter_ore0"
+      },
+      {
+        "model": "bfme:block/saltpeter_ore1"
+      }
+    ]
+  }
+}

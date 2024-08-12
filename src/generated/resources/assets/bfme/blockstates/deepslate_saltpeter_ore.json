@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/deepslate_saltpeter_ore"
+      },
+      {
+        "model": "bfme:block/deepslate_saltpeter_ore0"
+      },
+      {
+        "model": "bfme:block/deepslate_saltpeter_ore1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bfme:block/glowstone_ore"
+      },
+      {
+        "model": "bfme:block/glowstone_ore0"
+      },
+      {
+        "model": "bfme:block/glowstone_ore1"
+      }
+    ]
+  }
+}
