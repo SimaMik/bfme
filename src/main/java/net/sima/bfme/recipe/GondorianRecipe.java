@@ -1,102 +1,117 @@
-//package net.sima.bfme.recipe;
+package net.sima.bfme.recipe;
+
+import net.minecraft.core.HolderLookup;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.*;
+import net.minecraft.world.level.Level;
+
+public class GondorianRecipe implements Recipe<CraftingInput> {
+    public final ShapedRecipePattern pattern;
+    final ItemStack result;
+    final String group;
+    final CraftingBookCategory category;
+    final boolean showNotification;
+
+    public GondorianRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result, boolean showNotification) {
+        this.group = group;
+        this.category = category;
+        this.pattern = pattern;
+        this.result = result;
+        this.showNotification = showNotification;
+    }
+
+    public GondorianRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result) {
+        this(group, category, pattern, result, true);
+    }
+@Override
+    public RecipeSerializer<?> getSerializer() {
+        return ModRecipes.GONDORIAN_CRAFTING_SERIALIZER.get();
+    }
+    @Override
+    public RecipeType<?> getType() {
+        return ModRecipes.GONDORIAN_CRAFTING_TYPE.get();
+    }
+    public String getGroup() {
+        return this.group;
+    }
+
+    public CraftingBookCategory category() {
+        return this.category;
+    }
+
+    public ItemStack getResultItem(HolderLookup.Provider registries) {
+        return this.result;
+    }
+
+    public NonNullList<Ingredient> getIngredients() {
+        return this.pattern.ingredients();
+    }
+
+    public boolean showNotification() {
+        return this.showNotification;
+    }
+
+    public boolean canCraftInDimensions(int width, int height) {
+        return width >= this.pattern.width() && height >= this.pattern.height();
+    }
+
+    public boolean matches(CraftingInput input, Level level) {
+        return this.pattern.matches(input);
+    }
+
+    public ItemStack assemble(CraftingInput input, HolderLookup.Provider registries) {
+        return this.getResultItem(registries).copy();
+    }
+
+    public int getWidth() {
+        return this.pattern.width();
+    }
+
+    public int getHeight() {
+        return this.pattern.height();
+    }
+
+    public boolean isIncomplete() {
+        NonNullList<Ingredient> nonnulllist = this.getIngredients();
+        return nonnulllist.isEmpty() || nonnulllist.stream().filter((p_151277_) -> {
+            return !p_151277_.isEmpty();
+        }).anyMatch(Ingredient::hasNoItems);
+    }
+}
+
+
+
+
+
+
+
+//        extends ShapedRecipe {
 //
-//import com.mojang.serialization.Codec;
-//import com.mojang.serialization.MapCodec;
-//import com.mojang.serialization.codecs.RecordCodecBuilder;
-//import net.minecraft.core.HolderLookup;
-//import net.minecraft.core.NonNullList;
-//import net.minecraft.resources.ResourceLocation;
-//import net.minecraft.world.inventory.CraftingContainer;
-//import net.minecraft.world.item.ItemStack;
-//import net.minecraft.world.item.crafting.*;
-//import net.minecraft.world.level.Level;
-//import net.sima.bfme.block.ModBlocks;
-//
-//import java.util.Map;
-//
-//import static net.sima.bfme.recipe.ModRecipes.GONDORIAN_CRAFTING_SERIALIZER;
-//import static net.sima.bfme.recipe.ModRecipes.GONDORIAN_CRAFTING_TYPE;
-//
-//public class GondorianRecipe implements CraftingRecipe {
-//    public final ShapedRecipePattern pattern;
-//    private final ResourceLocation id;
-//    private final ItemStack result;
-//    private final NonNullList<Ingredient> ingredients;
-//    private final Map<Character, Ingredient> key;
-//
-//    public GondorianRecipe(ResourceLocation id, ItemStack result, NonNullList<Ingredient> ingredients, ShapedRecipePattern pattern, Map<Character, Ingredient> key) {
-//        this.id = id;
-//        this.result = result;
-//        this.ingredients = ingredients;
-//        this.pattern = pattern;
-//        this.key = key;
+//    public CraftingBookCategory category;
+//    public ItemStack result;
+//    public GondorianRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result, boolean showNotification, boolean showNotification1) {
+//        super(group, category, pattern, result, showNotification);
 //    }
 //
-//    @Override
-//    public boolean matches(CraftingInput craftingInput, Level level) {
-//        return this.pattern.matches(craftingInput);
+//    public GondorianRecipe(String group, CraftingBookCategory category, ShapedRecipePattern pattern, ItemStack result) {
+//        this(group, category, pattern, result, true);
 //    }
-//
-//    public ItemStack assemble(CraftingInput input, HolderLookup.Provider registries) {
-//        return this.getResultItem(registries).copy();
-//    }
-//
-//    @Override
-//    public boolean canCraftInDimensions(int width, int height) {
-//        return width * height >= ingredients.size();
-//    }
-//
-//    @Override
-//    public ItemStack getResultItem(HolderLookup.Provider pRegistries) {
-//        return result;
-//    }
-//
 //    @Override
 //    public RecipeSerializer<?> getSerializer() {
-//        return GONDORIAN_CRAFTING_SERIALIZER.get();
+//        return ModRecipes.GONDORIAN_CRAFTING_SERIALIZER.get();
 //    }
 //
 //    @Override
-//    public RecipeType<?> getType() {
-//        return GONDORIAN_CRAFTING_TYPE.get();
+//    public String getGroup() {
+//        return super.getGroup();
+//    }
+//    public boolean showNotification() {
+//        return this.showNotification;
 //    }
 //
 //    @Override
-//    public NonNullList<Ingredient> getIngredients() {
-//        return ingredients;
+//    public ItemStack getResultItem(HolderLookup.Provider registries) {
+//        return super.getResultItem(registries);
 //    }
-//
-//    @Override
-//    public ItemStack getToastSymbol() {
-//        return new ItemStack(ModBlocks.GONDORIAN_WORKBENCH.get());
-//    }
-//
-//    public ResourceLocation getId() {
-//        return id;
-//    }
-//
-//    public ItemStack getResult() {
-//        return result;
-//    }
-//
-//    public ShapedRecipePattern getPattern() {
-//        return pattern;
-//    }
-//
-//    public Map<Character, Ingredient> getKey() {
-//        return key;
-//    }
-//
-//    public static final MapCodec<GondorianRecipe> CODEC = RecordCodecBuilder.mapCodec(instance ->
-//            instance.group(
-//                    ResourceLocation.CODEC.fieldOf("id").forGetter(GondorianRecipe::getId),
-//                    ItemStack.CODEC.fieldOf("result").forGetter(GondorianRecipe::getResult),
-//                    Ingredient.CODEC.listOf().fieldOf("ingredients").forGetter(recipe -> recipe.getIngredients().stream().toList()),
-//                    Codec.STRING.listOf().fieldOf("pattern").forGetter(GondorianRecipe::getPattern),
-//                    Codec.unboundedMap(Codec.STRING.xmap(s -> s.charAt(0), c -> String.valueOf(c)), Ingredient.CODEC).fieldOf("key").forGetter(GondorianRecipe::getKey)
-//            ).apply(instance, (id, result, ingredients, pattern, key) ->
-//                    new GondorianRecipe(id, result, NonNullList.of(Ingredient.EMPTY, ingredients.toArray(new Ingredient[0])), NonNullList.copyOf(pattern), key)
-//            )
-//    );
-//
 //}

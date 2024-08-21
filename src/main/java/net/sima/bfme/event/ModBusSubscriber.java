@@ -1,5 +1,6 @@
 package net.sima.bfme.event;
 
+import net.minecraft.world.inventory.MenuType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -15,7 +16,7 @@ public class ModBusSubscriber {
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
-//        event.register(ModMenuTypes.GONDORIAN_WORKBENCH_MENU.get(), GondorianWorkbenchScreen::new);
+        event.register(ModMenuTypes.GONDORIAN_WORKBENCH_MENU.get(), GondorianWorkbenchScreen::new);
         event.register(ModMenuTypes.SMALL_POUCH.get(), SmallPouchScreen::new);
         event.register(ModMenuTypes.MEDIUM_POUCH.get(), MediumPouchScreen::new);
         event.register(ModMenuTypes.LARGE_POUCH.get(), LargePouchScreen::new);

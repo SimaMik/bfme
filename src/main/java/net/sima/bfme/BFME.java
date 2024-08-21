@@ -8,6 +8,7 @@ import net.sima.bfme.datagen.ModCreativeModeTabs;
 import net.sima.bfme.effect.ModEffects;
 import net.sima.bfme.item.ModItems;
 import net.sima.bfme.item.custom.PouchItem;
+import net.sima.bfme.recipe.ModRecipes;
 import net.sima.bfme.screen_menus.ModMenuTypes;
 import org.slf4j.Logger;
 
@@ -44,7 +45,8 @@ public class BFME
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
-
+        ModRecipes.RECIPE_SERIALIZERS.register(modEventBus);
+        ModRecipes.RECIPE_TYPES.register(modEventBus);
         ModEffects.register(modEventBus);
     }
 

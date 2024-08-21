@@ -171,13 +171,16 @@
 
 
 
-  "container.gondor_workbench": "Gondorian Workbench",
+  "container.gondorian_workbench": "Gondorian Workbench",
   "container.small_pouch": "Small Pouch",
   "container.medium_pouch" : "Medium Pouch",
   "container.large_pouch" : "Large Pouch",
 
   "creativetab.gondorian_tab": "Gondorian Building Blocks",
   "creativetab.durin_tab": "Durin Building Blocks",
+  "creativetab.rohan_tab" : "Rohan Building Blocks",
   "creativetab.ore_tab" : "Middle Earth Ores",
-  "creativetab.test_tab": "Test"
+  "creativetab.test_tab": "Test",
+  "creativetab.food_tab": "Food",
+  "creativetab.wood_tab": "Wood"
 }

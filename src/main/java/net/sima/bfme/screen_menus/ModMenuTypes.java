@@ -12,8 +12,8 @@ public class ModMenuTypes {
 
     public static final DeferredRegister<MenuType<?>> MENUS =
             DeferredRegister.create(BuiltInRegistries.MENU, BFME.MOD_ID);
-//    public static final Supplier<MenuType<GondorianWorkbenchMenu>> GONDORIAN_WORKBENCH_MENU =
-//            MENUS.register("gondorian_workbench", () -> new MenuType(GondorianWorkbenchMenu::new, FeatureFlags.DEFAULT_FLAGS));
+    public static final Supplier<MenuType<GondorianWorkbenchMenu>> GONDORIAN_WORKBENCH_MENU =
+            MENUS.register("gondorian_workbench", () -> new MenuType(GondorianWorkbenchMenu::new, FeatureFlags.DEFAULT_FLAGS));
 
 
     public static final Supplier<MenuType<SmallPouchContainer>> SMALL_POUCH =

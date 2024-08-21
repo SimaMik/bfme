@@ -1,0 +1,190 @@
+
+public static final DeferredBlock<Block> ROHAN_STONE = registerBlock("rohan_stone",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE = registerBlock("rohan_mossy_stone",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE = registerBlock("rohan_cracked_stone",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE = registerBlock("rohan_cobblestone",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE = registerBlock("rohan_mossy_cobblestone",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICK = registerBlock("rohan_brick",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICKWORK = registerBlock("rohan_brickwork",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICK = registerBlock("rohan_mossy_brick",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICKWORK = registerBlock("rohan_mossy_brickwork",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICK = registerBlock("rohan_cracked_brick",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICKWORK = registerBlock("rohan_cracked_brickwork",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CHISELED_BRICK = registerBlock("rohan_chiseled_brick",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHISELED_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_CHISELED_BRICK = registerBlock("rohan_mossy_chiseled_brick",
+() -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_PILLAR = registerBlock("rohan_pillar",
+() -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_PILLAR = registerBlock("rohan_mossy_pillar",
+() -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_PILLAR = registerBlock("rohan_cracked_pillar",
+() -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_COLUMN = registerBlock("rohan_column",
+() -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COLUMN = registerBlock("rohan_mossy_column",
+() -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_COLUMN = registerBlock("rohan_cracked_column",
+() -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_STONE_STAIRS = registerBlock("rohan_stone_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_STONE.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE_STAIRS = registerBlock("rohan_mossy_stone_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_MOSSY_STONE.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));;
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE_STAIRS = registerBlock("rohan_cracked_stone_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_CRACKED_STONE.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE_STAIRS = registerBlock("rohan_cobblestone_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_COBBLESTONE.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE_STAIRS = registerBlock("rohan_mossy_cobblestone_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_MOSSY_COBBLESTONE.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICK_STAIRS = registerBlock("rohan_brick_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_BRICK.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICKWORK_STAIRS = registerBlock("rohan_brickwork_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_BRICKWORK.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICK_STAIRS = registerBlock("rohan_mossy_brick_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_MOSSY_BRICK.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICKWORK_STAIRS = registerBlock("rohan_mossy_brickwork_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_MOSSY_BRICKWORK.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICK_STAIRS = registerBlock("rohan_cracked_brick_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_CRACKED_BRICK.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICKWORK_STAIRS = registerBlock("rohan_cracked_brickwork_stairs",
+() -> new StairBlock(ModBlocks.ROHAN_CRACKED_BRICKWORK.get().defaultBlockState(),
+BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_STAIRS).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_STONE_SLAB = registerBlock("rohan_stone_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE_SLAB = registerBlock("rohan_mossy_stone_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE_SLAB = registerBlock("rohan_cracked_stone_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE_SLAB = registerBlock("rohan_cobblestone_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE_SLAB = registerBlock("rohan_mossy_cobblestone_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICK_SLAB = registerBlock("rohan_brick_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICKWORK_SLAB = registerBlock("rohan_brickwork_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICK_SLAB = registerBlock("rohan_cracked_brick_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICKWORK_SLAB = registerBlock("rohan_cracked_brickwork_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICK_SLAB = registerBlock("rohan_mossy_brick_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICKWORK_SLAB = registerBlock("rohan_mossy_brickwork_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_PILLAR_SLAB = registerBlock("rohan_pillar_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_PILLAR_SLAB = registerBlock("rohan_mossy_pillar_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_PILLAR_SLAB = registerBlock("rohan_cracked_pillar_slab",
+() -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_STONE_VERTICAL_SLAB = registerBlock("rohan_stone_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE_VERTICAL_SLAB = registerBlock("rohan_mossy_stone_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE_VERTICAL_SLAB = registerBlock("rohan_cracked_stone_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE_VERTICAL_SLAB = registerBlock("rohan_cobblestone_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE_VERTICAL_SLAB = registerBlock("rohan_mossy_cobblestone_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICK_VERTICAL_SLAB = registerBlock("rohan_brick_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICKWORK_VERTICAL_SLAB = registerBlock("rohan_brickwork_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICK_VERTICAL_SLAB = registerBlock("rohan_cracked_brick_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICKWORK_VERTICAL_SLAB = registerBlock("rohan_cracked_brickwork_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICK_VERTICAL_SLAB = registerBlock("rohan_mossy_brick_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICKWORK_VERTICAL_SLAB = registerBlock("rohan_mossy_brickwork_vertical_slab",
+() -> new VerticalSlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_SLAB).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_STONE_WALL = registerBlock("rohan_stone_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE_WALL = registerBlock("rohan_mossy_stone_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE_WALL = registerBlock("rohan_cracked_stone_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE_WALL = registerBlock("rohan_cobblestone_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.COBBLESTONE_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE_WALL = registerBlock("rohan_mossy_cobblestone_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_COBBLESTONE_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICK_WALL = registerBlock("rohan_brick_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_BRICKWORK_WALL = registerBlock("rohan_brickwork_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICK_WALL = registerBlock("rohan_mossy_brick_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICKWORK_WALL = registerBlock("rohan_mossy_brickwork_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICK_WALL = registerBlock("rohan_cracked_brick_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICKWORK_WALL = registerBlock("rohan_cracked_brickwork_wall",
+() -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICK_WALL).mapColor(DyeColor.BROWN)));
+
+public static final DeferredBlock<Block> ROHAN_STONE_BUTTON = registerBlock("rohan_stone_button",
+() -> new ButtonBlock(BlockSetType.STONE, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE_BUTTON = registerBlock("rohan_mossy_stone_button",
+() -> new ButtonBlock(BlockSetType.STONE, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE_BUTTON = registerBlock("rohan_cracked_stone_button",
+() -> new ButtonBlock(BlockSetType.STONE, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE_BUTTON = registerBlock("rohan_cobblestone_button",
+() -> new ButtonBlock(BlockSetType.STONE, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE_BUTTON = registerBlock("rohan_mossy_cobblestone_button",
+() -> new ButtonBlock(BlockSetType.STONE, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+public static final DeferredBlock<Block> ROHAN_BRICK_BUTTON = registerBlock("rohan_brick_button",
+() -> new ButtonBlock(BlockSetType.STONE, 10, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BUTTON)));
+
+public static final DeferredBlock<Block> ROHAN_STONE_PRESSURE_PLATE = registerBlock("rohan_stone_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_STONE_PRESSURE_PLATE = registerBlock("rohan_mossy_stone_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_STONE_PRESSURE_PLATE = registerBlock("rohan_cracked_stone_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_COBBLESTONE_PRESSURE_PLATE = registerBlock("rohan_cobblestone_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_COBBLESTONE_PRESSURE_PLATE = registerBlock("rohan_mossy_cobblestone_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_BRICK_PRESSURE_PLATE = registerBlock("rohan_brick_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_BRICKWORK_PRESSURE_PLATE = registerBlock("rohan_brickwork_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICK_PRESSURE_PLATE = registerBlock("rohan_mossy_brick_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_BRICKWORK_PRESSURE_PLATE = registerBlock("rohan_mossy_brickwork_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICK_PRESSURE_PLATE = registerBlock("rohan_cracked_brick_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_CRACKED_BRICKWORK_PRESSURE_PLATE = registerBlock("rohan_cracked_brickwork_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_CHISELED_BRICK_PRESSURE_PLATE = registerBlock("rohan_chiseled_brick_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));
+public static final DeferredBlock<Block> ROHAN_MOSSY_CHISELED_BRICK_PRESSURE_PLATE = registerBlock("rohan_mossy_chiseled_brick_pressure_plate",
+() -> new PressurePlateBlock(BlockSetType.STONE, BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_PRESSURE_PLATE).sound(SoundType.STONE)));

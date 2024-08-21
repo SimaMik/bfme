@@ -50,14 +50,6 @@ abstract public class ModCraftingTable extends Block {
     }
 
 
-    protected abstract Component getContainerName();
-
-//    @Override
-//    protected MenuProvider getMenuProvider(BlockState pState, Level pLevel, BlockPos pPos) {
-//        return new SimpleMenuProvider(
-//                (i, inventory, player) -> new GondorianWorkbenchMenu(i, inventory, ContainerLevelAccess.create(pLevel, pPos)), getContainerName()
-//        );
-//    }
 }
 
 

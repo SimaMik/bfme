@@ -159,5 +159,9 @@
 
   "creativetab.ore_tab" : "Руды Средиземья",
   "creativetab.gondorian_tab": "Гондорские строительные блоки",
-  "creativetab.test_tab": "Тест"
+  "creativetab.durin_tab": "Дуринские строительные блоки",
+  "creativetab.test_tab": "Тест",
+  "creativetab.food_tab": "Еда Средиземья",
+  "creativetab.wood_tab": "Деревья Средиземья"
+
 }

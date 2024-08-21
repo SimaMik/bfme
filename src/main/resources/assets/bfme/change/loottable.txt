@@ -1,0 +1,118 @@
+ this.dropSelf(ModBlocks.ROHAN_STONE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_STONE.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_STONE.get());
+        this.dropSelf(ModBlocks.ROHAN_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICK.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICKWORK.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICK.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICKWORK.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICK.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICKWORK.get());
+        this.dropSelf(ModBlocks.ROHAN_CHISELED_BRICK.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_CHISELED_BRICK.get());
+
+        this.dropSelf(ModBlocks.ROHAN_PILLAR.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_PILLAR.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_PILLAR.get());
+        this.dropSelf(ModBlocks.ROHAN_COLUMN.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_COLUMN.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_COLUMN.get());
+
+        this.add(ModBlocks.ROHAN_STONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_STONE_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_STONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_STONE_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_STONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_STONE_SLAB.get()));
+        this.add(ModBlocks.ROHAN_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_COBBLESTONE_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_COBBLESTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_COBBLESTONE_SLAB.get()));
+        this.add(ModBlocks.ROHAN_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_BRICK_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_BRICK_SLAB.get()));
+        this.add(ModBlocks.ROHAN_BRICKWORK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_BRICKWORK_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_BRICKWORK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_BRICKWORK_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_BRICK_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_BRICKWORK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_BRICKWORK_SLAB.get()));
+        this.add(ModBlocks.ROHAN_PILLAR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_PILLAR_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_PILLAR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_PILLAR_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_PILLAR_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_PILLAR_SLAB.get()));
+
+
+        this.add(ModBlocks.ROHAN_STONE_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_STONE_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_STONE_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_STONE_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_STONE_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_STONE_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_COBBLESTONE_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_COBBLESTONE_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_COBBLESTONE_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_COBBLESTONE_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_BRICK_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_BRICK_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_BRICK_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_BRICK_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_BRICKWORK_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_BRICKWORK_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_CRACKED_BRICKWORK_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_CRACKED_BRICKWORK_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_BRICK_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_BRICK_VERTICAL_SLAB.get()));
+        this.add(ModBlocks.ROHAN_MOSSY_BRICKWORK_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ROHAN_MOSSY_BRICKWORK_VERTICAL_SLAB.get()));
+
+        this.dropSelf(ModBlocks.ROHAN_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_STONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_COBBLESTONE_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICKWORK_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICKWORK_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICK_STAIRS.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICKWORK_STAIRS.get());
+
+        this.dropSelf(ModBlocks.ROHAN_STONE_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_STONE_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_STONE_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_COBBLESTONE_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_COBBLESTONE_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICKWORK_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICKWORK_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICK_WALL.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICKWORK_WALL.get());
+
+        this.dropSelf(ModBlocks.ROHAN_STONE_BUTTON.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_STONE_BUTTON.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_STONE_BUTTON.get());
+        this.dropSelf(ModBlocks.ROHAN_COBBLESTONE_BUTTON.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_COBBLESTONE_BUTTON.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICK_BUTTON.get());
+
+        this.dropSelf(ModBlocks.ROHAN_STONE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_STONE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_STONE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_COBBLESTONE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_COBBLESTONE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_BRICKWORK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_BRICKWORK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_CRACKED_BRICKWORK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_CHISELED_BRICK_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.ROHAN_MOSSY_CHISELED_BRICK_PRESSURE_PLATE.get());
