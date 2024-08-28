@@ -1,6 +1,5 @@
 package net.sima.bfme.block;
 
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
@@ -13,10 +12,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sima.bfme.BFME;
-import net.sima.bfme.block.custom.ColumnBlock;
-import net.sima.bfme.block.custom.GondorianCraftingTable;
-import net.sima.bfme.block.custom.ModFruitLeaves;
-import net.sima.bfme.block.custom.VerticalSlabBlock;
+import net.sima.bfme.block.custom.*;
 import net.sima.bfme.block.wood.*;
 import net.sima.bfme.item.ModItems;
 import net.sima.bfme.util.ModWoodTypes;
@@ -66,11 +62,11 @@ public class ModBlocks {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.WHITE)));
 
     public static final DeferredBlock<Block> GONDORIAN_COLUMN = registerBlock("gondorian_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.WHITE)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.WHITE)));
     public static final DeferredBlock<Block> GONDORIAN_MOSSY_COLUMN = registerBlock("gondorian_mossy_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.WHITE)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.WHITE)));
     public static final DeferredBlock<Block> GONDORIAN_CRACKED_COLUMN = registerBlock("gondorian_cracked_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.WHITE)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.WHITE)));
 
     public static final DeferredBlock<Block> GONDORIAN_STONE_STAIRS = registerBlock("gondorian_stone_stairs",
             () -> new StairBlock(ModBlocks.GONDORIAN_STONE.get().defaultBlockState(),
@@ -272,11 +268,11 @@ public class ModBlocks {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.GRAY)));
 
     public static final DeferredBlock<Block> DURIN_COLUMN = registerBlock("durin_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.GRAY)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.GRAY)));
     public static final DeferredBlock<Block> DURIN_MOSSY_COLUMN = registerBlock("durin_mossy_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.GRAY)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.GRAY)));
     public static final DeferredBlock<Block> DURIN_CRACKED_COLUMN = registerBlock("durin_cracked_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.GRAY)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.GRAY)));
 
     public static final DeferredBlock<Block> DURIN_STONE_STAIRS = registerBlock("durin_stone_stairs",
             () -> new StairBlock(ModBlocks.DURIN_STONE.get().defaultBlockState(),
@@ -482,18 +478,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
 
     public static final DeferredBlock<Block> ROHAN_PILLAR = registerBlock("rohan_pillar",
-            () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).mapColor(DyeColor.BROWN)));
+            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS).mapColor(DyeColor.BROWN)));
     public static final DeferredBlock<Block> ROHAN_MOSSY_PILLAR = registerBlock("rohan_mossy_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.MOSSY_STONE_BRICKS).mapColor(DyeColor.BROWN)));
     public static final DeferredBlock<Block> ROHAN_CRACKED_PILLAR = registerBlock("rohan_cracked_pillar",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CRACKED_STONE_BRICKS).mapColor(DyeColor.BROWN)));
 
     public static final DeferredBlock<Block> ROHAN_COLUMN = registerBlock("rohan_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
     public static final DeferredBlock<Block> ROHAN_MOSSY_COLUMN = registerBlock("rohan_mossy_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
     public static final DeferredBlock<Block> ROHAN_CRACKED_COLUMN = registerBlock("rohan_cracked_column",
-            () -> new ColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
+            () -> new TinyColumnBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).mapColor(DyeColor.BROWN)));
 
     public static final DeferredBlock<Block> ROHAN_STONE_STAIRS = registerBlock("rohan_stone_stairs",
             () -> new StairBlock(ModBlocks.ROHAN_STONE.get().defaultBlockState(),
@@ -657,6 +653,8 @@ public class ModBlocks {
 
     /* WOOD */
 
+    public static final DeferredBlock<Block> ALMOND_BEAM = registerBlock("almond_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_ALMOND_LOG = registerBlock("stripped_almond_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_ALMOND_WOOD = registerBlock("stripped_almond_wood",
@@ -697,6 +695,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ALMOND_WALL_HANGING_SIGN = BLOCKS.register("almond_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.ALMOND));
 
+    public static final DeferredBlock<Block> APPLE_BEAM = registerBlock("apple_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_APPLE_LOG = registerBlock("stripped_apple_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_APPLE_WOOD = registerBlock("stripped_apple_wood",
@@ -737,6 +737,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> APPLE_WALL_HANGING_SIGN = BLOCKS.register("apple_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.APPLE));
 
+    public static final DeferredBlock<Block> ASPEN_BEAM = registerBlock("aspen_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_ASPEN_LOG = registerBlock("stripped_aspen_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_ASPEN_WOOD = registerBlock("stripped_aspen_wood",
@@ -777,6 +779,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ASPEN_WALL_HANGING_SIGN = BLOCKS.register("aspen_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.ASPEN));
 
+    public static final DeferredBlock<Block> BANANA_BEAM = registerBlock("banana_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_BANANA_LOG = registerBlock("stripped_banana_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_BANANA_WOOD = registerBlock("stripped_banana_wood",
@@ -817,6 +821,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BANANA_WALL_HANGING_SIGN = BLOCKS.register("banana_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BANANA));
 
+    public static final DeferredBlock<Block> BAOBAB_BEAM = registerBlock("baobab_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_BAOBAB_LOG = registerBlock("stripped_baobab_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_BAOBAB_WOOD = registerBlock("stripped_baobab_wood",
@@ -857,6 +863,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BAOBAB_WALL_HANGING_SIGN = BLOCKS.register("baobab_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BAOBAB));
 
+    public static final DeferredBlock<Block> BEECH_BEAM = registerBlock("beech_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_BEECH_LOG = registerBlock("stripped_beech_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_BEECH_WOOD = registerBlock("stripped_beech_wood",
@@ -897,6 +905,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> BEECH_WALL_HANGING_SIGN = BLOCKS.register("beech_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BEECH));
 
+    public static final DeferredBlock<Block> CEDAR_BEAM = registerBlock("cedar_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CEDAR_LOG = registerBlock("stripped_cedar_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CEDAR_WOOD = registerBlock("stripped_cedar_wood",
@@ -937,6 +947,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CEDAR_WALL_HANGING_SIGN = BLOCKS.register("cedar_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CEDAR));
 
+    public static final DeferredBlock<Block> CHARRED_BEAM = registerBlock("charred_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CHARRED_LOG = registerBlock("stripped_charred_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CHARRED_WOOD = registerBlock("stripped_charred_wood",
@@ -973,6 +985,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHARRED_WALL_HANGING_SIGN = BLOCKS.register("charred_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CHARRED_WOOD));
 
+    public static final DeferredBlock<Block> CHESTNUT_BEAM = registerBlock("chestnut_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CHESTNUT_LOG = registerBlock("stripped_chestnut_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CHESTNUT_WOOD = registerBlock("stripped_chestnut_wood",
@@ -1013,6 +1027,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CHESTNUT_WALL_HANGING_SIGN = BLOCKS.register("chestnut_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CHESTNUT));
 
+    public static final DeferredBlock<Block> CYPRESS_BEAM = registerBlock("cypress_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CYPRESS_LOG = registerBlock("stripped_cypress_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_CYPRESS_WOOD = registerBlock("stripped_cypress_wood",
@@ -1053,6 +1069,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CYPRESS_WALL_HANGING_SIGN = BLOCKS.register("cypress_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.CYPRESS));
 
+    public static final DeferredBlock<Block> DATE_PALM_BEAM = registerBlock("date_palm_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_DATE_PALM_LOG = registerBlock("stripped_date_palm_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_DATE_PALM_WOOD = registerBlock("stripped_date_palm_wood",
@@ -1093,6 +1111,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DATE_PALM_WALL_HANGING_SIGN = BLOCKS.register("date_palm_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.DATE_PALM));
 
+    public static final DeferredBlock<Block> FIR_BEAM = registerBlock("fir_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_FIR_LOG = registerBlock("stripped_fir_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_FIR_WOOD = registerBlock("stripped_fir_wood",
@@ -1133,6 +1153,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> FIR_WALL_HANGING_SIGN = BLOCKS.register("fir_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.FIR));
 
+    public static final DeferredBlock<Block> GREEN_OAK_BEAM = registerBlock("green_oak_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_GREEN_OAK_LOG = registerBlock("stripped_green_oak_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_GREEN_OAK_WOOD = registerBlock("stripped_green_oak_wood",
@@ -1173,6 +1195,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GREEN_OAK_WALL_HANGING_SIGN = BLOCKS.register("green_oak_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.GREEN_OAK));
 
+    public static final DeferredBlock<Block> HOLLY_BEAM = registerBlock("holly_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_HOLLY_LOG = registerBlock("stripped_holly_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_HOLLY_WOOD = registerBlock("stripped_holly_wood",
@@ -1213,6 +1237,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> HOLLY_WALL_HANGING_SIGN = BLOCKS.register("holly_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.HOLLY));
 
+    public static final DeferredBlock<Block> KUNTZ_BEAM = registerBlock("kuntz_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_KUNTZ_LOG = registerBlock("stripped_kuntz_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_KUNTZ_WOOD = registerBlock("stripped_kuntz_wood",
@@ -1253,6 +1279,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> KUNTZ_WALL_HANGING_SIGN = BLOCKS.register("kuntz_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.KUNTZ));
 
+    public static final DeferredBlock<Block> LAIRELOSSE_BEAM = registerBlock("lairelosse_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LAIRELOSSE_LOG = registerBlock("stripped_lairelosse_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LAIRELOSSE_WOOD = registerBlock("stripped_lairelosse_wood",
@@ -1293,6 +1321,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LAIRELOSSE_WALL_HANGING_SIGN = BLOCKS.register("lairelosse_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LAIRELOSSE));
 
+    public static final DeferredBlock<Block> LARCH_BEAM = registerBlock("larch_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LARCH_LOG = registerBlock("stripped_larch_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LARCH_WOOD = registerBlock("stripped_larch_wood",
@@ -1333,6 +1363,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LARCH_WALL_HANGING_SIGN = BLOCKS.register("larch_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LARCH));
 
+    public static final DeferredBlock<Block> LEBETHRON_BEAM = registerBlock("lebethron_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LEBETHRON_LOG = registerBlock("stripped_lebethron_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LEBETHRON_WOOD = registerBlock("stripped_lebethron_wood",
@@ -1373,6 +1405,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LEBETHRON_WALL_HANGING_SIGN = BLOCKS.register("lebethron_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LEBETHRON));
 
+    public static final DeferredBlock<Block> LEMON_BEAM = registerBlock("lemon_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LEMON_LOG = registerBlock("stripped_lemon_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LEMON_WOOD = registerBlock("stripped_lemon_wood",
@@ -1413,6 +1447,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LEMON_WALL_HANGING_SIGN = BLOCKS.register("lemon_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LEMON));
 
+    public static final DeferredBlock<Block> LIME_BEAM = registerBlock("lime_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LIME_LOG = registerBlock("stripped_lime_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_LIME_WOOD = registerBlock("stripped_lime_wood",
@@ -1453,6 +1489,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> LIME_WALL_HANGING_SIGN = BLOCKS.register("lime_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.LIME));
 
+    public static final DeferredBlock<Block> RED_MAHOGANY_BEAM = registerBlock("red_mahogany_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_RED_MAHOGANY_LOG = registerBlock("stripped_red_mahogany_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_RED_MAHOGANY_WOOD = registerBlock("stripped_red_mahogany_wood",
@@ -1494,6 +1532,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RED_MAHOGANY_WALL_HANGING_SIGN = BLOCKS.register("red_mahogany_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.RED_MAHOGANY));
 
+    public static final DeferredBlock<Block> MALLORN_BEAM = registerBlock("mallorn_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MALLORN_LOG = registerBlock("stripped_mallorn_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MALLORN_WOOD = registerBlock("stripped_mallorn_wood",
@@ -1534,6 +1574,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MALLORN_WALL_HANGING_SIGN = BLOCKS.register("mallorn_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MALLORN));
 
+    public static final DeferredBlock<Block> MANGO_BEAM = registerBlock("mango_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MANGO_LOG = registerBlock("stripped_mango_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MANGO_WOOD = registerBlock("stripped_mango_wood",
@@ -1574,6 +1616,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MANGO_WALL_HANGING_SIGN = BLOCKS.register("mango_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MANGO));
 
+    public static final DeferredBlock<Block> MAPLE_BEAM = registerBlock("maple_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
@@ -1614,6 +1658,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MAPLE_WALL_HANGING_SIGN = BLOCKS.register("maple_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MAPLE));
 
+    public static final DeferredBlock<Block> MIRK_OAK_BEAM = registerBlock("mirk_oak_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MIRK_OAK_LOG = registerBlock("stripped_mirk_oak_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_MIRK_OAK_WOOD = registerBlock("stripped_mirk_oak_wood",
@@ -1654,6 +1700,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MIRK_OAK_WALL_HANGING_SIGN = BLOCKS.register("mirk_oak_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MIRK_OAK));
 
+    public static final DeferredBlock<Block> OLIVE_BEAM = registerBlock("olive_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_OLIVE_LOG = registerBlock("stripped_olive_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_OLIVE_WOOD = registerBlock("stripped_olive_wood",
@@ -1694,6 +1742,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> OLIVE_WALL_HANGING_SIGN = BLOCKS.register("olive_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.OLIVE));
 
+    public static final DeferredBlock<Block> ORANGE_BEAM = registerBlock("orange_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_ORANGE_LOG = registerBlock("stripped_orange_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_ORANGE_WOOD = registerBlock("stripped_orange_wood",
@@ -1734,6 +1784,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ORANGE_WALL_HANGING_SIGN = BLOCKS.register("orange_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.ORANGE));
 
+    public static final DeferredBlock<Block> PALM_BEAM = registerBlock("palm_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PALM_LOG = registerBlock("stripped_palm_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PALM_WOOD = registerBlock("stripped_palm_wood",
@@ -1774,6 +1826,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PALM_WALL_HANGING_SIGN = BLOCKS.register("palm_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PALM));
 
+    public static final DeferredBlock<Block> PEAR_BEAM = registerBlock("pear_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PEAR_LOG = registerBlock("stripped_pear_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PEAR_WOOD = registerBlock("stripped_pear_wood",
@@ -1814,6 +1868,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PEAR_WALL_HANGING_SIGN = BLOCKS.register("pear_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PEAR));
 
+    public static final DeferredBlock<Block> PINE_BEAM = registerBlock("pine_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PINE_LOG = registerBlock("stripped_pine_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PINE_WOOD = registerBlock("stripped_pine_wood",
@@ -1854,6 +1910,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PINE_WALL_HANGING_SIGN = BLOCKS.register("pine_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PINE));
 
+    public static final DeferredBlock<Block> PLUM_BEAM = registerBlock("plum_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PLUM_LOG = registerBlock("stripped_plum_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_PLUM_WOOD = registerBlock("stripped_plum_wood",
@@ -1894,6 +1952,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PLUM_WALL_HANGING_SIGN = BLOCKS.register("plum_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.PLUM));
 
+    public static final DeferredBlock<Block> POMERGRANATE_BEAM = registerBlock("pomergranate_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_POMERGRANATE_LOG = registerBlock("stripped_pomergranate_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_POMERGRANATE_WOOD = registerBlock("stripped_pomergranate_wood",
@@ -1934,6 +1994,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> POMERGRANATE_WALL_HANGING_SIGN = BLOCKS.register("pomergranate_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.POMERGRANATE));
 
+    public static final DeferredBlock<Block> REDWOOD_BEAM = registerBlock("redwood_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood",
@@ -1974,6 +2036,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> REDWOOD_WALL_HANGING_SIGN = BLOCKS.register("redwood_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.RED_WOOD));
 
+    public static final DeferredBlock<Block> RED_OAK_BEAM = registerBlock("red_oak_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_RED_OAK_LOG = registerBlock("stripped_red_oak_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_RED_OAK_WOOD = registerBlock("stripped_red_oak_wood",
@@ -2014,6 +2078,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RED_OAK_WALL_HANGING_SIGN = BLOCKS.register("red_oak_wall_hanging_sign",
             () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.RED_OAK));
 
+    public static final DeferredBlock<Block> WILLOW_BEAM = registerBlock("willow_beam",
+            () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_WILLOW_LOG = registerBlock("stripped_willow_log",
             () -> new ModStrippedLog(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_WILLOW_WOOD = registerBlock("stripped_willow_wood",

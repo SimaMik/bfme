@@ -433,6 +433,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         /* WOOD */
         this.dropSelf(ModBlocks.APPLE_LOG.get());
+        this.dropSelf(ModBlocks.APPLE_BEAM.get());
         this.dropSelf(ModBlocks.APPLE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_APPLE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_APPLE_WOOD.get());
@@ -459,6 +460,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.APPLE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.PEAR_LOG.get());
+        this.dropSelf(ModBlocks.PEAR_BEAM.get());
         this.dropSelf(ModBlocks.PEAR_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_PEAR_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PEAR_WOOD.get());
@@ -485,6 +487,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.PEAR_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.PLUM_LOG.get());
+        this.dropSelf(ModBlocks.PLUM_BEAM.get());
         this.dropSelf(ModBlocks.PLUM_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_PLUM_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PLUM_WOOD.get());
@@ -511,6 +514,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.PLUM_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.MALLORN_LOG.get());
+        this.dropSelf(ModBlocks.MALLORN_BEAM.get());
         this.dropSelf(ModBlocks.MALLORN_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_MALLORN_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_MALLORN_WOOD.get());
@@ -537,6 +541,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.MALLORN_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.WILLOW_LOG.get());
+        this.dropSelf(ModBlocks.WILLOW_BEAM.get());
         this.dropSelf(ModBlocks.WILLOW_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_WILLOW_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_WILLOW_WOOD.get());
@@ -563,6 +568,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.WILLOW_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.CHARRED_LOG.get());
+        this.dropSelf(ModBlocks.CHARRED_BEAM.get());
         this.dropSelf(ModBlocks.CHARRED_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_CHARRED_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CHARRED_WOOD.get());
@@ -587,6 +593,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.CHARRED_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.BEECH_LOG.get());
+        this.dropSelf(ModBlocks.BEECH_BEAM.get());
         this.dropSelf(ModBlocks.BEECH_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_BEECH_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_BEECH_WOOD.get());
@@ -613,6 +620,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.BEECH_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.BAOBAB_LOG.get());
+        this.dropSelf(ModBlocks.BAOBAB_BEAM.get());
         this.dropSelf(ModBlocks.BAOBAB_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_BAOBAB_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_BAOBAB_WOOD.get());
@@ -639,6 +647,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.BAOBAB_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.PINE_LOG.get());
+        this.dropSelf(ModBlocks.PINE_BEAM.get());
         this.dropSelf(ModBlocks.PINE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_PINE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PINE_WOOD.get());
@@ -666,6 +675,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
 
         this.dropSelf(ModBlocks.HOLLY_LOG.get());
+        this.dropSelf(ModBlocks.HOLLY_BEAM.get());
         this.dropSelf(ModBlocks.HOLLY_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_HOLLY_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_HOLLY_WOOD.get());
@@ -692,6 +702,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.HOLLY_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.GREEN_OAK_LOG.get());
+        this.dropSelf(ModBlocks.GREEN_OAK_BEAM.get());
         this.dropSelf(ModBlocks.GREEN_OAK_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_GREEN_OAK_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_GREEN_OAK_WOOD.get());
@@ -718,6 +729,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.GREEN_OAK_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.RED_OAK_LOG.get());
+        this.dropSelf(ModBlocks.RED_OAK_BEAM.get());
         this.dropSelf(ModBlocks.RED_OAK_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_RED_OAK_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_RED_OAK_WOOD.get());
@@ -744,6 +756,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.RED_OAK_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.MIRK_OAK_LOG.get());
+        this.dropSelf(ModBlocks.MIRK_OAK_BEAM.get());
         this.dropSelf(ModBlocks.MIRK_OAK_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_MIRK_OAK_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_MIRK_OAK_WOOD.get());
@@ -770,6 +783,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.MIRK_OAK_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.MAPLE_LOG.get());
+        this.dropSelf(ModBlocks.MAPLE_BEAM.get());
         this.dropSelf(ModBlocks.MAPLE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_MAPLE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_MAPLE_WOOD.get());
@@ -796,6 +810,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.MAPLE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.PALM_LOG.get());
+        this.dropSelf(ModBlocks.PALM_BEAM.get());
         this.dropSelf(ModBlocks.PALM_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_PALM_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_PALM_WOOD.get());
@@ -822,6 +837,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.PALM_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.CHESTNUT_LOG.get());
+        this.dropSelf(ModBlocks.CHESTNUT_BEAM.get());
         this.dropSelf(ModBlocks.CHESTNUT_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_CHESTNUT_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CHESTNUT_WOOD.get());
@@ -848,6 +864,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.CHESTNUT_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.ASPEN_LOG.get());
+        this.dropSelf(ModBlocks.ASPEN_BEAM.get());
         this.dropSelf(ModBlocks.ASPEN_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_ASPEN_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ASPEN_WOOD.get());
@@ -874,6 +891,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.ASPEN_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.CEDAR_LOG.get());
+        this.dropSelf(ModBlocks.CEDAR_BEAM.get());
         this.dropSelf(ModBlocks.CEDAR_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_CEDAR_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CEDAR_WOOD.get());
@@ -900,6 +918,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.CEDAR_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.FIR_LOG.get());
+        this.dropSelf(ModBlocks.FIR_BEAM.get());
         this.dropSelf(ModBlocks.FIR_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_FIR_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FIR_WOOD.get());
@@ -926,6 +945,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.FIR_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.LARCH_LOG.get());
+        this.dropSelf(ModBlocks.LARCH_BEAM.get());
         this.dropSelf(ModBlocks.LARCH_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_LARCH_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_LARCH_WOOD.get());
@@ -952,6 +972,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.LARCH_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.LAIRELOSSE_LOG.get());
+        this.dropSelf(ModBlocks.LAIRELOSSE_BEAM.get());
         this.dropSelf(ModBlocks.LAIRELOSSE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_LAIRELOSSE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_LAIRELOSSE_WOOD.get());
@@ -978,6 +999,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.LAIRELOSSE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.ALMOND_LOG.get());
+        this.dropSelf(ModBlocks.ALMOND_BEAM.get());
         this.dropSelf(ModBlocks.ALMOND_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_ALMOND_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ALMOND_WOOD.get());
@@ -1004,6 +1026,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.ALMOND_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.BANANA_LOG.get());
+        this.dropSelf(ModBlocks.BANANA_BEAM.get());
         this.dropSelf(ModBlocks.BANANA_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_BANANA_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_BANANA_WOOD.get());
@@ -1030,6 +1053,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.BANANA_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.CYPRESS_LOG.get());
+        this.dropSelf(ModBlocks.CYPRESS_BEAM.get());
         this.dropSelf(ModBlocks.CYPRESS_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_CYPRESS_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_CYPRESS_WOOD.get());
@@ -1056,6 +1080,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.CYPRESS_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.DATE_PALM_LOG.get());
+        this.dropSelf(ModBlocks.DATE_PALM_BEAM.get());
         this.dropSelf(ModBlocks.DATE_PALM_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_DATE_PALM_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_DATE_PALM_WOOD.get());
@@ -1082,6 +1107,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.DATE_PALM_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.KUNTZ_LOG.get());
+        this.dropSelf(ModBlocks.KUNTZ_BEAM.get());
         this.dropSelf(ModBlocks.KUNTZ_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_KUNTZ_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_KUNTZ_WOOD.get());
@@ -1108,6 +1134,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.KUNTZ_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.LEBETHRON_LOG.get());
+        this.dropSelf(ModBlocks.LEBETHRON_BEAM.get());
         this.dropSelf(ModBlocks.LEBETHRON_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_LEBETHRON_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_LEBETHRON_WOOD.get());
@@ -1134,6 +1161,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.LEBETHRON_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.LEMON_LOG.get());
+        this.dropSelf(ModBlocks.LEMON_BEAM.get());
         this.dropSelf(ModBlocks.LEMON_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_LEMON_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_LEMON_WOOD.get());
@@ -1160,6 +1188,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.LEMON_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.LIME_LOG.get());
+        this.dropSelf(ModBlocks.LIME_BEAM.get());
         this.dropSelf(ModBlocks.LIME_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_LIME_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_LIME_WOOD.get());
@@ -1186,6 +1215,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.LIME_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.MANGO_LOG.get());
+        this.dropSelf(ModBlocks.MANGO_BEAM.get());
         this.dropSelf(ModBlocks.MANGO_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_MANGO_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_MANGO_WOOD.get());
@@ -1212,6 +1242,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.MANGO_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.ORANGE_LOG.get());
+        this.dropSelf(ModBlocks.ORANGE_BEAM.get());
         this.dropSelf(ModBlocks.ORANGE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_ORANGE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_ORANGE_WOOD.get());
@@ -1238,6 +1269,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.ORANGE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.POMERGRANATE_LOG.get());
+        this.dropSelf(ModBlocks.POMERGRANATE_BEAM.get());
         this.dropSelf(ModBlocks.POMERGRANATE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_POMERGRANATE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_POMERGRANATE_WOOD.get());
@@ -1264,6 +1296,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.POMERGRANATE_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.REDWOOD_LOG.get());
+        this.dropSelf(ModBlocks.REDWOOD_BEAM.get());
         this.dropSelf(ModBlocks.REDWOOD_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_REDWOOD_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_REDWOOD_WOOD.get());
@@ -1290,6 +1323,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.REDWOOD_HANGING_SIGN.get()));
 
         this.dropSelf(ModBlocks.RED_MAHOGANY_LOG.get());
+        this.dropSelf(ModBlocks.RED_MAHOGANY_BEAM.get());
         this.dropSelf(ModBlocks.RED_MAHOGANY_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_RED_MAHOGANY_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_RED_MAHOGANY_WOOD.get());
@@ -1314,7 +1348,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 createSingleItemTable(ModItems.RED_MAHOGANY_HANGING_SIGN.get()));
         this.add(ModBlocks.RED_MAHOGANY_HANGING_SIGN.get(), block ->
                 createSingleItemTable(ModItems.RED_MAHOGANY_HANGING_SIGN.get()));
+
         this.dropSelf(ModBlocks.OLIVE_LOG.get());
+        this.dropSelf(ModBlocks.OLIVE_BEAM.get());
         this.dropSelf(ModBlocks.OLIVE_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_OLIVE_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_OLIVE_WOOD.get());

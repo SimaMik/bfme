@@ -1,4 +1,5 @@
-// 1.21	2024-08-19T16:55:15.1797456	Loot Tables
+// 1.21	2024-08-27T14:42:48.3144588	Loot Tables
+8139290833d1ac67aa7b794bfba00412a9ca310f data/bfme/loot_table/blocks/almond_beam.json
 77ec6fd25340eb1e82613edab30e03f3245c6755 data/bfme/loot_table/blocks/almond_button.json
 38c19108ba3549ba5ff619e20ff520b72f76800e data/bfme/loot_table/blocks/almond_door.json
 04c7eda7daf217f8edeee2b04b4f42e2c45da722 data/bfme/loot_table/blocks/almond_fence.json
@@ -20,6 +21,7 @@ b4183170169577feaf9e0c9af3a8bdedde4d818a data/bfme/loot_table/blocks/amber_block
 6cde9951485b2635307e5ef946e31eea80eacd4a data/bfme/loot_table/blocks/amber_ore.json
 0b90d780da02d6589df007de078542a15fb5b0d3 data/bfme/loot_table/blocks/amethyst_block.json
 74ea3e249a782568a757c8ec163147dfccf39446 data/bfme/loot_table/blocks/amethyst_ore.json
+f316c796463b7f701873208f4dae6c778aed03dc data/bfme/loot_table/blocks/apple_beam.json
 c8fee337f7ec7085c2dfbf29c51982e7081a48a1 data/bfme/loot_table/blocks/apple_button.json
 4363a4a09c835d5452d750321ca120021644f2bf data/bfme/loot_table/blocks/apple_door.json
 f439b19706198419c3305b4723ad536fed48c5e7 data/bfme/loot_table/blocks/apple_fence.json
@@ -37,6 +39,7 @@ d1c02f8081c6a178c660979827a9dc64b0c6a610 data/bfme/loot_table/blocks/apple_press
 a8c8b58e948778656f66c835e3ddd7904f5c3c53 data/bfme/loot_table/blocks/apple_wall_hanging_sign.json
 e96fdfa64c4b9b641e4714cac410f266255f2cd3 data/bfme/loot_table/blocks/apple_wall_sign.json
 f58076802e9cc79fd82fe138cca8c6dac026f957 data/bfme/loot_table/blocks/apple_wood.json
+e1fe3a070c02e7631341b541dd40e4183ee75db1 data/bfme/loot_table/blocks/aspen_beam.json
 1bc389ce5b38686c243a39867a1e44e778c6b63f data/bfme/loot_table/blocks/aspen_button.json
 0b3ab090b6e7109db4a496223ed3a9ab439423cc data/bfme/loot_table/blocks/aspen_door.json
 127811099dcfe9f1ad29c50f3a4373ab7179080a data/bfme/loot_table/blocks/aspen_fence.json
@@ -54,6 +57,7 @@ da7bf0ac204ba6a62d2e02edba648440b674e426 data/bfme/loot_table/blocks/aspen_trapd
 d8c3bd359bcd39a612050814d556fa38004116b9 data/bfme/loot_table/blocks/aspen_wall_hanging_sign.json
 d1b8355b1295d9c891f76e5fa8d293e1c74f4f08 data/bfme/loot_table/blocks/aspen_wall_sign.json
 d71f75248c648ef6f1de9b93fea6f4f206568c6b data/bfme/loot_table/blocks/aspen_wood.json
+2e366ffa2a675f964153e17e19451101dcd46eaf data/bfme/loot_table/blocks/banana_beam.json
 e8dcd96764da43d7fbf14243be45a66828a84df6 data/bfme/loot_table/blocks/banana_button.json
 8ef05a8842072baf729bdea69b93af1ee4d6762d data/bfme/loot_table/blocks/banana_door.json
 910d856fd17525da11307f478499c3c4d0f0e0fe data/bfme/loot_table/blocks/banana_fence.json
@@ -71,6 +75,7 @@ b5fb9daec2f2e7f2e7c4033e3ad4569a4c121706 data/bfme/loot_table/blocks/banana_trap
 6ff0b1f4bc57d3fe8616564efbcef4053a52d41f data/bfme/loot_table/blocks/banana_wall_hanging_sign.json
 1f6e374fdd88410199e7eba75b2f56153f34504a data/bfme/loot_table/blocks/banana_wall_sign.json
 d9487b5d8fbbf294dd4ae6315bec33b53ee13e74 data/bfme/loot_table/blocks/banana_wood.json
+0cc72c2003d5677c95943e863254cb3013f111d6 data/bfme/loot_table/blocks/baobab_beam.json
 85b20373783d934e335f3adcff9f87da6991d8ce data/bfme/loot_table/blocks/baobab_button.json
 a34b25428316f35bbe0117f3725f4056db76d578 data/bfme/loot_table/blocks/baobab_door.json
 2971e2f746e06d8e20e4904dc49a5043dbc29309 data/bfme/loot_table/blocks/baobab_fence.json
@@ -88,6 +93,7 @@ f5d545c2503d912d4c35116514abb4e9daca9310 data/bfme/loot_table/blocks/baobab_sapl
 0c1acaa7a3089730c1f9cb5b99279bfaf32af533 data/bfme/loot_table/blocks/baobab_wall_hanging_sign.json
 b97c73d8e3644bdb27c8a482100024f39ee0c4af data/bfme/loot_table/blocks/baobab_wall_sign.json
 09b243c4d795d8caaf46bdc23b556d81d773218b data/bfme/loot_table/blocks/baobab_wood.json
+5d9a2a516bab18af20a9e793622cebd5961faba4 data/bfme/loot_table/blocks/beech_beam.json
 fbaf65dc41941adadf50f1e294b8d1e410b575b0 data/bfme/loot_table/blocks/beech_button.json
 e6ff1093a5eeead03f63c64a3155fdf6c603d3db data/bfme/loot_table/blocks/beech_door.json
 5dfaaa2d75ce1f1c81c3f737fd165bd43b1d8a04 data/bfme/loot_table/blocks/beech_fence.json
@@ -106,6 +112,7 @@ dcc7aef6100d6544a0e9f86afb271e33f72cb3da data/bfme/loot_table/blocks/beech_wall_
 d81743e5e256d76122634f5de679e0771156487c data/bfme/loot_table/blocks/beech_wall_sign.json
 886a98c8b5dc87c26b127e48f304b9009462bde8 data/bfme/loot_table/blocks/beech_wood.json
 75c8c4f57dbf1a2f4870c604fcbc8af8babf9d4f data/bfme/loot_table/blocks/bronze_block.json
+2b46022a725c7a40c8a04210e705da330d5ca0fd data/bfme/loot_table/blocks/cedar_beam.json
 0beba72baef19003096717074b1def31b3b43512 data/bfme/loot_table/blocks/cedar_button.json
 0dc06db3524b81f17563cfc1d170bf00df9010a3 data/bfme/loot_table/blocks/cedar_door.json
 7cf134348be35b6779043466ea47e43ebf995468 data/bfme/loot_table/blocks/cedar_fence.json
@@ -123,6 +130,7 @@ d0232941ede9498d2355e23d34dddba31239febd data/bfme/loot_table/blocks/cedar_trapd
 4353ab6fa2f0b14af8a183f4de7d2acff7924957 data/bfme/loot_table/blocks/cedar_wall_hanging_sign.json
 a7a42e171d5d3e29496165bf54575bd7e30a2995 data/bfme/loot_table/blocks/cedar_wall_sign.json
 b7bec511e26b095055456112a7c60c4b7fedea16 data/bfme/loot_table/blocks/cedar_wood.json
+e57c4dcbf4bc2c38cffff40406fdc0f8a306220d data/bfme/loot_table/blocks/charred_beam.json
 750ffd640f50be7e954123b608039fe5a68e429c data/bfme/loot_table/blocks/charred_button.json
 5766ea68bcb7369f501cf3b6439675eea2783c79 data/bfme/loot_table/blocks/charred_door.json
 9342d7e97e8aa4263476aa599e24d1fccee352b3 data/bfme/loot_table/blocks/charred_fence.json
@@ -138,6 +146,7 @@ ef8dd94244d5796c35986b1651b295ca684aa23f data/bfme/loot_table/blocks/charred_sig
 2bac2057029a8f4c07aa2b2ad82c5a4b0cac7130 data/bfme/loot_table/blocks/charred_wall_hanging_sign.json
 9dc6ab72b709de1ced9d9f40d8023182e2123273 data/bfme/loot_table/blocks/charred_wall_sign.json
 e3bed3add3aa7f7d5e0a33bc7f2acae76b26a326 data/bfme/loot_table/blocks/charred_wood.json
+f393a504efee8d23bd8274b028cbc912e9bef341 data/bfme/loot_table/blocks/chestnut_beam.json
 fabd6cea48a56fdd923a8a43467bed71cf4b9825 data/bfme/loot_table/blocks/chestnut_button.json
 44ef1a3f195fda10912375c76712dda797108de7 data/bfme/loot_table/blocks/chestnut_door.json
 eb5fa42219ab28dbb52f1e58216c002a0b17e654 data/bfme/loot_table/blocks/chestnut_fence.json
@@ -155,6 +164,7 @@ c6d923f8e37d3644fa5b02ef1d81aafff6aafdc9 data/bfme/loot_table/blocks/chestnut_sa
 8b3c7fc96f7ae4bc96f9299ce6e687750717c39c data/bfme/loot_table/blocks/chestnut_wall_hanging_sign.json
 56e7af5e82bf4958caf6a57f52d5a78405b0b1e8 data/bfme/loot_table/blocks/chestnut_wall_sign.json
 4ea0524f9b497ab9867c9f8cd3fc2c6b448ad28d data/bfme/loot_table/blocks/chestnut_wood.json
+63e5fa018420a87d3e748d4b841bd71eaed9d06b data/bfme/loot_table/blocks/cypress_beam.json
 0e0445d05e61684ce6ae4cb888323e879a90f4bf data/bfme/loot_table/blocks/cypress_button.json
 527ea471a79822bda8ce580b8f087ef395b03c3c data/bfme/loot_table/blocks/cypress_door.json
 6c476b872222f9e10731a63e642b8b897fbea7a1 data/bfme/loot_table/blocks/cypress_fence.json
@@ -172,6 +182,7 @@ bac1a9d22359aa63881690d92a6d3fcccb944ea6 data/bfme/loot_table/blocks/cypress_pre
 5ede9be1008112fdad51de572e6bc8bdd6379c54 data/bfme/loot_table/blocks/cypress_wall_hanging_sign.json
 4fef24784599d7e60a4b74911ca57b70bfa45db1 data/bfme/loot_table/blocks/cypress_wall_sign.json
 1ec13177bb0e9401a2f783d87f81e935250860da data/bfme/loot_table/blocks/cypress_wood.json
+6f2e80e1f04ff1bf5c92c02799bef3eaa9904116 data/bfme/loot_table/blocks/date_palm_beam.json
 e59bec0d0970e7dc07b626f1054126e1c9c8d770 data/bfme/loot_table/blocks/date_palm_button.json
 f8fd12d6cd3af84d6d4980423f2fc0e09c6d2b59 data/bfme/loot_table/blocks/date_palm_door.json
 104927bd26f5725f30f5e1777967d23acf050beb data/bfme/loot_table/blocks/date_palm_fence.json
@@ -304,6 +315,7 @@ fb6037d9dee939863d2813fdec5f7a84f7644ef3 data/bfme/loot_table/blocks/durin_stone
 3f92295c40e85c3b371f3ddeae957868e7177173 data/bfme/loot_table/blocks/durin_stone_wall.json
 5543490e9463093bf0988ca91f05c35666914403 data/bfme/loot_table/blocks/emerald_block.json
 148a77896c6e13a09c9530c8b464be94d32c6ceb data/bfme/loot_table/blocks/emerald_ore.json
+9f5147a1320cf3b381a0180ab4ba8e2d907fc3e5 data/bfme/loot_table/blocks/fir_beam.json
 8b63434bd06e1a759f67352a1c5442537a2b826d data/bfme/loot_table/blocks/fir_button.json
 a34398b17685f24166b6381f07f5cb2543dc1a39 data/bfme/loot_table/blocks/fir_door.json
 d4666cc822395cdb94dbed4f15366fbae70e7a40 data/bfme/loot_table/blocks/fir_fence.json
@@ -414,6 +426,7 @@ ede3525c725db8e967424d0ab5ac17144f3027c4 data/bfme/loot_table/blocks/gondorian_s
 456687b40071e728602dbd3d1f3400d7123ea0c9 data/bfme/loot_table/blocks/gondorian_stone_vertical_slab.json
 1e68790123207c1ec2e94ca1e6a64f786f452663 data/bfme/loot_table/blocks/gondorian_stone_wall.json
 e7c094ded8b72ce1aa1f012574bcf23a69702a34 data/bfme/loot_table/blocks/gondorian_workbench.json
+20fe7a472004a029abdd5b863d07adea57a4bea0 data/bfme/loot_table/blocks/green_oak_beam.json
 c881d46fe04245dc14bf937ad0aaaa9e35913d30 data/bfme/loot_table/blocks/green_oak_button.json
 825bc1fadd99988861453192e9724c554a7be885 data/bfme/loot_table/blocks/green_oak_door.json
 099bce304f7a73f2fe5cda420dd3fa4d0bc80e47 data/bfme/loot_table/blocks/green_oak_fence.json
@@ -431,6 +444,7 @@ d173c26ebbe9ec75d99ca60bf22f4a9d952b27ed data/bfme/loot_table/blocks/green_oak_p
 b9fb035300e1f56f01095701e2d7c4bb0ea8b6f1 data/bfme/loot_table/blocks/green_oak_wall_hanging_sign.json
 d3d5614e213c0dd6299a24dafcc0a9554587e5c6 data/bfme/loot_table/blocks/green_oak_wall_sign.json
 2ed0775f4e5d38aefaba39f9588be65547dd34e2 data/bfme/loot_table/blocks/green_oak_wood.json
+7534b8f39ed8046afaa25b8d2ddd9eef3ec9af78 data/bfme/loot_table/blocks/holly_beam.json
 f8a744d40196b60bb5a4551bb2f50f3977bf1591 data/bfme/loot_table/blocks/holly_button.json
 2df72006571836dc67c363e3804d4699fa38b527 data/bfme/loot_table/blocks/holly_door.json
 402680d1745c3344598a7e6cff902baabb034a6e data/bfme/loot_table/blocks/holly_fence.json
@@ -448,6 +462,7 @@ a662a6aa48d08877d2c67d898288e199c1cdf37f data/bfme/loot_table/blocks/holly_hangi
 2aa512564cd3f10bb88e7b9e7d329e37d307a796 data/bfme/loot_table/blocks/holly_wall_hanging_sign.json
 f69180d84edc723035d3242e679923830d4d12ab data/bfme/loot_table/blocks/holly_wall_sign.json
 ff4185315926d1614bb7f25b52cd5d71616bd6f0 data/bfme/loot_table/blocks/holly_wood.json
+315624cc2896fd9879e31fbca94182518af860d1 data/bfme/loot_table/blocks/kuntz_beam.json
 b723cbc02b9056fc453d0132bd12e0b0f754d706 data/bfme/loot_table/blocks/kuntz_button.json
 2f351c062cb738707195db9d3593e6735fd9d100 data/bfme/loot_table/blocks/kuntz_door.json
 14ea163d3c22ab519b62f2d967620d261fad632f data/bfme/loot_table/blocks/kuntz_fence.json
@@ -465,6 +480,7 @@ ac435b782e2ad089a8f4fadd54f63f0f48ab2add data/bfme/loot_table/blocks/kuntz_hangi
 9be9738bb2cca0f2ad9498273ec43444b7b1f4fc data/bfme/loot_table/blocks/kuntz_wall_hanging_sign.json
 47bdc80903811661378b1b0432d821b683f10962 data/bfme/loot_table/blocks/kuntz_wall_sign.json
 6af462ddd448052318a76e9d2d993468a38738c6 data/bfme/loot_table/blocks/kuntz_wood.json
+7c14409c86798dc4f10102cfee751ce4e25375c2 data/bfme/loot_table/blocks/lairelosse_beam.json
 cece5f343321d27751161ca315ba9251c4529fa5 data/bfme/loot_table/blocks/lairelosse_button.json
 e871d85c82fb111c67dbb911eebf050fd0919359 data/bfme/loot_table/blocks/lairelosse_door.json
 f802dc5283f0e72b3a691ef71223efc0d9105aa2 data/bfme/loot_table/blocks/lairelosse_fence.json
@@ -482,6 +498,7 @@ a4a972692c8e4268b13942070419b44a59c20c6b data/bfme/loot_table/blocks/lairelosse_
 8b058be75744a77a985541d2f5a0dd5b4df9b799 data/bfme/loot_table/blocks/lairelosse_wall_hanging_sign.json
 66ecf32a7c2f160759fbcbf58f338e5d101e5bef data/bfme/loot_table/blocks/lairelosse_wall_sign.json
 b142a8760af4947c8cbb3a02c71e4296fba142e2 data/bfme/loot_table/blocks/lairelosse_wood.json
+e0b3064b2dbc49154bf8a13a9adcbc1101fecca5 data/bfme/loot_table/blocks/larch_beam.json
 d2137b6fb7585e06ecf885bb94c5ac37f1d0ae62 data/bfme/loot_table/blocks/larch_button.json
 f84d9ad6c1ee202238f08d78b58fb688ef095cb5 data/bfme/loot_table/blocks/larch_door.json
 8c8333180a3f5b2c81cdd10819f9e22e12996a91 data/bfme/loot_table/blocks/larch_fence.json
@@ -499,6 +516,7 @@ f9365f2e4e437a11ed5b4df521185916dd8f1650 data/bfme/loot_table/blocks/larch_plank
 d4bbe9521f3c3ecfc69e91f8d82f42edf23d9796 data/bfme/loot_table/blocks/larch_wall_hanging_sign.json
 db91a04e3abc6891f3937b6e7414d830eed34880 data/bfme/loot_table/blocks/larch_wall_sign.json
 c79f8ba5b98fac8aa417863b2609e7bc039be8a5 data/bfme/loot_table/blocks/larch_wood.json
+8abea6b66816890b37c5414068c6eeb73b974ae3 data/bfme/loot_table/blocks/lebethron_beam.json
 416d35cb16073f563dda5562080eecd6c2ef5099 data/bfme/loot_table/blocks/lebethron_button.json
 e1e84ea31c94067f70a1ff0cf0724c2fa504ac23 data/bfme/loot_table/blocks/lebethron_door.json
 dcb40045f8bf4f812b9ee0c4b1d3d65b8e6682c3 data/bfme/loot_table/blocks/lebethron_fence.json
@@ -516,6 +534,7 @@ c3745124dda5c370b3b5d6c60a10fd2cc534af62 data/bfme/loot_table/blocks/lebethron_p
 35f7697ec5b5bba52b7a7942f98c37b8ec00b368 data/bfme/loot_table/blocks/lebethron_wall_hanging_sign.json
 380d1e25011c310b7e199b21fdaabdd44806a387 data/bfme/loot_table/blocks/lebethron_wall_sign.json
 31eebe1a2f2c54ab3d9a86d734446fe5d5280ab6 data/bfme/loot_table/blocks/lebethron_wood.json
+e8c99d9faa44967d98273a8c8c2c856244b7eaa8 data/bfme/loot_table/blocks/lemon_beam.json
 1a6dfeb232d0bf432d5b90ffeced132b896dccf7 data/bfme/loot_table/blocks/lemon_button.json
 fb3275b900abc5796c43d00eddc2dd22a94fb498 data/bfme/loot_table/blocks/lemon_door.json
 7ec31f9fd3db5b87cf8addbae9422804ffb31ac8 data/bfme/loot_table/blocks/lemon_fence.json
@@ -533,6 +552,7 @@ edf2a898e949e94703d1fc417525b8e7f7028b53 data/bfme/loot_table/blocks/lemon_trapd
 119fcb6611caac5a73b001e2aa7bcb735d693d4f data/bfme/loot_table/blocks/lemon_wall_hanging_sign.json
 98281d6078fe8b354e390aa9af1bf4b46531b37a data/bfme/loot_table/blocks/lemon_wall_sign.json
 9002df93cedc249af38a3fbb31ccf242de4ccf0e data/bfme/loot_table/blocks/lemon_wood.json
+43f5edae570e8797299b50f89adb8ae1cbde9b4f data/bfme/loot_table/blocks/lime_beam.json
 af7ff235b108f50d5d112adb3a17a1af566571f1 data/bfme/loot_table/blocks/lime_button.json
 390b58ff9a6c161385be522930887e55ce464612 data/bfme/loot_table/blocks/lime_door.json
 23c627da845ad33355a2595067c387b801f00186 data/bfme/loot_table/blocks/lime_fence.json
@@ -550,6 +570,7 @@ d61cc92bdafb34d9f776583950910c138bcf6255 data/bfme/loot_table/blocks/lime_trapdo
 eabd252dc5c8974edf4ef1b7ec6e41bd312f8491 data/bfme/loot_table/blocks/lime_wall_hanging_sign.json
 44183d4f0bdd000bcde604d2bf9ac8595805fd67 data/bfme/loot_table/blocks/lime_wall_sign.json
 188ee3ab61253f86390bd6ff52ef9de997e62f70 data/bfme/loot_table/blocks/lime_wood.json
+2ce9da9a1d7d37f4eca3fadc5302f202c892b3a5 data/bfme/loot_table/blocks/mallorn_beam.json
 0848876b2bc19d0f2b84a6b65b94b1f3e65e8979 data/bfme/loot_table/blocks/mallorn_button.json
 99a04be5057a7c3498a49ae46b858663c1a4214a data/bfme/loot_table/blocks/mallorn_door.json
 369d4bc1640839f66456b3b00262b4f2ad5d7328 data/bfme/loot_table/blocks/mallorn_fence.json
@@ -567,6 +588,7 @@ eafa896e02b96bf8e31a5ceeec23031450d70032 data/bfme/loot_table/blocks/mallorn_pre
 5fa60f864c4e856fb8cdbdd85df78868c96a0024 data/bfme/loot_table/blocks/mallorn_wall_hanging_sign.json
 c394124ff756a7d6bd66a22f9e3a5a67b1292c3e data/bfme/loot_table/blocks/mallorn_wall_sign.json
 debf5783159a43d1ee11de73fdf48b80873d6e5c data/bfme/loot_table/blocks/mallorn_wood.json
+8ca62eca6661bac20b9f7a0f16f2b4adad80e209 data/bfme/loot_table/blocks/mango_beam.json
 606f42a17f2159905d3ec9518016976dd4e84e2d data/bfme/loot_table/blocks/mango_button.json
 9b8cd5ebb05dba0e14386bf235e217e3f7df6f0c data/bfme/loot_table/blocks/mango_door.json
 f4b05f47160344df5c9df98796cded7794bcc97e data/bfme/loot_table/blocks/mango_fence.json
@@ -584,6 +606,7 @@ ef720a2218d2292a26f1d124668afa8ded7fd227 data/bfme/loot_table/blocks/mango_press
 030ad04082ad8a7a5755ac1378d56204fa099a9a data/bfme/loot_table/blocks/mango_wall_hanging_sign.json
 8c22a8e7c0f0a779eccac06ed89aa122c5b57b20 data/bfme/loot_table/blocks/mango_wall_sign.json
 d84e3264686e2e67f4b41bcbf94c6ffe94f1ccc3 data/bfme/loot_table/blocks/mango_wood.json
+452052634b711062f3e53cc0c0c6595e5a7b66be data/bfme/loot_table/blocks/maple_beam.json
 672c51ce72577fb377549b76a0d4ec9552a936d3 data/bfme/loot_table/blocks/maple_button.json
 6a78dff8dfd6af159161f7369e0676a6c17a5498 data/bfme/loot_table/blocks/maple_door.json
 de3ca4dfa2fd01bd0a2cf81014735f47910d0b6b data/bfme/loot_table/blocks/maple_fence.json
@@ -601,6 +624,7 @@ bedf777d806e34b71eaba21447c5bce60e6d4559 data/bfme/loot_table/blocks/maple_log.j
 d135549e6c4cc9bca00e65ce340dd1f9d40d2b4d data/bfme/loot_table/blocks/maple_wall_hanging_sign.json
 68e26f858fa8cf4955b296dc34bc0249ba2d2f2a data/bfme/loot_table/blocks/maple_wall_sign.json
 662b64e3b2d48009a48f2ef6b12222ef8948434c data/bfme/loot_table/blocks/maple_wood.json
+7a402b1012a8b7912f3d199b2247079fbbadcbfb data/bfme/loot_table/blocks/mirk_oak_beam.json
 73b290fb363607bc8ee18dbe2a8a14b87a651f4e data/bfme/loot_table/blocks/mirk_oak_button.json
 a73e63b6a9790e13118399d463e3cb1248bf6e22 data/bfme/loot_table/blocks/mirk_oak_door.json
 6a0464ffe005d6aca9d350204bb5f4e319697af2 data/bfme/loot_table/blocks/mirk_oak_fence.json
@@ -620,6 +644,7 @@ ce7dc23408397515d364a0f90b0481f6b4cc1aaf data/bfme/loot_table/blocks/mirk_oak_wa
 26835deac63119498c653a1f3836ac1f002fab27 data/bfme/loot_table/blocks/mirk_oak_wood.json
 8f2734a22c498ff7833619ed4977243e265b0d09 data/bfme/loot_table/blocks/mithril_block.json
 be792f30f20faed43b4b3dad1ad325a8d9e95447 data/bfme/loot_table/blocks/mithril_ore.json
+5eeb66eb9f0e70aec6b9b03a9ecab984a25c79a8 data/bfme/loot_table/blocks/olive_beam.json
 ccae4344e8847e25c4d5f6526b13263f6b97577c data/bfme/loot_table/blocks/olive_button.json
 9771a15f09f4f8337fc1b51e9624b481f98e2e50 data/bfme/loot_table/blocks/olive_door.json
 e2ce6ff9c47f667390af0fe48a3c24ca663df40f data/bfme/loot_table/blocks/olive_fence.json
@@ -639,6 +664,7 @@ d98bad4802d44bb86e4e42f5e886e36266df99be data/bfme/loot_table/blocks/olive_wall_
 94309b6eb081294aea61ff2d2aba22d141af7791 data/bfme/loot_table/blocks/olive_wood.json
 45b8fdf71ce543fb576064b3732f6c9743a56899 data/bfme/loot_table/blocks/opal_block.json
 7c1cf3736a3887584c1af78617503b9dc5961ded data/bfme/loot_table/blocks/opal_ore.json
+a83ae64b3e3ea9a1512e1b949a5c9d327a3c9040 data/bfme/loot_table/blocks/orange_beam.json
 554102305455d6ad4a89d86585e850993877e7d0 data/bfme/loot_table/blocks/orange_button.json
 a54edebc910bcea79c2a9597759a311a4534e3cd data/bfme/loot_table/blocks/orange_door.json
 9b3151995af91dc61870083463475c7a27ce0a5c data/bfme/loot_table/blocks/orange_fence.json
@@ -656,6 +682,7 @@ b2e1eaaa343eeee57c2ff965bd782d3f86e7341e data/bfme/loot_table/blocks/orange_sapl
 6027ea5b669a701c6e44b108bfb8d0cc7fd0cd52 data/bfme/loot_table/blocks/orange_wall_hanging_sign.json
 f43edb61f3e409834c895ed25bd985ed54dd34f6 data/bfme/loot_table/blocks/orange_wall_sign.json
 53aa30b8d6d9413d437174e6ba9940b4d3c670cc data/bfme/loot_table/blocks/orange_wood.json
+3f6863fbf7a341a3a413d4c90a1a48d451b7d69b data/bfme/loot_table/blocks/palm_beam.json
 06c05849c49e436fc84b33e31b7c82ae538d3e2f data/bfme/loot_table/blocks/palm_button.json
 24abfb071cfddce0b5eb92abd93eb03a8c032bd5 data/bfme/loot_table/blocks/palm_door.json
 6de6cf4eff2bea1fa96ffe72c172b10f16e9963c data/bfme/loot_table/blocks/palm_fence.json
@@ -673,6 +700,7 @@ a032f3542e7c8354759cc00923ef98b14e05234c data/bfme/loot_table/blocks/palm_planks
 90b8b16f7b1d6c18bfcbbd180d7c26bbb3cf97c0 data/bfme/loot_table/blocks/palm_wall_hanging_sign.json
 4fb006473e6d534b044f7e38ce80f4a6746e5111 data/bfme/loot_table/blocks/palm_wall_sign.json
 47548493a60e994043a94a317a213efa2e907259 data/bfme/loot_table/blocks/palm_wood.json
+c9684d71134396456365578a82c699a2ac6f4673 data/bfme/loot_table/blocks/pear_beam.json
 86eecfddeb314e9faa1cd300366362bdaae1d825 data/bfme/loot_table/blocks/pear_button.json
 3656225febd608fcfee359e3373ed069c7636086 data/bfme/loot_table/blocks/pear_door.json
 16d849bb624b96a5cbe5fa019c6b303c3dd1e5b6 data/bfme/loot_table/blocks/pear_fence.json
@@ -690,6 +718,7 @@ aa17653b88704d2af031cb15f95464df5c26b0ea data/bfme/loot_table/blocks/pear_trapdo
 7d27b0ec1213023e4303a8fa01d3fd6843eba8ba data/bfme/loot_table/blocks/pear_wall_hanging_sign.json
 2ee6c62b282047978a95c3fcbecb8f9b975e27fd data/bfme/loot_table/blocks/pear_wall_sign.json
 f0ab089815416786b6ca65066bb40ddd3148318f data/bfme/loot_table/blocks/pear_wood.json
+6fde027ed25ec599a8c659b96c159ad5da7c913d data/bfme/loot_table/blocks/pine_beam.json
 e01d930b3a666a32d17ee352bba6bf73d963aa96 data/bfme/loot_table/blocks/pine_button.json
 36ad45e80fc1c6b7f94a8920c1ef9b6e85fcae7a data/bfme/loot_table/blocks/pine_door.json
 e5e8768ddcabbdad75b4437b8c3cbf7a272a3b5c data/bfme/loot_table/blocks/pine_fence.json
@@ -707,6 +736,7 @@ fc9bf87130e243b9d1994b8f7ae2aa4e00447f1d data/bfme/loot_table/blocks/pine_planks
 bcb7a4197a08d8f254d19436fdbf96e3bb751ebd data/bfme/loot_table/blocks/pine_wall_hanging_sign.json
 c899e1bbdfa8d39173971c4fbd8fd73c0aa1da63 data/bfme/loot_table/blocks/pine_wall_sign.json
 6208cf1792e1d03ddc50e95c8f1aefd466da1d89 data/bfme/loot_table/blocks/pine_wood.json
+504b09ef7b16ddd62aee7ac5616305bfe24641d1 data/bfme/loot_table/blocks/plum_beam.json
 ed9cb86f3955807aab929d3c3e201fa4ba9daf31 data/bfme/loot_table/blocks/plum_button.json
 718ab50940eb270bd9c6cd7e1d89cb52fd979000 data/bfme/loot_table/blocks/plum_door.json
 596caa3a5b74170ec36b53d74dcf1dc8426e8f71 data/bfme/loot_table/blocks/plum_fence.json
@@ -724,6 +754,7 @@ cced0ca0da9593974ca8e2242c3962aef636125e data/bfme/loot_table/blocks/plum_trapdo
 5ff476e7dcfbba31759eb386d37c41ae6c4f8cb5 data/bfme/loot_table/blocks/plum_wall_hanging_sign.json
 1c2edc3ecfba2f559d7559c4fa46a3455876cca3 data/bfme/loot_table/blocks/plum_wall_sign.json
 54517a97fbdd94de6bc58a7fa7184e9e90ff42e8 data/bfme/loot_table/blocks/plum_wood.json
+fe7c6f7fb5f80c4fee54ed090badceaf52807ac2 data/bfme/loot_table/blocks/pomergranate_beam.json
 54691c8e735a3671e85d30869426d6e0d4c611ac data/bfme/loot_table/blocks/pomergranate_button.json
 d7dc884a08243d8af769a9aa50967c69aa4cb4be data/bfme/loot_table/blocks/pomergranate_door.json
 2720ffd31ea971645b8e72b3cace4de9166a42b6 data/bfme/loot_table/blocks/pomergranate_fence.json
@@ -741,6 +772,7 @@ e6bf5eb4f5a35046caffa9903e73f5084e2a4a01 data/bfme/loot_table/blocks/pomergranat
 d08f0d4f61588b74c24f634edb7b0a2b2c6f568b data/bfme/loot_table/blocks/pomergranate_wall_hanging_sign.json
 67723d1913c0be33b385b5cf957422c08c82d6c7 data/bfme/loot_table/blocks/pomergranate_wall_sign.json
 8ed6116cb6bf2d05eef98e6256cafe66f17d83d0 data/bfme/loot_table/blocks/pomergranate_wood.json
+95d7f6a9d93d7584f2f7f0b22c8721882480da0e data/bfme/loot_table/blocks/redwood_beam.json
 9b2900d52154819b7d994c9476ffc6a6175b9120 data/bfme/loot_table/blocks/redwood_button.json
 46e7c56fa0cc5292c7d48cc1aabd20e996e45120 data/bfme/loot_table/blocks/redwood_door.json
 8afae14ca16fe64d24746e087ff60f113e968930 data/bfme/loot_table/blocks/redwood_fence.json
@@ -758,6 +790,7 @@ e91be7a7badae6af09fc094681fe4f89b0c245a5 data/bfme/loot_table/blocks/redwood_pre
 e07b6dee7b1eedcd734ab95bd48750c852caf8aa data/bfme/loot_table/blocks/redwood_wall_hanging_sign.json
 9a3bd927a4819a5c8df01f78a6d7a6bd3e290731 data/bfme/loot_table/blocks/redwood_wall_sign.json
 fe05be5ebbed6cfa3b91d9bd9b0b2be1cd7ee435 data/bfme/loot_table/blocks/redwood_wood.json
+6b1be797606f9cbe3a17815149278377b9d18e0c data/bfme/loot_table/blocks/red_mahogany_beam.json
 34ecb29f96df72b8c8697973b4bdc48d3c1d80ed data/bfme/loot_table/blocks/red_mahogany_button.json
 e039d83b7f7caf4c4ea118878d9954d7cc629ab8 data/bfme/loot_table/blocks/red_mahogany_door.json
 7e5183a98a634fb3f09ac5a059952d4a6df69f40 data/bfme/loot_table/blocks/red_mahogany_fence.json
@@ -775,6 +808,7 @@ ca7ad617f663d0cd985aee2b158fc0324e953d0c data/bfme/loot_table/blocks/red_mahogan
 b87eb6ac75e4968c35b5cf2003b6e7f94caf654f data/bfme/loot_table/blocks/red_mahogany_wall_hanging_sign.json
 3e21a7aca86c5acd6a857b0b5882a0f55415ab46 data/bfme/loot_table/blocks/red_mahogany_wall_sign.json
 7fa91b4716131b0f6b86e109b1d267e743e69473 data/bfme/loot_table/blocks/red_mahogany_wood.json
+c85790efb4a3e119f6d1ef75a4def9de403f3350 data/bfme/loot_table/blocks/red_oak_beam.json
 4ce0f453ec103fa073d95e6174c77d23e1bcec76 data/bfme/loot_table/blocks/red_oak_button.json
 26790eefdd922d685323d994eddba51199a1e206 data/bfme/loot_table/blocks/red_oak_door.json
 d170de89e8d246d528c2eae488dd47bc2424363f data/bfme/loot_table/blocks/red_oak_fence.json
@@ -967,6 +1001,7 @@ d0a7bb52dd39537c8afaa87b684fb9509453b448 data/bfme/loot_table/blocks/sulfur_bloc
 7fbbf25c6add742057f798618ec6a7f1d79aacc8 data/bfme/loot_table/blocks/sulfur_ore.json
 072333cd53c8b8c48b8d81a96f6fa49e912730d7 data/bfme/loot_table/blocks/topaz_block.json
 0680b901829261aab85e82d36bce48fd6ec4b31b data/bfme/loot_table/blocks/topaz_ore.json
+00a4fd2c84f2a2e1ce123cd832f33709c81c0244 data/bfme/loot_table/blocks/willow_beam.json
 6c618f182c8232d1fb711915f00150fe5f6e4ea6 data/bfme/loot_table/blocks/willow_button.json
 e60ca08f9295504adc67c43872b7c0161d866f3f data/bfme/loot_table/blocks/willow_door.json
 9c678c35c713175d2e6b32bf5b4f982ce7dd27d5 data/bfme/loot_table/blocks/willow_fence.json

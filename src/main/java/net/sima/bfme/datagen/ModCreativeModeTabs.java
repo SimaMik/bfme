@@ -463,6 +463,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALMOND_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_ALMOND_LOG.get());
                         output.accept(ModBlocks.STRIPPED_ALMOND_WOOD.get());
+                        output.accept(ModBlocks.ALMOND_BEAM.get());
                         output.accept(ModBlocks.ALMOND_PLANKS.get());
                         output.accept(ModBlocks.ALMOND_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.ALMOND_PLANKS_SLAB.get());
@@ -479,6 +480,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.APPLE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_APPLE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_APPLE_WOOD.get());
+                        output.accept(ModBlocks.APPLE_BEAM.get());
                         output.accept(ModBlocks.APPLE_PLANKS.get());
                         output.accept(ModBlocks.APPLE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.APPLE_PLANKS_SLAB.get());
@@ -495,6 +497,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ASPEN_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_ASPEN_LOG.get());
                         output.accept(ModBlocks.STRIPPED_ASPEN_WOOD.get());
+                        output.accept(ModBlocks.ASPEN_BEAM.get());
                         output.accept(ModBlocks.ASPEN_PLANKS.get());
                         output.accept(ModBlocks.ASPEN_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.ASPEN_PLANKS_SLAB.get());
@@ -511,6 +514,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BANANA_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_BANANA_LOG.get());
                         output.accept(ModBlocks.STRIPPED_BANANA_WOOD.get());
+                        output.accept(ModBlocks.BANANA_BEAM.get());
                         output.accept(ModBlocks.BANANA_PLANKS.get());
                         output.accept(ModBlocks.BANANA_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.BANANA_PLANKS_SLAB.get());
@@ -527,6 +531,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BAOBAB_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_BAOBAB_LOG.get());
                         output.accept(ModBlocks.STRIPPED_BAOBAB_WOOD.get());
+                        output.accept(ModBlocks.BAOBAB_BEAM.get());
                         output.accept(ModBlocks.BAOBAB_PLANKS.get());
                         output.accept(ModBlocks.BAOBAB_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.BAOBAB_PLANKS_SLAB.get());
@@ -543,6 +548,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BEECH_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_BEECH_LOG.get());
                         output.accept(ModBlocks.STRIPPED_BEECH_WOOD.get());
+                        output.accept(ModBlocks.BEECH_BEAM.get());
                         output.accept(ModBlocks.BEECH_PLANKS.get());
                         output.accept(ModBlocks.BEECH_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.BEECH_PLANKS_SLAB.get());
@@ -555,10 +561,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BEECH_LEAVES.get());
                         output.accept(ModBlocks.BEECH_SAPLING.get());
 
-                        output.accept(ModBlocks.CEDAR_LOG.get());
                         output.accept(ModBlocks.CEDAR_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_CEDAR_LOG.get());
                         output.accept(ModBlocks.STRIPPED_CEDAR_WOOD.get());
+                        output.accept(ModBlocks.CEDAR_BEAM.get());
                         output.accept(ModBlocks.CEDAR_PLANKS.get());
                         output.accept(ModBlocks.CEDAR_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.CEDAR_PLANKS_SLAB.get());
@@ -575,6 +581,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CHARRED_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_CHARRED_LOG.get());
                         output.accept(ModBlocks.STRIPPED_CHARRED_WOOD.get());
+                        output.accept(ModBlocks.CHARRED_BEAM.get());
                         output.accept(ModBlocks.CHARRED_PLANKS.get());
                         output.accept(ModBlocks.CHARRED_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.CHARRED_PLANKS_SLAB.get());
@@ -589,6 +596,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CHESTNUT_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_CHESTNUT_LOG.get());
                         output.accept(ModBlocks.STRIPPED_CHESTNUT_WOOD.get());
+                        output.accept(ModBlocks.CHESTNUT_BEAM.get());
                         output.accept(ModBlocks.CHESTNUT_PLANKS.get());
                         output.accept(ModBlocks.CHESTNUT_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.CHESTNUT_PLANKS_SLAB.get());
@@ -605,6 +613,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.CYPRESS_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_CYPRESS_LOG.get());
                         output.accept(ModBlocks.STRIPPED_CYPRESS_WOOD.get());
+                        output.accept(ModBlocks.CYPRESS_BEAM.get());
                         output.accept(ModBlocks.CYPRESS_PLANKS.get());
                         output.accept(ModBlocks.CYPRESS_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.CYPRESS_PLANKS_SLAB.get());
@@ -621,6 +630,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DATE_PALM_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_DATE_PALM_LOG.get());
                         output.accept(ModBlocks.STRIPPED_DATE_PALM_WOOD.get());
+                        output.accept(ModBlocks.DATE_PALM_BEAM.get());
                         output.accept(ModBlocks.DATE_PALM_PLANKS.get());
                         output.accept(ModBlocks.DATE_PALM_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.DATE_PALM_PLANKS_SLAB.get());
@@ -637,6 +647,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.FIR_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_FIR_LOG.get());
                         output.accept(ModBlocks.STRIPPED_FIR_WOOD.get());
+                        output.accept(ModBlocks.FIR_BEAM.get());
                         output.accept(ModBlocks.FIR_PLANKS.get());
                         output.accept(ModBlocks.FIR_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.FIR_PLANKS_SLAB.get());
@@ -653,6 +664,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.GREEN_OAK_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_GREEN_OAK_LOG.get());
                         output.accept(ModBlocks.STRIPPED_GREEN_OAK_WOOD.get());
+                        output.accept(ModBlocks.GREEN_OAK_BEAM.get());
                         output.accept(ModBlocks.GREEN_OAK_PLANKS.get());
                         output.accept(ModBlocks.GREEN_OAK_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.GREEN_OAK_PLANKS_SLAB.get());
@@ -669,6 +681,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HOLLY_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_HOLLY_LOG.get());
                         output.accept(ModBlocks.STRIPPED_HOLLY_WOOD.get());
+                        output.accept(ModBlocks.HOLLY_BEAM.get());
                         output.accept(ModBlocks.HOLLY_PLANKS.get());
                         output.accept(ModBlocks.HOLLY_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.HOLLY_PLANKS_SLAB.get());
@@ -685,6 +698,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.KUNTZ_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_KUNTZ_LOG.get());
                         output.accept(ModBlocks.STRIPPED_KUNTZ_WOOD.get());
+                        output.accept(ModBlocks.KUNTZ_BEAM.get());
                         output.accept(ModBlocks.KUNTZ_PLANKS.get());
                         output.accept(ModBlocks.KUNTZ_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.KUNTZ_PLANKS_SLAB.get());
@@ -701,6 +715,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LAIRELOSSE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_LAIRELOSSE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_LAIRELOSSE_WOOD.get());
+                        output.accept(ModBlocks.LAIRELOSSE_BEAM.get());
                         output.accept(ModBlocks.LAIRELOSSE_PLANKS.get());
                         output.accept(ModBlocks.LAIRELOSSE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.LAIRELOSSE_PLANKS_SLAB.get());
@@ -717,6 +732,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LARCH_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_LARCH_LOG.get());
                         output.accept(ModBlocks.STRIPPED_LARCH_WOOD.get());
+                        output.accept(ModBlocks.LARCH_BEAM.get());
                         output.accept(ModBlocks.LARCH_PLANKS.get());
                         output.accept(ModBlocks.LARCH_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.LARCH_PLANKS_SLAB.get());
@@ -733,6 +749,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LEBETHRON_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_LEBETHRON_LOG.get());
                         output.accept(ModBlocks.STRIPPED_LEBETHRON_WOOD.get());
+                        output.accept(ModBlocks.LEBETHRON_BEAM.get());
                         output.accept(ModBlocks.LEBETHRON_PLANKS.get());
                         output.accept(ModBlocks.LEBETHRON_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.LEBETHRON_PLANKS_SLAB.get());
@@ -749,6 +766,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LEMON_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_LEMON_LOG.get());
                         output.accept(ModBlocks.STRIPPED_LEMON_WOOD.get());
+                        output.accept(ModBlocks.LEMON_BEAM.get());
                         output.accept(ModBlocks.LEMON_PLANKS.get());
                         output.accept(ModBlocks.LEMON_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.LEMON_PLANKS_SLAB.get());
@@ -765,6 +783,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.LIME_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_LIME_LOG.get());
                         output.accept(ModBlocks.STRIPPED_LIME_WOOD.get());
+                        output.accept(ModBlocks.LIME_BEAM.get());
                         output.accept(ModBlocks.LIME_PLANKS.get());
                         output.accept(ModBlocks.LIME_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.LIME_PLANKS_SLAB.get());
@@ -781,6 +800,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MALLORN_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_MALLORN_LOG.get());
                         output.accept(ModBlocks.STRIPPED_MALLORN_WOOD.get());
+                        output.accept(ModBlocks.MALLORN_BEAM.get());
                         output.accept(ModBlocks.MALLORN_PLANKS.get());
                         output.accept(ModBlocks.MALLORN_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.MALLORN_PLANKS_SLAB.get());
@@ -797,6 +817,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MANGO_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_MANGO_LOG.get());
                         output.accept(ModBlocks.STRIPPED_MANGO_WOOD.get());
+                        output.accept(ModBlocks.MANGO_BEAM.get());
                         output.accept(ModBlocks.MANGO_PLANKS.get());
                         output.accept(ModBlocks.MANGO_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.MANGO_PLANKS_SLAB.get());
@@ -813,6 +834,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MAPLE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_MAPLE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_MAPLE_WOOD.get());
+                        output.accept(ModBlocks.MAPLE_BEAM.get());
                         output.accept(ModBlocks.MAPLE_PLANKS.get());
                         output.accept(ModBlocks.MAPLE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.MAPLE_PLANKS_SLAB.get());
@@ -829,6 +851,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MIRK_OAK_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_MIRK_OAK_LOG.get());
                         output.accept(ModBlocks.STRIPPED_MIRK_OAK_WOOD.get());
+                        output.accept(ModBlocks.MIRK_OAK_BEAM.get());
                         output.accept(ModBlocks.MIRK_OAK_PLANKS.get());
                         output.accept(ModBlocks.MIRK_OAK_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.MIRK_OAK_PLANKS_SLAB.get());
@@ -845,6 +868,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.OLIVE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_OLIVE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_OLIVE_WOOD.get());
+                        output.accept(ModBlocks.OLIVE_BEAM.get());
                         output.accept(ModBlocks.OLIVE_PLANKS.get());
                         output.accept(ModBlocks.OLIVE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.OLIVE_PLANKS_SLAB.get());
@@ -861,6 +885,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ORANGE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_ORANGE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_ORANGE_WOOD.get());
+                        output.accept(ModBlocks.ORANGE_BEAM.get());
                         output.accept(ModBlocks.ORANGE_PLANKS.get());
                         output.accept(ModBlocks.ORANGE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.ORANGE_PLANKS_SLAB.get());
@@ -877,6 +902,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PALM_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_PALM_LOG.get());
                         output.accept(ModBlocks.STRIPPED_PALM_WOOD.get());
+                        output.accept(ModBlocks.PALM_BEAM.get());
                         output.accept(ModBlocks.PALM_PLANKS.get());
                         output.accept(ModBlocks.PALM_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.PALM_PLANKS_SLAB.get());
@@ -893,6 +919,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PEAR_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_PEAR_LOG.get());
                         output.accept(ModBlocks.STRIPPED_PEAR_WOOD.get());
+                        output.accept(ModBlocks.PEAR_BEAM.get());
                         output.accept(ModBlocks.PEAR_PLANKS.get());
                         output.accept(ModBlocks.PEAR_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.PEAR_PLANKS_SLAB.get());
@@ -909,6 +936,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PINE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_PINE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_PINE_WOOD.get());
+                        output.accept(ModBlocks.PINE_BEAM.get());
                         output.accept(ModBlocks.PINE_PLANKS.get());
                         output.accept(ModBlocks.PINE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.PINE_PLANKS_SLAB.get());
@@ -925,6 +953,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.PLUM_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_PLUM_LOG.get());
                         output.accept(ModBlocks.STRIPPED_PLUM_WOOD.get());
+                        output.accept(ModBlocks.PLUM_BEAM.get());
                         output.accept(ModBlocks.PLUM_PLANKS.get());
                         output.accept(ModBlocks.PLUM_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.PLUM_PLANKS_SLAB.get());
@@ -941,6 +970,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.POMERGRANATE_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_POMERGRANATE_LOG.get());
                         output.accept(ModBlocks.STRIPPED_POMERGRANATE_WOOD.get());
+                        output.accept(ModBlocks.POMERGRANATE_BEAM.get());
                         output.accept(ModBlocks.POMERGRANATE_PLANKS.get());
                         output.accept(ModBlocks.POMERGRANATE_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.POMERGRANATE_PLANKS_SLAB.get());
@@ -957,6 +987,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_MAHOGANY_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_RED_MAHOGANY_LOG.get());
                         output.accept(ModBlocks.STRIPPED_RED_MAHOGANY_WOOD.get());
+                        output.accept(ModBlocks.RED_MAHOGANY_BEAM.get());
                         output.accept(ModBlocks.RED_MAHOGANY_PLANKS.get());
                         output.accept(ModBlocks.RED_MAHOGANY_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.RED_MAHOGANY_PLANKS_SLAB.get());
@@ -973,6 +1004,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RED_OAK_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_RED_OAK_LOG.get());
                         output.accept(ModBlocks.STRIPPED_RED_OAK_WOOD.get());
+                        output.accept(ModBlocks.RED_OAK_BEAM.get());
                         output.accept(ModBlocks.RED_OAK_PLANKS.get());
                         output.accept(ModBlocks.RED_OAK_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.RED_OAK_PLANKS_SLAB.get());
@@ -989,6 +1021,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.REDWOOD_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_REDWOOD_LOG.get());
                         output.accept(ModBlocks.STRIPPED_REDWOOD_WOOD.get());
+                        output.accept(ModBlocks.REDWOOD_BEAM.get());
                         output.accept(ModBlocks.REDWOOD_PLANKS.get());
                         output.accept(ModBlocks.REDWOOD_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.REDWOOD_PLANKS_SLAB.get());
@@ -1005,6 +1038,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WILLOW_WOOD.get());
                         output.accept(ModBlocks.STRIPPED_WILLOW_LOG.get());
                         output.accept(ModBlocks.STRIPPED_WILLOW_WOOD.get());
+                        output.accept(ModBlocks.WILLOW_BEAM.get());
                         output.accept(ModBlocks.WILLOW_PLANKS.get());
                         output.accept(ModBlocks.WILLOW_PLANKS_STAIRS.get());
                         output.accept(ModBlocks.WILLOW_PLANKS_SLAB.get());

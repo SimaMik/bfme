@@ -69,6 +69,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.DURIN_MOSSY_COBBLESTONE_BUTTON.get());
         buttonItem(ModBlocks.DURIN_BRICK_BUTTON.get());
 
+        wallItem(ModBlocks.ROHAN_STONE_WALL.get());
+        wallItem(ModBlocks.ROHAN_MOSSY_STONE_WALL.get());
+        wallItem(ModBlocks.ROHAN_CRACKED_STONE_WALL.get());
+        wallItem(ModBlocks.ROHAN_COBBLESTONE_WALL.get());
+        wallItem(ModBlocks.ROHAN_MOSSY_COBBLESTONE_WALL.get());
+        wallItem(ModBlocks.ROHAN_BRICK_WALL.get());
+        wallItem(ModBlocks.ROHAN_BRICKWORK_WALL.get());
+        wallItem(ModBlocks.ROHAN_MOSSY_BRICK_WALL.get());
+        wallItem(ModBlocks.ROHAN_MOSSY_BRICKWORK_WALL.get());
+        wallItem(ModBlocks.ROHAN_CRACKED_BRICK_WALL.get());
+        wallItem(ModBlocks.ROHAN_CRACKED_BRICKWORK_WALL.get());
+        wallItem(ModBlocks.ROHAN_SMOOTH_STONE_WALL.get());
+
+        buttonItem(ModBlocks.ROHAN_STONE_BUTTON.get());
+        buttonItem(ModBlocks.ROHAN_MOSSY_STONE_BUTTON.get());
+        buttonItem(ModBlocks.ROHAN_CRACKED_STONE_BUTTON.get());
+        buttonItem(ModBlocks.ROHAN_COBBLESTONE_BUTTON.get());
+        buttonItem(ModBlocks.ROHAN_MOSSY_COBBLESTONE_BUTTON.get());
+        buttonItem(ModBlocks.ROHAN_BRICK_BUTTON.get());
+
         pouchItem(ModItems.SMALL_POUCH);
         pouchItem(ModItems.MEDIUM_POUCH);
         pouchItem(ModItems.LARGE_POUCH);

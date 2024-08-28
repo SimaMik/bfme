@@ -275,13 +275,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
         stairs(ModBlocks.ROHAN_CRACKED_BRICK_STAIRS.get());
         stairs(ModBlocks.ROHAN_CRACKED_BRICKWORK_STAIRS.get());
 
-        pillar(ModBlocks.ROHAN_PILLAR.get());
+        pillarExtend(ModBlocks.ROHAN_PILLAR.get());
         pillar(ModBlocks.ROHAN_MOSSY_PILLAR.get());
         pillar(ModBlocks.ROHAN_CRACKED_PILLAR.get());
         column(ModBlocks.ROHAN_COLUMN.get());
         column(ModBlocks.ROHAN_MOSSY_COLUMN.get());
         column(ModBlocks.ROHAN_CRACKED_COLUMN.get());
-        pillarSlab(ModBlocks.ROHAN_PILLAR_SLAB.get());
+        pillarExtendSlab(ModBlocks.ROHAN_PILLAR_SLAB.get());
         pillarSlab(ModBlocks.ROHAN_MOSSY_PILLAR_SLAB.get());
         pillarSlab(ModBlocks.ROHAN_CRACKED_PILLAR_SLAB.get());
 
@@ -323,6 +323,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         /* WOOD */
 
         log(ModBlocks.APPLE_LOG.get());
+        log(ModBlocks.APPLE_BEAM.get());
         wood(ModBlocks.APPLE_WOOD.get());
         log(ModBlocks.STRIPPED_APPLE_LOG.get());
         wood(ModBlocks.STRIPPED_APPLE_WOOD.get());
@@ -344,6 +345,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.APPLE_PLANKS.get()));
 
         log(ModBlocks.PEAR_LOG.get());
+        log(ModBlocks.PEAR_BEAM.get());
         wood(ModBlocks.PEAR_WOOD.get());
         log(ModBlocks.STRIPPED_PEAR_LOG.get());
         wood(ModBlocks.STRIPPED_PEAR_WOOD.get());
@@ -364,6 +366,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.PEAR_PLANKS.get()));
 
         log(ModBlocks.PLUM_LOG.get());
+        log(ModBlocks.PLUM_BEAM.get());
         wood(ModBlocks.PLUM_WOOD.get());
         log(ModBlocks.STRIPPED_PLUM_LOG.get());
         wood(ModBlocks.STRIPPED_PLUM_WOOD.get());
@@ -384,6 +387,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.PLUM_PLANKS.get()));
 
         log(ModBlocks.MALLORN_LOG.get());
+        log(ModBlocks.MALLORN_BEAM.get());
         wood(ModBlocks.MALLORN_WOOD.get());
         log(ModBlocks.STRIPPED_MALLORN_LOG.get());
         wood(ModBlocks.STRIPPED_MALLORN_WOOD.get());
@@ -404,6 +408,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.MALLORN_PLANKS.get()));
 
         log(ModBlocks.CHARRED_LOG.get());
+        log(ModBlocks.CHARRED_BEAM.get());
         wood(ModBlocks.CHARRED_WOOD.get());
         log(ModBlocks.STRIPPED_CHARRED_LOG.get());
         wood(ModBlocks.STRIPPED_CHARRED_WOOD.get());
@@ -422,6 +427,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CHARRED_PLANKS.get()));
 
         log(ModBlocks.WILLOW_LOG.get());
+        log(ModBlocks.WILLOW_BEAM.get());
         wood(ModBlocks.WILLOW_WOOD.get());
         log(ModBlocks.STRIPPED_WILLOW_LOG.get());
         wood(ModBlocks.STRIPPED_WILLOW_WOOD.get());
@@ -442,6 +448,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.WILLOW_PLANKS.get()));
 
         log(ModBlocks.BEECH_LOG.get());
+        log(ModBlocks.BEECH_BEAM.get());
         wood(ModBlocks.BEECH_WOOD.get());
         log(ModBlocks.STRIPPED_BEECH_LOG.get());
         wood(ModBlocks.STRIPPED_BEECH_WOOD.get());
@@ -462,6 +469,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.BEECH_PLANKS.get()));
 
         log(ModBlocks.BAOBAB_LOG.get());
+        log(ModBlocks.BAOBAB_BEAM.get());
         wood(ModBlocks.BAOBAB_WOOD.get());
         log(ModBlocks.STRIPPED_BAOBAB_LOG.get());
         wood(ModBlocks.STRIPPED_BAOBAB_WOOD.get());
@@ -482,6 +490,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.BAOBAB_PLANKS.get()));
 
         log(ModBlocks.PINE_LOG.get());
+        log(ModBlocks.PINE_BEAM.get());
         wood(ModBlocks.PINE_WOOD.get());
         log(ModBlocks.STRIPPED_PINE_LOG.get());
         wood(ModBlocks.STRIPPED_PINE_WOOD.get());
@@ -502,6 +511,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.PINE_PLANKS.get()));
 
         log(ModBlocks.HOLLY_LOG.get());
+        log(ModBlocks.HOLLY_BEAM.get());
         wood(ModBlocks.HOLLY_WOOD.get());
         log(ModBlocks.STRIPPED_HOLLY_LOG.get());
         wood(ModBlocks.STRIPPED_HOLLY_WOOD.get());
@@ -522,6 +532,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.HOLLY_PLANKS.get()));
 
         log(ModBlocks.GREEN_OAK_LOG.get());
+        log(ModBlocks.GREEN_OAK_BEAM.get());
         wood(ModBlocks.GREEN_OAK_WOOD.get());
         log(ModBlocks.STRIPPED_GREEN_OAK_LOG.get());
         wood(ModBlocks.STRIPPED_GREEN_OAK_WOOD.get());
@@ -542,6 +553,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.GREEN_OAK_PLANKS.get()));
 
         log(ModBlocks.RED_OAK_LOG.get());
+        log(ModBlocks.RED_OAK_BEAM.get());
         wood(ModBlocks.RED_OAK_WOOD.get());
         log(ModBlocks.STRIPPED_RED_OAK_LOG.get());
         wood(ModBlocks.STRIPPED_RED_OAK_WOOD.get());
@@ -562,6 +574,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.RED_OAK_PLANKS.get()));
 
         log(ModBlocks.MIRK_OAK_LOG.get());
+        log(ModBlocks.MIRK_OAK_BEAM.get());
         wood(ModBlocks.MIRK_OAK_WOOD.get());
         log(ModBlocks.STRIPPED_MIRK_OAK_LOG.get());
         wood(ModBlocks.STRIPPED_MIRK_OAK_WOOD.get());
@@ -582,6 +595,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.MIRK_OAK_PLANKS.get()));
 
         log(ModBlocks.MAPLE_LOG.get());
+        log(ModBlocks.MAPLE_BEAM.get());
         wood(ModBlocks.MAPLE_WOOD.get());
         log(ModBlocks.STRIPPED_MAPLE_LOG.get());
         wood(ModBlocks.STRIPPED_MAPLE_WOOD.get());
@@ -602,6 +616,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.MAPLE_PLANKS.get()));
 
         log(ModBlocks.PALM_LOG.get());
+        log(ModBlocks.PALM_BEAM.get());
         wood(ModBlocks.PALM_WOOD.get());
         log(ModBlocks.STRIPPED_PALM_LOG.get());
         wood(ModBlocks.STRIPPED_PALM_WOOD.get());
@@ -622,6 +637,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.PALM_PLANKS.get()));
 
         log(ModBlocks.CHESTNUT_LOG.get());
+        log(ModBlocks.CHESTNUT_BEAM.get());
         wood(ModBlocks.CHESTNUT_WOOD.get());
         log(ModBlocks.STRIPPED_CHESTNUT_LOG.get());
         wood(ModBlocks.STRIPPED_CHESTNUT_WOOD.get());
@@ -642,6 +658,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CHESTNUT_PLANKS.get()));
 
         log(ModBlocks.ASPEN_LOG.get());
+        log(ModBlocks.ASPEN_BEAM.get());
         wood(ModBlocks.ASPEN_WOOD.get());
         log(ModBlocks.STRIPPED_ASPEN_LOG.get());
         wood(ModBlocks.STRIPPED_ASPEN_WOOD.get());
@@ -662,6 +679,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.ASPEN_PLANKS.get()));
 
         log(ModBlocks.CEDAR_LOG.get());
+        log(ModBlocks.CEDAR_BEAM.get());
         wood(ModBlocks.CEDAR_WOOD.get());
         log(ModBlocks.STRIPPED_CEDAR_LOG.get());
         wood(ModBlocks.STRIPPED_CEDAR_WOOD.get());
@@ -682,6 +700,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CEDAR_PLANKS.get()));
 
         log(ModBlocks.FIR_LOG.get());
+        log(ModBlocks.FIR_BEAM.get());
         wood(ModBlocks.FIR_WOOD.get());
         log(ModBlocks.STRIPPED_FIR_LOG.get());
         wood(ModBlocks.STRIPPED_FIR_WOOD.get());
@@ -702,6 +721,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.FIR_PLANKS.get()));
 
         log(ModBlocks.LARCH_LOG.get());
+        log(ModBlocks.LARCH_BEAM.get());
         wood(ModBlocks.LARCH_WOOD.get());
         log(ModBlocks.STRIPPED_LARCH_LOG.get());
         wood(ModBlocks.STRIPPED_LARCH_WOOD.get());
@@ -722,6 +742,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.LARCH_PLANKS.get()));
 
         log(ModBlocks.LAIRELOSSE_LOG.get());
+        log(ModBlocks.LAIRELOSSE_BEAM.get());
         wood(ModBlocks.LAIRELOSSE_WOOD.get());
         log(ModBlocks.STRIPPED_LAIRELOSSE_LOG.get());
         wood(ModBlocks.STRIPPED_LAIRELOSSE_WOOD.get());
@@ -742,6 +763,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.LAIRELOSSE_PLANKS.get()));
 
         log(ModBlocks.ALMOND_LOG.get());
+        log(ModBlocks.ALMOND_BEAM.get());
         wood(ModBlocks.ALMOND_WOOD.get());
         log(ModBlocks.STRIPPED_ALMOND_LOG.get());
         wood(ModBlocks.STRIPPED_ALMOND_WOOD.get());
@@ -762,6 +784,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.ALMOND_PLANKS.get()));
 
         log(ModBlocks.BANANA_LOG.get());
+        log(ModBlocks.BANANA_BEAM.get());
         wood(ModBlocks.BANANA_WOOD.get());
         log(ModBlocks.STRIPPED_BANANA_LOG.get());
         wood(ModBlocks.STRIPPED_BANANA_WOOD.get());
@@ -782,6 +805,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.BANANA_PLANKS.get()));
 
         log(ModBlocks.CYPRESS_LOG.get());
+        log(ModBlocks.CYPRESS_BEAM.get());
         wood(ModBlocks.CYPRESS_WOOD.get());
         log(ModBlocks.STRIPPED_CYPRESS_LOG.get());
         wood(ModBlocks.STRIPPED_CYPRESS_WOOD.get());
@@ -802,6 +826,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.CYPRESS_PLANKS.get()));
 
         log(ModBlocks.DATE_PALM_LOG.get());
+        log(ModBlocks.DATE_PALM_BEAM.get());
         wood(ModBlocks.DATE_PALM_WOOD.get());
         log(ModBlocks.STRIPPED_DATE_PALM_LOG.get());
         wood(ModBlocks.STRIPPED_DATE_PALM_WOOD.get());
@@ -822,6 +847,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.DATE_PALM_PLANKS.get()));
 
         log(ModBlocks.KUNTZ_LOG.get());
+        log(ModBlocks.KUNTZ_BEAM.get());
         wood(ModBlocks.KUNTZ_WOOD.get());
         log(ModBlocks.STRIPPED_KUNTZ_LOG.get());
         wood(ModBlocks.STRIPPED_KUNTZ_WOOD.get());
@@ -842,6 +868,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.KUNTZ_PLANKS.get()));
 
         log(ModBlocks.LEBETHRON_LOG.get());
+        log(ModBlocks.LEBETHRON_BEAM.get());
         wood(ModBlocks.LEBETHRON_WOOD.get());
         log(ModBlocks.STRIPPED_LEBETHRON_LOG.get());
         wood(ModBlocks.STRIPPED_LEBETHRON_WOOD.get());
@@ -862,6 +889,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.LEBETHRON_PLANKS.get()));
 
         log(ModBlocks.LEMON_LOG.get());
+        log(ModBlocks.LEMON_BEAM.get());
         wood(ModBlocks.LEMON_WOOD.get());
         log(ModBlocks.STRIPPED_LEMON_LOG.get());
         wood(ModBlocks.STRIPPED_LEMON_WOOD.get());
@@ -882,6 +910,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.LEMON_PLANKS.get()));
 
         log(ModBlocks.LIME_LOG.get());
+        log(ModBlocks.LIME_BEAM.get());
         wood(ModBlocks.LIME_WOOD.get());
         log(ModBlocks.STRIPPED_LIME_LOG.get());
         wood(ModBlocks.STRIPPED_LIME_WOOD.get());
@@ -898,6 +927,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         sapling(ModBlocks.LIME_SAPLING.get());
 
         log(ModBlocks.MANGO_LOG.get());
+        log(ModBlocks.MANGO_BEAM.get());
         wood(ModBlocks.MANGO_WOOD.get());
         log(ModBlocks.STRIPPED_MANGO_LOG.get());
         wood(ModBlocks.STRIPPED_MANGO_WOOD.get());
@@ -918,6 +948,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.MANGO_PLANKS.get()));
 
         log(ModBlocks.ORANGE_LOG.get());
+        log(ModBlocks.ORANGE_BEAM.get());
         wood(ModBlocks.ORANGE_WOOD.get());
         log(ModBlocks.STRIPPED_ORANGE_LOG.get());
         wood(ModBlocks.STRIPPED_ORANGE_WOOD.get());
@@ -938,6 +969,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.ORANGE_PLANKS.get()));
 
         log(ModBlocks.POMERGRANATE_LOG.get());
+        log(ModBlocks.POMERGRANATE_BEAM.get());
         wood(ModBlocks.POMERGRANATE_WOOD.get());
         log(ModBlocks.STRIPPED_POMERGRANATE_LOG.get());
         wood(ModBlocks.STRIPPED_POMERGRANATE_WOOD.get());
@@ -958,6 +990,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.POMERGRANATE_PLANKS.get()));
 
         log(ModBlocks.REDWOOD_LOG.get());
+        log(ModBlocks.REDWOOD_BEAM.get());
         axisBlock(((RotatedPillarBlock) ModBlocks.REDWOOD_WOOD.get()), blockTexture(ModBlocks.REDWOOD_LOG.get()), blockTexture(ModBlocks.REDWOOD_LOG.get()));
         log(ModBlocks.STRIPPED_REDWOOD_LOG.get());
         axisBlock((RotatedPillarBlock) ModBlocks.STRIPPED_REDWOOD_WOOD.get(), ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID, "block/stripped_redwood_log"),
@@ -981,6 +1014,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 blockTexture(ModBlocks.REDWOOD_PLANKS.get()));
 
         log(ModBlocks.RED_MAHOGANY_LOG.get());
+        log(ModBlocks.RED_MAHOGANY_BEAM.get());
         wood(ModBlocks.RED_MAHOGANY_WOOD.get());
         log(ModBlocks.STRIPPED_RED_MAHOGANY_LOG.get());
         wood(ModBlocks.STRIPPED_RED_MAHOGANY_WOOD.get());
@@ -997,6 +1031,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         sapling(ModBlocks.RED_MAHOGANY_SAPLING.get());
 
         log(ModBlocks.OLIVE_LOG.get());
+        log(ModBlocks.OLIVE_BEAM.get());
         wood(ModBlocks.OLIVE_WOOD.get());
         log(ModBlocks.STRIPPED_OLIVE_LOG.get());
         wood(ModBlocks.STRIPPED_OLIVE_WOOD.get());
@@ -1175,6 +1210,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         slabBlock((SlabBlock) block, change(block, "_slab", ""), change(block, "_slab", ""), change(block, "_slab", "_end"), change(block, "_slab", "_end"));
         blockItem(block);
     }
+    private void pillarExtendSlab(Block block){
+        slabBlock((SlabBlock) block, change(block, "slab", "single"), change(block, "slab", "single"), change(block, "_slab", "_end"), change(block, "_slab", "_end"));
+        blockItem(block);
+    }
     public void stairs(Block block) {
         stairsBlock((StairBlock) block, change(block, "_stairs", ""));
         blockItem(block);
@@ -1241,13 +1280,13 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private void column(Block block) {
         createColumnModels(block);
         getVariantBuilder(block)
-                .partialState().with(ColumnBlock.PART, ColumnPart.SINGLE)
+                .partialState().with(TinyColumnBlock.PART, ColumnPart.SINGLE)
                 .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_single"))).addModel()
-                .partialState().with(ColumnBlock.PART, ColumnPart.BOTTOM)
+                .partialState().with(TinyColumnBlock.PART, ColumnPart.BOTTOM)
                 .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_bottom"))).addModel()
-                .partialState().with(ColumnBlock.PART, ColumnPart.MIDDLE)
+                .partialState().with(TinyColumnBlock.PART, ColumnPart.MIDDLE)
                 .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_middle"))).addModel()
-                .partialState().with(ColumnBlock.PART, ColumnPart.TOP)
+                .partialState().with(TinyColumnBlock.PART, ColumnPart.TOP)
                 .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_top"))).addModel();
         ColumnBlockItem(block);
     }
@@ -1267,7 +1306,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         builder.element().from(0, 0, 0).to(16, 2, 16).textureAll("#1").end()
                 .element().from(1, 2, 1).to(15, 3, 15).textureAll("#2").end()
                 .element().from(3, 3, 3).to(13, 13, 13).textureAll("#3").end()
-                .element().from(1, 13, 1).to(14, 14, 14).textureAll("#2").end()
+                .element().from(1, 13, 1).to(15, 14, 15).textureAll("#2").end()
                 .element().from(0, 14, 0).to(16, 16, 16).textureAll("#1").end();
     }
     private void createBottomColumnModel(Block block, String name) {
@@ -1298,6 +1337,34 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 .element().from(1, 13, 1).to(15, 14, 15).textureAll("#2").end()
                 .element().from(0, 14, 0).to(16, 16, 16).textureAll("#1").end();
     }
+
+    private void pillarExtend(Block block) {
+        createPillarModels(block);
+        getVariantBuilder(block)
+                .partialState().with(ColumnBlock.PART, ColumnPart.SINGLE)
+                .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_single"))).addModel()
+                .partialState().with(ColumnBlock.PART, ColumnPart.BOTTOM)
+                .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_bottom"))).addModel()
+                .partialState().with(ColumnBlock.PART, ColumnPart.MIDDLE)
+                .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_middle"))).addModel()
+                .partialState().with(ColumnBlock.PART, ColumnPart.TOP)
+                .modelForState().modelFile(models().getExistingFile(extend(blockTexture(block), "_top"))).addModel();
+        ColumnBlockItem(block);
+    }
+
+    private void createPillarModels(Block block){
+        ResourceLocation end = extend(blockTexture(block), "_end");
+        ResourceLocation single = extend(blockTexture(block), "_single");
+        ResourceLocation top = extend(blockTexture(block), "_top");
+        ResourceLocation middle = extend(blockTexture(block), "_middle");
+        ResourceLocation bottom = extend(blockTexture(block), "_bottom");
+        BlockModelBuilder singleModel = models().cube(name(block) + "_single", end, end, single, single, single, single).texture("particle", blockTexture(block));
+        BlockModelBuilder topModel = models().cube(name(block) + "_top", end, end, top, top, top, top).texture("particle", blockTexture(block));
+        BlockModelBuilder middleModel = models().cube(name(block) + "_middle", end, end, middle, middle, middle, middle).texture("particle", blockTexture(block));
+        BlockModelBuilder bottomModel = models().cube(name(block) + "_bottom", end, end, bottom, bottom, bottom, bottom).texture("particle", blockTexture(block));
+
+    }
+
     private void verticalBlockItem(Block block) {
         simpleBlockItem(block, new ModelFile.UncheckedModelFile("bfme:block/" + name(block) + "_south"));
     }

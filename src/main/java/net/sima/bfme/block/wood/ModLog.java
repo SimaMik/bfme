@@ -21,6 +21,17 @@ public class ModLog extends RotatedPillarBlock {
         super(pProperties);
         this.strippedLog = strippedLog;
     }
+//    public ModLog(Properties pProperties) {
+//        super(pProperties);
+//    }
+
+    @Override
+    public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
+        if (!simulate && itemAbility == ItemAbilities.AXE_STRIP) {
+            state = this.strippedLog.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+        }
+        return state;
+    }
 
     @Override
     public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
@@ -37,11 +48,4 @@ public class ModLog extends RotatedPillarBlock {
         return 5;
     }
 
-    @Override
-    public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
-        if (!simulate && itemAbility == ItemAbilities.AXE_STRIP) {
-            state = this.strippedLog.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
-        }
-        return state;
-    }
 }
