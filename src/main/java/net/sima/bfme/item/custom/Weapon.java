@@ -156,9 +156,8 @@ public class Weapon extends Item {
     public boolean isRepairable(ItemStack stack) {
         return true;
     }
-
-    @Override
     @OnlyIn(Dist.CLIENT)
+    @Override
     public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltip, TooltipFlag flag) {
 //        tooltip.add(Component.literal("Attack Damage: " + this.getAttackDamage()).withStyle(ChatFormatting.GRAY));
 //        tooltip.add(Component.literal("Attack Speed: " + this.getAttackSpeed()).withStyle(ChatFormatting.GRAY));

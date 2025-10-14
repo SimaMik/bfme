@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "bfme:item/large_pouch",
-    "layer1": "bfme:item/large_pouch_overlay"
-  }
-}

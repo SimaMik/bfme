@@ -1,0 +1,33 @@
+
+    public static final DeferredBlock<Block> STRIPPED_CHERRY_LOG_SLAB = registerBlock("stripped_cherry_log_slab",
+            () -> new ModStrippedSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_CHERRY_LOG_STAIRS = registerBlock("stripped_cherry_log_stairs",
+            () -> new ModStrippedStairs(Blocks.STRIPPED_CHERRY_LOG.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_CHERRY_LOG_VERTICAL_SLAB = registerBlock("stripped_cherry_log_vertical_slab",
+            () -> new StrippedWoodVerticalSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_WOOD)));
+
+    public static final DeferredBlock<Block> STRIPPED_CHERRY_WOOD_SLAB = registerBlock("stripped_cherry_wood_slab",
+            () -> new ModStrippedSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_CHERRY_WOOD_STAIRS = registerBlock("stripped_cherry_wood_stairs",
+            () -> new ModStrippedStairs(Blocks.STRIPPED_CHERRY_WOOD.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_WOOD)));
+    public static final DeferredBlock<Block> STRIPPED_CHERRY_WOOD_VERTICAL_SLAB = registerBlock("stripped_cherry_wood_vertical_slab",
+            () -> new StrippedWoodVerticalSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_CHERRY_WOOD)));
+
+    public static final DeferredBlock<Block> CHERRY_LOG_SLAB = registerBlock("cherry_log_slab",
+            () -> new ModSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_WOOD), STRIPPED_CHERRY_LOG_SLAB));
+    public static final DeferredBlock<Block> CHERRY_LOG_STAIRS = registerBlock("cherry_log_stairs",
+            () -> new ModStairs(Blocks.CHERRY_LOG.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_WOOD), STRIPPED_CHERRY_LOG_STAIRS));
+    public static final DeferredBlock<Block> CHERRY_LOG_VERTICAL_SLAB = registerBlock("cherry_log_vertical_slab",
+            () -> new WoodVerticalSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_WOOD),
+                    STRIPPED_CHERRY_LOG_VERTICAL_SLAB));
+
+    public static final DeferredBlock<Block> CHERRY_WOOD_SLAB = registerBlock("cherry_wood_slab",
+            () -> new ModSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_WOOD), STRIPPED_CHERRY_WOOD_SLAB));
+    public static final DeferredBlock<Block> CHERRY_WOOD_STAIRS = registerBlock("cherry_wood_stairs",
+            () -> new ModStairs(Blocks.CHERRY_WOOD.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_WOOD), STRIPPED_CHERRY_WOOD_STAIRS));
+    public static final DeferredBlock<Block> CHERRY_WOOD_VERTICAL_SLAB = registerBlock("cherry_wood_vertical_slab",
+            () -> new WoodVerticalSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_WOOD),
+                    STRIPPED_CHERRY_WOOD_VERTICAL_SLAB));
+
+    public static final DeferredBlock<Block> CHERRY_PLANKS_VERTICAL_SLAB = registerBlock("cherry_planks_vertical_slab",
+            () -> new StrippedWoodVerticalSlab(BlockBehaviour.Properties.ofFullCopy(Blocks.CHERRY_PLANKS)));

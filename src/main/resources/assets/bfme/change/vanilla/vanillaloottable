@@ -1,0 +1,27 @@
+
+        this.add(ModBlocks.STRIPPED_CHERRY_LOG_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STRIPPED_CHERRY_LOG_SLAB.get()));
+        this.dropSelf(ModBlocks.STRIPPED_CHERRY_LOG_STAIRS.get());
+        this.add(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.get()));
+
+        this.add(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.get()));
+        this.dropSelf(ModBlocks.STRIPPED_CHERRY_WOOD_STAIRS.get());
+        this.add(ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.get()));
+
+        this.add(ModBlocks.CHERRY_LOG_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHERRY_LOG_SLAB.get()));
+        this.dropSelf(ModBlocks.CHERRY_LOG_STAIRS.get());
+        this.add(ModBlocks.CHERRY_LOG_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHERRY_LOG_VERTICAL_SLAB.get()));
+
+        this.add(ModBlocks.CHERRY_WOOD_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHERRY_WOOD_SLAB.get()));
+        this.dropSelf(ModBlocks.CHERRY_WOOD_STAIRS.get());
+        this.add(ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.get()));
+
+        this.add(ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get()));

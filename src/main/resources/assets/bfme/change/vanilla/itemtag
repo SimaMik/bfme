@@ -1,0 +1,19 @@
+
+                ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.asItem(),
+                ModBlocks.CHERRY_LOG_SLAB.asItem(),
+                ModBlocks.CHERRY_LOG_VERTICAL_SLAB.asItem(),
+                ModBlocks.CHERRY_WOOD_SLAB.asItem(),
+                ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.asItem(),
+                ModBlocks.STRIPPED_CHERRY_LOG_SLAB.asItem(),
+                ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.asItem(),
+                ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.asItem(),
+                ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.asItem()
+
+
+
+
+
+                ModBlocks.CHERRY_LOG_STAIRS.asItem(),
+                ModBlocks.CHERRY_WOOD_STAIRS.asItem(),
+                ModBlocks.STRIPPED_CHERRY_LOG_STAIRS.asItem(),
+                ModBlocks.STRIPPED_CHERRY_WOOD_STAIRS.asItem()

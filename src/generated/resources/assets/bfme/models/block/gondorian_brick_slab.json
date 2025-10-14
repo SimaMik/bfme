@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "bfme:block/gondorian_brick",
-    "side": "bfme:block/gondorian_brick",
-    "top": "bfme:block/gondorian_brick"
-  }
-}

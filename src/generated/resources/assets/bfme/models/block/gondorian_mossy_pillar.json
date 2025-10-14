@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "bfme:block/gondorian_mossy_pillar_end",
-    "side": "bfme:block/gondorian_mossy_pillar"
-  }
-}

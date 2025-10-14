@@ -6,8 +6,11 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sima.bfme.BFME;
 import net.sima.bfme.block.ModBlocks;
-import net.sima.bfme.item.custom.HammerItem;
-import net.sima.bfme.item.custom.PouchItem;
+import net.sima.bfme.entity.custom.ModBoatEntity;
+import net.sima.bfme.item.custom.*;
+import net.sima.bfme.item.custom.armor_item.GondorianArmorItem;
+import net.sima.bfme.item.custom.armor_item.IthilienRangerArmorItem;
+//import net.sima.bfme.item.custom.RedBookOfWestmarchItem;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(BFME.MOD_ID);
@@ -22,6 +25,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_AMBER = ITEMS.register("raw_amber",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PICK = ITEMS.register("pick",
+            () -> new Pickaxe(Tiers.DIAMOND, (new Item.Properties()).attributes(Pickaxe.createAttributes(Tiers.DIAMOND, 1.0F, -2.8F))));
     public static final DeferredItem<Item> RAW_AMETHYST = ITEMS.register("raw_amethyst",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_DIAMOND = ITEMS.register("raw_diamond",
@@ -115,7 +120,7 @@ public class ModItems {
     public static final DeferredItem<Item> ORANGE = ITEMS.register("orange",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(1).saturationModifier(0.2f).build())));
-    public static final DeferredItem<Item> POMERGRANATE = ITEMS.register("pomergranate",
+    public static final DeferredItem<Item> POMEGRANATE = ITEMS.register("pomegranate",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(1).saturationModifier(0.2f).build())));
 
@@ -274,10 +279,10 @@ public class ModItems {
     public static final DeferredItem<Item> ORANGE_HANGING_SIGN = ITEMS.register("orange_hanging_sign",
             () -> new HangingSignItem(ModBlocks.ORANGE_HANGING_SIGN.get(), ModBlocks.ORANGE_WALL_HANGING_SIGN.get(),
                     new Item.Properties().stacksTo(16)));
-    public static final DeferredItem<Item> POMERGRANATE_SIGN = ITEMS.register("pomergranate_sign",
-            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.POMERGRANATE_SIGN.get(), ModBlocks.POMERGRANATE_WALL_SIGN.get()));
-    public static final DeferredItem<Item> POMERGRANATE_HANGING_SIGN = ITEMS.register("pomergranate_hanging_sign",
-            () -> new HangingSignItem(ModBlocks.POMERGRANATE_HANGING_SIGN.get(), ModBlocks.POMERGRANATE_WALL_HANGING_SIGN.get(),
+    public static final DeferredItem<Item> POMEGRANATE_SIGN = ITEMS.register("pomegranate_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.POMEGRANATE_SIGN.get(), ModBlocks.POMEGRANATE_WALL_SIGN.get()));
+    public static final DeferredItem<Item> POMEGRANATE_HANGING_SIGN = ITEMS.register("pomegranate_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.POMEGRANATE_HANGING_SIGN.get(), ModBlocks.POMEGRANATE_WALL_HANGING_SIGN.get(),
                     new Item.Properties().stacksTo(16)));
     public static final DeferredItem<Item> REDWOOD_SIGN = ITEMS.register("redwood_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.REDWOOD_SIGN.get(), ModBlocks.REDWOOD_WALL_SIGN.get()));
@@ -295,12 +300,216 @@ public class ModItems {
             () -> new HangingSignItem(ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get(),
                     new Item.Properties().stacksTo(16)));
 
+
+    public static final DeferredItem<Item> ALMOND_BOAT = ITEMS.register("almond_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.ALMOND,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> APPLE_BOAT = ITEMS.register("apple_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.APPLE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ASPEN_BOAT = ITEMS.register("aspen_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.ASPEN,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BANANA_BOAT = ITEMS.register("banana_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.BANANA,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BAOBAB_BOAT = ITEMS.register("baobab_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.BAOBAB,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BEECH_BOAT = ITEMS.register("beech_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.BEECH,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CEDAR_BOAT = ITEMS.register("cedar_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.CEDAR,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CHESTNUT_BOAT = ITEMS.register("chestnut_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.CHESTNUT,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CYPRESS_BOAT = ITEMS.register("cypress_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.CYPRESS,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> DATE_PALM_BOAT = ITEMS.register("date_palm_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.DATE_PALM,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> FIR_BOAT = ITEMS.register("fir_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.FIR,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> GREEN_OAK_BOAT = ITEMS.register("green_oak_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.GREEN_OAK,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> HOLLY_BOAT = ITEMS.register("holly_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.HOLLY,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> KUNTZ_BOAT = ITEMS.register("kuntz_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.KUNTZ,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LAIRELOSSE_BOAT = ITEMS.register("lairelosse_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.LAIRELOSSE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LARCH_BOAT = ITEMS.register("larch_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.LARCH,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LEBETHRON_BOAT = ITEMS.register("lebethron_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.LEBETHRON,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LEMON_BOAT = ITEMS.register("lemon_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.LEMON,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LIME_BOAT = ITEMS.register("lime_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.LIME,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MALLORN_BOAT = ITEMS.register("mallorn_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.MALLORN,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MANGO_BOAT = ITEMS.register("mango_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.MANGO,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MAPLE_BOAT = ITEMS.register("maple_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.MAPLE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MIRK_OAK_BOAT = ITEMS.register("mirk_oak_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.MIRK_OAK,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> OLIVE_BOAT = ITEMS.register("olive_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.OLIVE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ORANGE_BOAT = ITEMS.register("orange_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.ORANGE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PALM_BOAT = ITEMS.register("palm_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PALM,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PEAR_BOAT = ITEMS.register("pear_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PEAR,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PINE_BOAT = ITEMS.register("pine_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PINE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PLUM_BOAT = ITEMS.register("plum_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.PLUM,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> POMEGRANATE_BOAT = ITEMS.register("pomegranate_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.POMEGRANATE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> RED_OAK_BOAT = ITEMS.register("red_oak_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.RED_OAK,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> RED_MAHOGANY_BOAT = ITEMS.register("red_mahogany_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.RED_MAHOGANY,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> REDWOOD_BOAT = ITEMS.register("redwood_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.REDWOOD,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> WILLOW_BOAT = ITEMS.register("willow_boat",
+            () -> new ModBoatItem(false, ModBoatEntity.Type.WILLOW,new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> ALMOND_CHEST_BOAT = ITEMS.register("almond_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.ALMOND,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> APPLE_CHEST_BOAT = ITEMS.register("apple_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.APPLE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ASPEN_CHEST_BOAT = ITEMS.register("aspen_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.ASPEN,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BANANA_CHEST_BOAT = ITEMS.register("banana_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.BANANA,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BAOBAB_CHEST_BOAT = ITEMS.register("baobab_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.BAOBAB,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> BEECH_CHEST_BOAT = ITEMS.register("beech_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.BEECH,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CEDAR_CHEST_BOAT = ITEMS.register("cedar_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.CEDAR,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CHESTNUT_CHEST_BOAT = ITEMS.register("chestnut_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.CHESTNUT,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> CYPRESS_CHEST_BOAT = ITEMS.register("cypress_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.CYPRESS,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> DATE_PALM_CHEST_BOAT = ITEMS.register("date_palm_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.DATE_PALM,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> FIR_CHEST_BOAT = ITEMS.register("fir_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.FIR,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> GREEN_OAK_CHEST_BOAT = ITEMS.register("green_oak_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.GREEN_OAK,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> HOLLY_CHEST_BOAT = ITEMS.register("holly_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.HOLLY,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> KUNTZ_CHEST_BOAT = ITEMS.register("kuntz_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.KUNTZ,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LAIRELOSSE_CHEST_BOAT = ITEMS.register("lairelosse_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.LAIRELOSSE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LARCH_CHEST_BOAT = ITEMS.register("larch_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.LARCH,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LEBETHRON_CHEST_BOAT = ITEMS.register("lebethron_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.LEBETHRON,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LEMON_CHEST_BOAT = ITEMS.register("lemon_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.LEMON,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> LIME_CHEST_BOAT = ITEMS.register("lime_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.LIME,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MALLORN_CHEST_BOAT = ITEMS.register("mallorn_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.MALLORN,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MANGO_CHEST_BOAT = ITEMS.register("mango_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.MANGO,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MAPLE_CHEST_BOAT = ITEMS.register("maple_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.MAPLE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> MIRK_OAK_CHEST_BOAT = ITEMS.register("mirk_oak_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.MIRK_OAK,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> OLIVE_CHEST_BOAT = ITEMS.register("olive_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.OLIVE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> ORANGE_CHEST_BOAT = ITEMS.register("orange_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.ORANGE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PALM_CHEST_BOAT = ITEMS.register("palm_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PALM,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PEAR_CHEST_BOAT = ITEMS.register("pear_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PEAR,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PINE_CHEST_BOAT = ITEMS.register("pine_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PINE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> PLUM_CHEST_BOAT = ITEMS.register("plum_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.PLUM,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> POMEGRANATE_CHEST_BOAT = ITEMS.register("pomegranate_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.POMEGRANATE,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> RED_OAK_CHEST_BOAT = ITEMS.register("red_oak_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.RED_OAK,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> RED_MAHOGANY_CHEST_BOAT = ITEMS.register("red_mahogany_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.RED_MAHOGANY,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> REDWOOD_CHEST_BOAT = ITEMS.register("redwood_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.REDWOOD,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> WILLOW_CHEST_BOAT = ITEMS.register("willow_chest_boat",
+            () -> new ModBoatItem(true, ModBoatEntity.Type.WILLOW,new Item.Properties().stacksTo(1)));
+    public static final DeferredItem<Item> THATCH_BUNDLE = ITEMS.register("thatch_bundle",
+            () -> new Item(new Item.Properties()));
+
+
+    public static final DeferredItem<Item> RED_BOOK_OF_WESTMARCH = ITEMS.register("red_book_of_westmarch",
+            () -> new RedBookOfWestmarchItem(new Item.Properties().stacksTo(1)));
+
+    public static final DeferredItem<Item> GONDORIAN_INGOT = ITEMS.register("gondorian_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GONDORIAN_HELMET = ITEMS.register("gondorian_helmet",
+            () -> new GondorianArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> GONDORIAN_CHESTPLATE = ITEMS.register("gondorian_chestplate",
+            () -> new GondorianArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(16))));
+    public static final DeferredItem<Item> GONDORIAN_LEGGINGS = ITEMS.register("gondorian_leggings",
+            () -> new GondorianArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(16))));
+    public static final DeferredItem<Item> GONDORIAN_BOOTS = ITEMS.register("gondorian_boots",
+            () -> new GondorianArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(16))));
+
+    public static final DeferredItem<Item> ITHILIEN_RANGER_HELMET = ITEMS.register("ithilien_ranger_helmet",
+            () -> new IthilienRangerArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(16))));
+    public static final DeferredItem<Item> ITHILIEN_RANGER_CHESTPLATE = ITEMS.register("ithilien_ranger_chestplate",
+            () -> new IthilienRangerArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(16))));
+    public static final DeferredItem<Item> ITHILIEN_RANGER_LEGGINGS = ITEMS.register("ithilien_ranger_leggings",
+            () -> new IthilienRangerArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(16))));
+    public static final DeferredItem<Item> ITHILIEN_RANGER_BOOTS = ITEMS.register("ithilien_ranger_boots",
+            () -> new IthilienRangerArmorItem(ModArmorMaterials.GONDORIAN_INGOT, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(16))));
+
+    public static final DeferredItem<Item> GONDORIAN_PICKAXE = ITEMS.register("gondorian_pickaxe",
+            () -> new Pickaxe(ModToolTiers.GONDORIAN, new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.GONDORIAN, 1.0F, -2.8F))));
+    public static final DeferredItem<Item> GONDORIAN_AXE = ITEMS.register("gondorian_axe",
+            () -> new Axe(ModToolTiers.GONDORIAN, new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.GONDORIAN, 3.0F, -2.8F))));
+    public static final DeferredItem<Item> GONDORIAN_SHOVEL = ITEMS.register("gondorian_shovel",
+            () -> new ShovelItem(ModToolTiers.GONDORIAN, new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.GONDORIAN, 1.0F, -2.8F))));
+    public static final DeferredItem<Item> GONDORIAN_HOE = ITEMS.register("gondorian_hoe",
+            () -> new HoeItem(ModToolTiers.GONDORIAN, new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.GONDORIAN, 1.0F, -2.8F))));
+
+    public static final DeferredItem<Item> GONDORIAN_WARHAMMER = ITEMS.register("gondorian_warhammer",
+            () -> new HammerItem(1,2,5,3,1000, 10, new Item.Properties()));
+    public static final DeferredItem<Item> GONDORIAN_DAGGER = ITEMS.register("gondorian_dagger",
+            () -> new Weapon(1,2,5,0,1000, 10, new Item.Properties()));
+    public static final DeferredItem<Item> GONDORIAN_DAGGER_POISONED = ITEMS.register("gondorian_dagger_poisoned",
+            () -> new Weapon(1,2,5,0,1000, 10, new Item.Properties()));
+    public static final DeferredItem<Item> GONDORIAN_PIKE = ITEMS.register("gondorian_pike",
+            () -> new Weapon(1,2,5,3,1000, 10, new Item.Properties()));
+    public static final DeferredItem<Item> GONDORIAN_SPEAR = ITEMS.register("gondorian_spear",
+            () -> new Weapon(1,2,5,3,1000, 10, new Item.Properties()));
+    public static final DeferredItem<Item> GONDORIAN_SWORD = ITEMS.register("gondorian_sword",
+            () -> new Weapon(1,2,5,3,1000, 10, new Item.Properties()));
+
+
+
+
     public static final DeferredItem<Item> GONDORIAN_HAMMER = ITEMS.register("gondorian_hammer",
             () -> new HammerItem(1,2,5,3,1000, 10, new Item.Properties()));
 
-    public static final DeferredItem<Item> GONDORIAN_PIKE = ITEMS.register("gondorian_pike",
-            () -> new HammerItem(1,2,5,3,1000, 10, new Item.Properties()));
+    public static final DeferredItem<Item> MORDOR_SWORD = ITEMS.register("mordor_sword",
+            () -> new Weapon(1,2,5,3,1000, 10, new Item.Properties()));
+
+    public static final DeferredItem<Item> GONDORIAN_CLAYMORE = ITEMS.register("gondorian_claymore",
+            () -> new Weapon(1,2,5,3,1000, 10, new Item.Properties()));
+
     public static final DeferredItem<Item> GONDORIAN_PIKE1 = ITEMS.register("gondorian_pike1",
             () -> new HammerItem(1,2,5,3,1000, 10, new Item.Properties()));
 
+    public static final DeferredItem<Item> GONDORIAN_SHIELD = ITEMS.register("gondorian_shield",
+            () -> new ShieldItem(new Item.Properties().durability(600)));
 }

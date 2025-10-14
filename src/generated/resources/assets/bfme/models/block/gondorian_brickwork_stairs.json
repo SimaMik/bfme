@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "bfme:block/gondorian_brickwork",
-    "side": "bfme:block/gondorian_brickwork",
-    "top": "bfme:block/gondorian_brickwork"
-  }
-}

@@ -1,0 +1,18 @@
+
+        slab(pRecipeOutput, Blocks.CHERRY_LOG, ModBlocks.CHERRY_LOG_SLAB.get());
+        stair(pRecipeOutput, Blocks.CHERRY_LOG, ModBlocks.CHERRY_LOG_STAIRS.get());
+        verticalSlab(pRecipeOutput, Blocks.CHERRY_LOG, ModBlocks.CHERRY_LOG_VERTICAL_SLAB.get());
+
+        slab(pRecipeOutput, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG_SLAB.get());
+        stair(pRecipeOutput, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG_STAIRS.get());
+        verticalSlab(pRecipeOutput, Blocks.STRIPPED_CHERRY_LOG, ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.get());
+
+        slab(pRecipeOutput, Blocks.CHERRY_WOOD, ModBlocks.CHERRY_WOOD_SLAB.get());
+        stair(pRecipeOutput, Blocks.CHERRY_WOOD, ModBlocks.CHERRY_WOOD_STAIRS.get());
+        verticalSlab(pRecipeOutput, Blocks.CHERRY_WOOD, ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.get());
+
+        slab(pRecipeOutput, Blocks.STRIPPED_CHERRY_WOOD, ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.get());
+        stair(pRecipeOutput, Blocks.STRIPPED_CHERRY_WOOD, ModBlocks.STRIPPED_CHERRY_WOOD_STAIRS.get());
+        verticalSlab(pRecipeOutput, Blocks.STRIPPED_CHERRY_WOOD, ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.get());
+
+        verticalSlab(pRecipeOutput, Blocks.CHERRY_PLANKS, ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get());

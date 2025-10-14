@@ -1,4 +1,20 @@
-// 1.21	2024-08-19T16:55:15.1477709	Block Tags
-17014673e0cc06cff0cc288f3dc7ffe8068df4c0 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2025-01-10T19:58:41.1401842	Block Tags
+28664f209d59643cd660ffecc4ec013d2b0ccf68 data/bfme/tags/block/incorrect_for_gondorian_tool.json
+05f052357dc31ec497ce66b117370b9e1c4dbcfd data/bfme/tags/block/miner_blocks.json
+7eb9a4069e2f86d6e41094887b0f5ce87849f9bc data/bfme/tags/block/ores.json
+e41e8968773bc2062a460f5b6a877ef03b3ab327 data/minecraft/tags/block/fence_gates.json
+162474e9a16cda1e1ed8d909b44268ee4434e208 data/minecraft/tags/block/leaves.json
+59d3a2128c237996fefefd87afb7ed5d2ebf2030 data/minecraft/tags/block/logs.json
+9c33e761a4f23baa98bffcfaa4ee61dd4387bc46 data/minecraft/tags/block/logs_that_burn.json
+5a9403e9d8b5297fdd82e8f2f1629e7542963805 data/minecraft/tags/block/mineable/pickaxe.json
 2851e5b07eb60e9bf1bb836585235d79c0ce1837 data/minecraft/tags/block/needs_iron_tool.json
-4cd49d8469072183328a894e4c260494a8913a6c data/minecraft/tags/block/walls.json
+457ef51edbbc661f90049b0389bdcaf0c5c98233 data/minecraft/tags/block/planks.json
+d6b6547d8a75e6ae056c63eb6e376f56bfb3cdf3 data/minecraft/tags/block/saplings.json
+5ef9568eb208e96972f589e4a341e255870edb3c data/minecraft/tags/block/walls.json
+909842e58d06d5393f98b9c5dcc88fcb024f5c80 data/minecraft/tags/block/wooden_buttons.json
+91754d72bb2169e2f7f0fc2cddc28cfcbb7efd74 data/minecraft/tags/block/wooden_doors.json
+2cdf8f492476276a677cdc9853d761a9cb2752b6 data/minecraft/tags/block/wooden_fences.json
+f8ec76078db3bbb3d67a6f40b403b68e21d6d5f2 data/minecraft/tags/block/wooden_pressure_plates.json
+338e3770453f9c6f7243b33cdb3a2218dbfc10d8 data/minecraft/tags/block/wooden_slabs.json
+3adae9bdb007a9117e941bed9c9190210df49f29 data/minecraft/tags/block/wooden_stairs.json
+844241eb395f86ad3e7080f85159752a5b77e45e data/minecraft/tags/block/wooden_trapdoors.json

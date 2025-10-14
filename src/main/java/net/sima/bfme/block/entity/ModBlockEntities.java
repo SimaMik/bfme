@@ -1,18 +1,21 @@
 package net.sima.bfme.block.entity;
 
-import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sima.bfme.BFME;
 import net.sima.bfme.block.ModBlocks;
+import net.sima.bfme.block.entity.furnace.HumanFurnaceBlockEntity;
 
 import java.util.function.Supplier;
 
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-            DeferredRegister.create(BuiltInRegistries. BLOCK_ENTITY_TYPE, BFME.MOD_ID);
+            DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, BFME.MOD_ID);
     public static final Supplier<BlockEntityType<ModSignBlockEntity>> MOD_SIGN =
             BLOCK_ENTITIES.register("mod_sign", () ->
                     BlockEntityType.Builder.of(ModSignBlockEntity::new,
@@ -47,10 +50,15 @@ public class ModBlockEntities {
         ModBlocks.LIME_SIGN.get(), ModBlocks.LIME_WALL_SIGN.get(),
         ModBlocks.MANGO_SIGN.get(), ModBlocks.MANGO_WALL_SIGN.get(),
         ModBlocks.ORANGE_SIGN.get(), ModBlocks.ORANGE_WALL_SIGN.get(),
-        ModBlocks.POMERGRANATE_SIGN.get(), ModBlocks.POMERGRANATE_WALL_SIGN.get(),
+        ModBlocks.POMEGRANATE_SIGN.get(), ModBlocks.POMEGRANATE_WALL_SIGN.get(),
         ModBlocks.REDWOOD_SIGN.get(), ModBlocks.REDWOOD_WALL_SIGN.get(),
         ModBlocks.RED_MAHOGANY_SIGN.get(), ModBlocks.RED_MAHOGANY_WALL_SIGN.get(),
         ModBlocks.OLIVE_SIGN.get(), ModBlocks.OLIVE_WALL_SIGN.get()).build(null));
+
+//    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<GondorianCraftingTableEntity>> GONDORIAN_TABLE =
+//            BLOCK_ENTITIES.register("gondorian_table", ()->
+//                    BlockEntityType.Builder.of(GondorianCraftingTableEntity::new, ModBlocks.GONDORIAN_CRAFTING_TABLE.get()).build(null));
+
     public static final Supplier<BlockEntityType<ModHangingSignBlockEntity>> MOD_HANGING_SIGN =
             BLOCK_ENTITIES.register("mod_hanging_sign", ()->
                     BlockEntityType.Builder.of(ModHangingSignBlockEntity::new,
@@ -85,11 +93,22 @@ public class ModBlockEntities {
             ModBlocks.LIME_HANGING_SIGN.get(), ModBlocks.LIME_WALL_HANGING_SIGN.get(),
             ModBlocks.MANGO_HANGING_SIGN.get(), ModBlocks.MANGO_WALL_HANGING_SIGN.get(),
             ModBlocks.ORANGE_HANGING_SIGN.get(), ModBlocks.ORANGE_WALL_HANGING_SIGN.get(),
-            ModBlocks.POMERGRANATE_HANGING_SIGN.get(), ModBlocks.POMERGRANATE_WALL_HANGING_SIGN.get(),
+            ModBlocks.POMEGRANATE_HANGING_SIGN.get(), ModBlocks.POMEGRANATE_WALL_HANGING_SIGN.get(),
             ModBlocks.REDWOOD_HANGING_SIGN.get(), ModBlocks.REDWOOD_WALL_HANGING_SIGN.get(),
             ModBlocks.RED_MAHOGANY_HANGING_SIGN.get(), ModBlocks.RED_MAHOGANY_WALL_HANGING_SIGN.get(),
             ModBlocks.OLIVE_HANGING_SIGN.get(), ModBlocks.OLIVE_WALL_HANGING_SIGN.get()).build(null));
-//
+    public static final Supplier<BlockEntityType<PrivateBlockEntity>> PRIVATE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("private_block_entity",
+                    () -> BlockEntityType.Builder.of(
+                            PrivateBlockEntity::new,
+                            ModBlocks.PRIVATE_BLOCK.get()
+                    ).build(null)
+            );
+    public static final Supplier<BlockEntityType<HumanFurnaceBlockEntity>> HUMAN_FURNACE =
+            BLOCK_ENTITIES.register("human_furnace",
+                    () -> BlockEntityType.Builder.of(HumanFurnaceBlockEntity::new,
+                            ModBlocks.HUMAN_FURNACE.get()).build(null));
+
 //    public static final RegistryObject<BlockEntityType<ChestBlockEntity>> MOD_CHEST =
 //            BLOCK_ENTITIES.register("mod_chest", () ->
 //                    BlockEntityType.Builder.of(ChestBlockEntity::new,
@@ -110,7 +129,7 @@ public class ModBlockEntities {
 //                            ModBlocks.OLIVE_CHEST.get(),ModBlocks.ORANGE_CHEST.get(),
 //                            ModBlocks.PALM_CHEST.get(),ModBlocks.PEAR_CHEST.get(),
 //                            ModBlocks.PINE_CHEST.get(),ModBlocks.PLUM_CHEST.get(),
-//                            ModBlocks.POMERGRANATE_CHEST.get(),ModBlocks.RED_OAK_CHEST.get(),
+//                            ModBlocks.POMEGRANATE_CHEST.get(),ModBlocks.RED_OAK_CHEST.get(),
 //                            ModBlocks.RED_WOOD_CHEST.get(),ModBlocks.RED_MAHOGANY_CHEST.get(),
 //                            ModBlocks.SEQUOIA_CHEST.get(),ModBlocks.WILLOW_CHEST.get()).build(null));
 //
@@ -119,6 +138,9 @@ public class ModBlockEntities {
 //            BLOCK_ENTITIES.register("mod_furnace_block_entity", ()->
 //                    BlockEntityType.Builder.of(ModFurnaceBlockEntity::new,).build(null));
 
+    private static <T extends BlockEntity> DeferredHolder<BlockEntityType<?>, BlockEntityType<T>> register(String name, BlockEntityType.BlockEntitySupplier<T> tile, Supplier<Block[]> blocks) {
+        return BLOCK_ENTITIES.register(name, () -> BlockEntityType.Builder.of(tile, blocks.get()).build(null));
+    }
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

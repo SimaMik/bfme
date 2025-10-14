@@ -1,0 +1,20 @@
+wood_stairs
+
+         ModBlocks.CHERRY_LOG_STAIRS.get(),
+         ModBlocks.STRIPPED_CHERRY_LOG_STAIRS.get(),
+         ModBlocks.CHERRY_WOOD_STAIRS.get(),
+         ModBlocks.STRIPPED_CHERRY_WOOD_STAIRS.get()
+
+
+         wood_slabs
+
+
+ModBlocks.STRIPPED_CHERRY_LOG_SLAB.get(),
+ModBlocks.CHERRY_LOG_SLAB.get(),
+ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.get(),
+ModBlocks.CHERRY_WOOD_SLAB.get(),
+ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.get(),
+ModBlocks.CHERRY_LOG_VERTICAL_SLAB.get(),
+ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.get(),
+ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.get(),
+ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get()

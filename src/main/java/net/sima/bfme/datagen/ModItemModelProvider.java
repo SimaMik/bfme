@@ -30,6 +30,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         wallItem(ModBlocks.GONDORIAN_STONE_WALL.get());
+        wallItem(ModBlocks.GONDORIAN_SMOOTH_STONE_WALL.get());
         wallItem(ModBlocks.GONDORIAN_MOSSY_STONE_WALL.get());
         wallItem(ModBlocks.GONDORIAN_CRACKED_STONE_WALL.get());
         wallItem(ModBlocks.GONDORIAN_COBBLESTONE_WALL.get());
@@ -89,6 +90,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.ROHAN_MOSSY_COBBLESTONE_BUTTON.get());
         buttonItem(ModBlocks.ROHAN_BRICK_BUTTON.get());
 
+        wallItem(ModBlocks.NUMENOREAN_STONE_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_MOSSY_STONE_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_CRACKED_STONE_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_COBBLESTONE_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_MOSSY_COBBLESTONE_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_BRICK_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_BRICKWORK_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_MOSSY_BRICK_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_MOSSY_BRICKWORK_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_CRACKED_BRICK_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_CRACKED_BRICKWORK_WALL.get());
+        wallItem(ModBlocks.NUMENOREAN_SMOOTH_STONE_WALL.get());
+
+        buttonItem(ModBlocks.NUMENOREAN_STONE_BUTTON.get());
+        buttonItem(ModBlocks.NUMENOREAN_MOSSY_STONE_BUTTON.get());
+        buttonItem(ModBlocks.NUMENOREAN_CRACKED_STONE_BUTTON.get());
+        buttonItem(ModBlocks.NUMENOREAN_COBBLESTONE_BUTTON.get());
+        buttonItem(ModBlocks.NUMENOREAN_MOSSY_COBBLESTONE_BUTTON.get());
+        buttonItem(ModBlocks.NUMENOREAN_BRICK_BUTTON.get());
+
         pouchItem(ModItems.SMALL_POUCH);
         pouchItem(ModItems.MEDIUM_POUCH);
         pouchItem(ModItems.LARGE_POUCH);
@@ -136,7 +157,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MANGO.get());
         basicItem(ModItems.OLIVE.get());
         basicItem(ModItems.ORANGE.get());
-        basicItem(ModItems.POMERGRANATE.get());
+        basicItem(ModItems.POMEGRANATE.get());
         buttonItem(ModBlocks.APPLE_BUTTON, ModBlocks.APPLE_PLANKS);
         fenceItem(ModBlocks.APPLE_FENCE, ModBlocks.APPLE_PLANKS);
         simpleBlockItem(ModBlocks.APPLE_DOOR);
@@ -353,12 +374,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.ORANGE_SIGN.get());
         basicItem(ModItems.ORANGE_HANGING_SIGN.get());
 
-        buttonItem(ModBlocks.POMERGRANATE_BUTTON, ModBlocks.POMERGRANATE_PLANKS);
-        fenceItem(ModBlocks.POMERGRANATE_FENCE, ModBlocks.POMERGRANATE_PLANKS);
-        simpleBlockItem(ModBlocks.POMERGRANATE_DOOR);
-        saplingItem(ModBlocks.POMERGRANATE_SAPLING);
-        basicItem(ModItems.POMERGRANATE_SIGN.get());
-        basicItem(ModItems.POMERGRANATE_HANGING_SIGN.get());
+        buttonItem(ModBlocks.POMEGRANATE_BUTTON, ModBlocks.POMEGRANATE_PLANKS);
+        fenceItem(ModBlocks.POMEGRANATE_FENCE, ModBlocks.POMEGRANATE_PLANKS);
+        simpleBlockItem(ModBlocks.POMEGRANATE_DOOR);
+        saplingItem(ModBlocks.POMEGRANATE_SAPLING);
+        basicItem(ModItems.POMEGRANATE_SIGN.get());
+        basicItem(ModItems.POMEGRANATE_HANGING_SIGN.get());
 
         buttonItem(ModBlocks.REDWOOD_BUTTON, ModBlocks.REDWOOD_PLANKS);
         fenceItem(ModBlocks.REDWOOD_FENCE, ModBlocks.REDWOOD_PLANKS);
@@ -380,39 +401,206 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.OLIVE_SAPLING);
         basicItem(ModItems.OLIVE_SIGN.get());
         basicItem(ModItems.OLIVE_HANGING_SIGN.get());
+
+        basicItem(ModItems.ALMOND_BOAT.get());
+        basicItem(ModItems.APPLE_BOAT.get());
+        basicItem(ModItems.ASPEN_BOAT.get());
+        basicItem(ModItems.BANANA_BOAT.get());
+        basicItem(ModItems.BAOBAB_BOAT.get());
+        basicItem(ModItems.BEECH_BOAT.get());
+        basicItem(ModItems.CEDAR_BOAT.get());
+        basicItem(ModItems.CHESTNUT_BOAT.get());
+        basicItem(ModItems.CYPRESS_BOAT.get());
+        basicItem(ModItems.DATE_PALM_BOAT.get());
+        basicItem(ModItems.FIR_BOAT.get());
+        basicItem(ModItems.GREEN_OAK_BOAT.get());
+        basicItem(ModItems.HOLLY_BOAT.get());
+        basicItem(ModItems.KUNTZ_BOAT.get());
+        basicItem(ModItems.LAIRELOSSE_BOAT.get());
+        basicItem(ModItems.LARCH_BOAT.get());
+        basicItem(ModItems.LEBETHRON_BOAT.get());
+        basicItem(ModItems.LEMON_BOAT.get());
+        basicItem(ModItems.LIME_BOAT.get());
+        basicItem(ModItems.MALLORN_BOAT.get());
+        basicItem(ModItems.MANGO_BOAT.get());
+        basicItem(ModItems.MAPLE_BOAT.get());
+        basicItem(ModItems.MIRK_OAK_BOAT.get());
+        basicItem(ModItems.OLIVE_BOAT.get());
+        basicItem(ModItems.ORANGE_BOAT.get());
+        basicItem(ModItems.PALM_BOAT.get());
+        basicItem(ModItems.PEAR_BOAT.get());
+        basicItem(ModItems.PINE_BOAT.get());
+        basicItem(ModItems.PLUM_BOAT.get());
+        basicItem(ModItems.POMEGRANATE_BOAT.get());
+        basicItem(ModItems.RED_OAK_BOAT.get());
+        basicItem(ModItems.RED_MAHOGANY_BOAT.get());
+        basicItem(ModItems.REDWOOD_BOAT.get());
+        basicItem(ModItems.WILLOW_BOAT.get());
+
+        basicItem(ModItems.ALMOND_CHEST_BOAT.get());
+        basicItem(ModItems.APPLE_CHEST_BOAT.get());
+        basicItem(ModItems.ASPEN_CHEST_BOAT.get());
+        basicItem(ModItems.BANANA_CHEST_BOAT.get());
+        basicItem(ModItems.BAOBAB_CHEST_BOAT.get());
+        basicItem(ModItems.BEECH_CHEST_BOAT.get());
+        basicItem(ModItems.CEDAR_CHEST_BOAT.get());
+        basicItem(ModItems.CHESTNUT_CHEST_BOAT.get());
+        basicItem(ModItems.CYPRESS_CHEST_BOAT.get());
+        basicItem(ModItems.DATE_PALM_CHEST_BOAT.get());
+        basicItem(ModItems.FIR_CHEST_BOAT.get());
+        basicItem(ModItems.GREEN_OAK_CHEST_BOAT.get());
+        basicItem(ModItems.HOLLY_CHEST_BOAT.get());
+        basicItem(ModItems.KUNTZ_CHEST_BOAT.get());
+        basicItem(ModItems.LAIRELOSSE_CHEST_BOAT.get());
+        basicItem(ModItems.LARCH_CHEST_BOAT.get());
+        basicItem(ModItems.LEBETHRON_CHEST_BOAT.get());
+        basicItem(ModItems.LEMON_CHEST_BOAT.get());
+        basicItem(ModItems.LIME_CHEST_BOAT.get());
+        basicItem(ModItems.MALLORN_CHEST_BOAT.get());
+        basicItem(ModItems.MANGO_CHEST_BOAT.get());
+        basicItem(ModItems.MAPLE_CHEST_BOAT.get());
+        basicItem(ModItems.MIRK_OAK_CHEST_BOAT.get());
+        basicItem(ModItems.OLIVE_CHEST_BOAT.get());
+        basicItem(ModItems.ORANGE_CHEST_BOAT.get());
+        basicItem(ModItems.PALM_CHEST_BOAT.get());
+        basicItem(ModItems.PEAR_CHEST_BOAT.get());
+        basicItem(ModItems.PINE_CHEST_BOAT.get());
+        basicItem(ModItems.PLUM_CHEST_BOAT.get());
+        basicItem(ModItems.POMEGRANATE_CHEST_BOAT.get());
+        basicItem(ModItems.RED_OAK_CHEST_BOAT.get());
+        basicItem(ModItems.RED_MAHOGANY_CHEST_BOAT.get());
+        basicItem(ModItems.REDWOOD_CHEST_BOAT.get());
+        basicItem(ModItems.WILLOW_CHEST_BOAT.get());
+
+        wallItem(ModBlocks.TERRACOTTA_BRICK_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_BLACK_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_BLUE_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_BROWN_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_CYAN_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_GRAY_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_GREEN_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_LIGHT_BLUE_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_LIGHT_GRAY_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_LIME_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_MAGENTA_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_ORANGE_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_PINK_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_PURPLE_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_RED_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_WHITE_WALL.get());
+        wallItem(ModBlocks.TERRACOTTA_BRICK_YELLOW_WALL.get());
+
+        wallItem(ModBlocks.CONCRETE_BRICK_BLACK_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_BLUE_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_BROWN_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_CYAN_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_GRAY_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_GREEN_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_LIGHT_BLUE_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_LIGHT_GRAY_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_LIME_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_MAGENTA_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_ORANGE_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_PINK_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_PURPLE_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_RED_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_WHITE_WALL.get());
+        wallItem(ModBlocks.CONCRETE_BRICK_YELLOW_WALL.get());
+
+        glassPane(ModBlocks.GLASS_PANE.get());
+        glassPane(ModBlocks.WHITE_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.ORANGE_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.MAGENTA_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.LIGHT_BLUE_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.YELLOW_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.LIME_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.PINK_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.GRAY_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.LIGHT_GRAY_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.CYAN_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.PURPLE_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.BLUE_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.BROWN_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.GREEN_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.RED_STAINED_GLASS_PANE.get());
+        glassPane(ModBlocks.BLACK_STAINED_GLASS_PANE.get());
+
+        bars(ModBlocks.GOLD_BARS.get());
+        bars(ModBlocks.SILVER_BARS.get());
+        bars(ModBlocks.REED_BARS.get());
+        basicItem(ModItems.THATCH_BUNDLE.get());
+        basicItem(ModItems.PICK.get());
+
+        basicItem(ModItems.GONDORIAN_BOOTS.get());
+        basicItem(ModItems.GONDORIAN_LEGGINGS.get());
+        basicItem(ModItems.GONDORIAN_CHESTPLATE.get());
+        basicItem(ModItems.GONDORIAN_HELMET.get());
+        basicItem(ModItems.ITHILIEN_RANGER_BOOTS.get());
+        basicItem(ModItems.ITHILIEN_RANGER_LEGGINGS.get());
+        basicItem(ModItems.ITHILIEN_RANGER_CHESTPLATE.get());
+        basicItem(ModItems.ITHILIEN_RANGER_HELMET.get());
+        basicItem(ModItems.GONDORIAN_INGOT.get());
+
+        handheldItem(ModItems.GONDORIAN_PICKAXE.get());
+        handheldItem(ModItems.GONDORIAN_AXE.get());
+        handheldItem(ModItems.GONDORIAN_SHOVEL.get());
+        handheldItem(ModItems.GONDORIAN_HOE.get());
+        handheldItem(ModItems.GONDORIAN_SWORD.get());
+        handheldItem(ModItems.GONDORIAN_DAGGER.get());
+        handheldItem(ModItems.GONDORIAN_DAGGER_POISONED.get());
+        claymore(ModItems.GONDORIAN_CLAYMORE);
+        spear(ModItems.GONDORIAN_SPEAR);
+        spear(ModItems.GONDORIAN_PIKE);
+        spear(ModItems.GONDORIAN_WARHAMMER);
+       // claymore(ModItems.MORDOR_SWORD);
     }
 
     private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID,"block/" + item.getId().getPath()));
+                BFME.resource("block/" + item.getId().getPath()));
     }
 
     public void buttonItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock){
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
-                .texture("texture", ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID, "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
+                .texture("texture", BFME.resource( "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
     }
 
     public void fenceItem(DeferredBlock<Block> block, DeferredBlock<Block> baseBlock){
         this.withExistingParent(BuiltInRegistries.BLOCK.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
-                .texture("texture", ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID, "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
+                .texture("texture", BFME.resource( "block/" + BuiltInRegistries.BLOCK.getKey(baseBlock.get()).getPath()));
     }
-    private ItemModelBuilder weapon2d(DeferredItem item){
+    private ItemModelBuilder claymore(DeferredItem item){
         return withExistingParent(item.getId().getPath(),
-                ResourceLocation.withDefaultNamespace("item/handheld")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID,"item/" + item.getId().getPath()));
+                BFME.resource("item/handheld_claymore")).texture("layer0",
+                BFME.resource("item/" + item.getId().getPath()));
+    }
+    private ItemModelBuilder spear(DeferredItem item){
+        return withExistingParent(item.getId().getPath(),
+                BFME.resource("item/handheld_spear")).texture("layer0",
+                BFME.resource("item/" + item.getId().getPath()));
     }
     private ItemModelBuilder pouchItem(DeferredItem item){
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID,"item/" + item.getId().getPath())).texture("layer1",
-                ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID,"item/" + item.getId().getPath() + "_overlay"));
+                BFME.resource("item/" + item.getId().getPath())).texture("layer1",
+                BFME.resource("item/" + item.getId().getPath() + "_overlay"));
     }
     public void wallItem(Block block){
         this.withExistingParent(name(block), mcLoc("block/wall_inventory"))
                 .texture("wall", change(block, "_wall", ""));
     }
 
+    private ItemModelBuilder glassPane(Block block) {
+        return withExistingParent(name(block),
+                ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
+                change(block, "_pane", "")).renderType("translucent");
+    }
+    private ItemModelBuilder bars(Block block) {
+        return withExistingParent(name(block),
+                ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
+                blockTexture(block));
+    }
     public void buttonItem(Block block){
         this.withExistingParent(name(block), mcLoc("block/button_inventory"))
                 .texture("texture", change(block, "_button", ""));
@@ -423,12 +611,16 @@ public class ModItemModelProvider extends ItemModelProvider {
     private ItemModelBuilder simpleBlockItem(DeferredBlock<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.withDefaultNamespace("item/generated")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID,"item/" + item.getId().getPath()));
+                BFME.resource("item/" + item.getId().getPath()));
     }
     private ResourceLocation key(Block block) {
         return BuiltInRegistries.BLOCK.getKey(block);
     }
     private ResourceLocation change(Block block, String replaced, String replace) {
-        return ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID,"block/" +  key(block).getPath().replaceAll(replaced, replace));
+        return BFME.resource("block/" +  key(block).getPath().replaceAll(replaced, replace));
+    }
+    public ResourceLocation blockTexture(Block block) {
+        ResourceLocation name = this.key(block);
+        return ResourceLocation.fromNamespaceAndPath(name.getNamespace(), "block/" + name.getPath());
     }
 }
