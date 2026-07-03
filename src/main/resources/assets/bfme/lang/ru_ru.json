@@ -119,6 +119,8 @@
 
 
 
+  "entity.bfme.eagle" : "Орёл",
+  "item.bfme.eagle_spawn_egg" : "Яйцо призыва орла",
   "item.bfme.raw_amber" : "Необработанный янтарь",
   "item.bfme.raw_amethyst" : "Необработанный аметист",
   "item.bfme.raw_diamond" : "Необработанный алмаз",
@@ -156,6 +158,15 @@
   "container.small_pouch": "Маленький мешок",
   "container.medium_pouch" : "Средний мешок",
   "container.large_pouch" : "Большой мешок",
+
+  "item.bfme.small_pouch": "Маленький мешок",
+  "item.bfme.medium_pouch": "Средний мешок",
+  "item.bfme.large_pouch": "Большой мешок",
+
+  "tooltip.bfme.pouch.empty": "Пусто",
+  "tooltip.bfme.pouch.entry": "%1$s × %2$d",
+  "tooltip.bfme.pouch.more": "…и ещё %1$d предметов",
+  "tooltip.bfme.pouch.summary": "Занято %1$d из %2$d слотов (всего %3$d шт.)",
 
   "creativetab.ore_tab" : "Руды Средиземья",
   "creativetab.gondorian_tab": "Гондорские строительные блоки",

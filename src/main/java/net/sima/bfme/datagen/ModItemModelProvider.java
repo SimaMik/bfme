@@ -158,6 +158,24 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.OLIVE.get());
         basicItem(ModItems.ORANGE.get());
         basicItem(ModItems.POMEGRANATE.get());
+
+        basicItem(ModItems.GRAPE_RED.get());
+        basicItem(ModItems.GRAPE_BLACK.get());
+        basicItem(ModItems.GRAPE_WHITE.get());
+        basicItem(ModItems.PICKLE.get());
+        basicItem(ModItems.STRAWBERRY.get());
+        basicItem(ModItems.TOMATO.get());
+        basicItem(ModItems.CUCUMBER.get());
+        basicItem(ModItems.ONION.get());
+        basicItem(ModItems.CABBAGE.get());
+        basicItem(ModItems.COTTON.get());
+
+        // Seeds
+        basicItem(ModItems.TOMATO_SEEDS.get());
+        basicItem(ModItems.CABBAGE_SEEDS.get());
+        basicItem(ModItems.ONION_SEEDS.get());
+        basicItem(ModItems.CUCUMBER_SEEDS.get());
+
         buttonItem(ModBlocks.APPLE_BUTTON, ModBlocks.APPLE_PLANKS);
         fenceItem(ModBlocks.APPLE_FENCE, ModBlocks.APPLE_PLANKS);
         simpleBlockItem(ModBlocks.APPLE_DOOR);

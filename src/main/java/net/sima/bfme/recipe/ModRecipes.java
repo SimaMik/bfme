@@ -4,6 +4,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
+import net.minecraft.world.item.crafting.SimpleCraftingRecipeSerializer;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sima.bfme.BFME;
 import net.sima.bfme.recipe.recipes.HumanFurnaceRecipe;
@@ -18,6 +19,8 @@ public class ModRecipes {
             RECIPE_SERIALIZERS.register("gondorian", () -> GondorianRecipe.SERIALIZER);
     public static final Supplier<RecipeSerializer<HumanFurnaceRecipe>> HUMAN_SERIALIZER =
             RECIPE_SERIALIZERS.register("human", () -> HumanFurnaceRecipe.SERIALIZER);
+    public static final Supplier<RecipeSerializer<PouchDyeRecipe>> POUCH_DYE_SERIALIZER =
+            RECIPE_SERIALIZERS.register("pouch_dye", () -> new SimpleCraftingRecipeSerializer<>(PouchDyeRecipe::new));
 
 
     public static final DeferredRegister<RecipeType<?>> RECIPE_TYPES =

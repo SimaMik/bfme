@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sima.bfme.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "VanillaGenTimingMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

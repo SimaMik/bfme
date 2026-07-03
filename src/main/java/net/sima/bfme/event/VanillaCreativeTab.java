@@ -18,7 +18,7 @@ import javax.swing.*;
 import java.util.Arrays;
 import java.util.List;
 
-@EventBusSubscriber(modid = BFME.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@EventBusSubscriber(modid = BFME.MOD_ID, value = Dist.CLIENT)
 public class VanillaCreativeTab {
     @SubscribeEvent
     public static void buildContents(BuildCreativeModeTabContentsEvent event) {

@@ -2,10 +2,13 @@ package net.sima.bfme.item;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.ItemNameBlockItem;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sima.bfme.BFME;
 import net.sima.bfme.block.ModBlocks;
+import net.sima.bfme.entity.ModEntities;
 import net.sima.bfme.entity.custom.ModBoatEntity;
 import net.sima.bfme.item.custom.*;
 import net.sima.bfme.item.custom.armor_item.GondorianArmorItem;
@@ -22,11 +25,14 @@ public class ModItems {
             () -> new PouchItem(new Item.Properties().stacksTo(1), 18));
     public static final DeferredItem<Item> LARGE_POUCH = ITEMS.register("large_pouch",
             () -> new PouchItem(new Item.Properties().stacksTo(1), 27));
+    public static final DeferredItem<Item> PICK = ITEMS.register("pick",
+            () -> new Pickaxe(Tiers.DIAMOND, (new Item.Properties()).attributes(Pickaxe.createAttributes(Tiers.DIAMOND, 1.0F, -2.8F))));
+
+    public static final DeferredItem<Item> EAGLE_SPAWN_EGG = ITEMS.register("eagle_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.EAGLE, 0x4a3a2a, 0xe8d8b0, new Item.Properties()));
 
     public static final DeferredItem<Item> RAW_AMBER = ITEMS.register("raw_amber",
             () -> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> PICK = ITEMS.register("pick",
-            () -> new Pickaxe(Tiers.DIAMOND, (new Item.Properties()).attributes(Pickaxe.createAttributes(Tiers.DIAMOND, 1.0F, -2.8F))));
     public static final DeferredItem<Item> RAW_AMETHYST = ITEMS.register("raw_amethyst",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_DIAMOND = ITEMS.register("raw_diamond",
@@ -87,6 +93,10 @@ public class ModItems {
     public static final DeferredItem<Item> SULFUR = ITEMS.register("sulfur",
             () -> new Item(new Item.Properties()));
 
+
+    public static final DeferredItem<Item> COTTON = ITEMS.register("cotton",
+            () -> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> APPLE = ITEMS.register("apple",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(1).saturationModifier(0.2f).build())));
@@ -123,6 +133,43 @@ public class ModItems {
     public static final DeferredItem<Item> POMEGRANATE = ITEMS.register("pomegranate",
             () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> GRAPE_BLACK = ITEMS.register("grape_black",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> GRAPE_RED = ITEMS.register("grape_red",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> GRAPE_WHITE = ITEMS.register("grape_white",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> PICKLE = ITEMS.register("pickle",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> STRAWBERRY = ITEMS.register("strawberry",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> TOMATO = ITEMS.register("tomato",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> CUCUMBER = ITEMS.register("cucumber",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> ONION = ITEMS.register("onion",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+    public static final DeferredItem<Item> CABBAGE = ITEMS.register("cabbage",
+            () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(1).saturationModifier(0.2f).build())));
+
+    // Seeds
+    public static final DeferredItem<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<Item> CABBAGE_SEEDS = ITEMS.register("cabbage_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CABBAGE_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<Item> ONION_SEEDS = ITEMS.register("onion_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.ONION_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<Item> CUCUMBER_SEEDS = ITEMS.register("cucumber_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.CUCUMBER_CROP.get(), new Item.Properties()));
 
     public static final DeferredItem<Item> APPLE_SIGN = ITEMS.register("apple_sign",
             () -> new SignItem(new Item.Properties().stacksTo(16), ModBlocks.APPLE_SIGN.get(), ModBlocks.APPLE_WALL_SIGN.get()));

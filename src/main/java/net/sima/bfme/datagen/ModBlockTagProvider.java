@@ -85,6 +85,84 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 Blocks.TUFF,
                 Blocks.DEEPSLATE
         );
+        this.tag(BlockTags.LOGS)
+                .add(
+                        ModBlocks.ALMOND_LOG.get(),
+                        ModBlocks.APPLE_LOG.get(),
+                        ModBlocks.ASPEN_LOG.get(),
+                        ModBlocks.BANANA_LOG.get(),
+                        ModBlocks.BAOBAB_LOG.get(),
+                        ModBlocks.BEECH_LOG.get(),
+                        ModBlocks.CEDAR_LOG.get(),
+                        ModBlocks.CHESTNUT_LOG.get(),
+                        ModBlocks.CYPRESS_LOG.get(),
+                        ModBlocks.DATE_PALM_LOG.get(),
+                        ModBlocks.FIR_LOG.get(),
+                        ModBlocks.GREEN_OAK_LOG.get(),
+                        ModBlocks.HOLLY_LOG.get(),
+                        ModBlocks.KUNTZ_LOG.get(),
+                        ModBlocks.LAIRELOSSE_LOG.get(),
+                        ModBlocks.LARCH_LOG.get(),
+                        ModBlocks.LEBETHRON_LOG.get(),
+                        ModBlocks.LEMON_LOG.get(),
+                        ModBlocks.LIME_LOG.get(),
+                        ModBlocks.MALLORN_LOG.get(),
+                        ModBlocks.MANGO_LOG.get(),
+                        ModBlocks.MAPLE_LOG.get(),
+                        ModBlocks.MIRK_OAK_LOG.get(),
+                        ModBlocks.OLIVE_LOG.get(),
+                        ModBlocks.ORANGE_LOG.get(),
+                        ModBlocks.PALM_LOG.get(),
+                        ModBlocks.PEAR_LOG.get(),
+                        ModBlocks.PINE_LOG.get(),
+                        ModBlocks.PLUM_LOG.get(),
+                        ModBlocks.POMEGRANATE_LOG.get(),
+                        ModBlocks.RED_OAK_LOG.get(),
+                        ModBlocks.REDWOOD_LOG.get(),
+                        ModBlocks.RED_MAHOGANY_LOG.get(),
+                        ModBlocks.WILLOW_LOG.get()
+                );
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .addTag(BlockTags.LOGS);
+
+        this.tag(BlockTags.LEAVES)
+                .add(
+                        ModBlocks.ALMOND_LEAVES.get(),
+                        ModBlocks.APPLE_LEAVES.get(),
+                        ModBlocks.ASPEN_LEAVES.get(),
+                        ModBlocks.BANANA_LEAVES.get(),
+                        ModBlocks.BAOBAB_LEAVES.get(),
+                        ModBlocks.BEECH_LEAVES.get(),
+                        ModBlocks.CEDAR_LEAVES.get(),
+                        ModBlocks.CHESTNUT_LEAVES.get(),
+                        ModBlocks.CYPRESS_LEAVES.get(),
+                        ModBlocks.DATE_PALM_LEAVES.get(),
+                        ModBlocks.FIR_LEAVES.get(),
+                        ModBlocks.GREEN_OAK_LEAVES.get(),
+                        ModBlocks.HOLLY_LEAVES.get(),
+                        ModBlocks.KUNTZ_LEAVES.get(),
+                        ModBlocks.LAIRELOSSE_LEAVES.get(),
+                        ModBlocks.LARCH_LEAVES.get(),
+                        ModBlocks.LEBETHRON_LEAVES.get(),
+                        ModBlocks.LEMON_LEAVES.get(),
+                        ModBlocks.LIME_LEAVES.get(),
+                        ModBlocks.MALLORN_LEAVES.get(),
+                        ModBlocks.MANGO_LEAVES.get(),
+                        ModBlocks.MAPLE_LEAVES.get(),
+                        ModBlocks.MIRK_OAK_LEAVES.get(),
+                        ModBlocks.OLIVE_LEAVES.get(),
+                        ModBlocks.ORANGE_LEAVES.get(),
+                        ModBlocks.PALM_LEAVES.get(),
+                        ModBlocks.PEAR_LEAVES.get(),
+                        ModBlocks.PINE_LEAVES.get(),
+                        ModBlocks.PLUM_LEAVES.get(),
+                        ModBlocks.POMEGRANATE_LEAVES.get(),
+                        ModBlocks.RED_OAK_LEAVES.get(),
+                        ModBlocks.REDWOOD_LEAVES.get(),
+                        ModBlocks.RED_MAHOGANY_LEAVES.get(),
+                        ModBlocks.WILLOW_LEAVES.get()
+                );
 
 
 
@@ -697,7 +775,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 ModBlocks.CONCRETE_BRICK_PURPLE_VERTICAL_SLAB.get(),
                 ModBlocks.CONCRETE_BRICK_RED_VERTICAL_SLAB.get(),
                 ModBlocks.CONCRETE_BRICK_WHITE_VERTICAL_SLAB.get(),
-                ModBlocks.CONCRETE_BRICK_YELLOW_VERTICAL_SLAB.get());
+                ModBlocks.CONCRETE_BRICK_YELLOW_VERTICAL_SLAB.get(),
+
+                ModBlocks.WHITE_LIMESTONE.get(),
+                ModBlocks.WHITE_LIMESTONE_BRICKS.get(),
+                ModBlocks.WHITE_LIMESTONE_BRICKWORK.get(),
+                ModBlocks.POLISHED_WHITE_LIMESTONE.get(),
+                ModBlocks.WHITE_LIMESTONE_PILLAR.get());
         this.tag(BlockTags.WALLS).add(
          ModBlocks.GONDORIAN_STONE_WALL.get(),
                         ModBlocks.GONDORIAN_MOSSY_STONE_WALL.get(),

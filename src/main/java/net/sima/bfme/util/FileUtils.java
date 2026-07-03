@@ -1,14 +1,10 @@
 package net.sima.bfme.util;
 
-import net.sima.bfme.worldgen.chunkgen.map.ImageUtils;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.awt.image.ConvolveOp;
-import java.awt.image.Kernel;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
+import java.net.URL;
 
 public class FileUtils {
 
@@ -29,7 +25,8 @@ public class FileUtils {
 
     public BufferedImage getResourceImage(String path) {
         try {
-            return ImageUtils.fetchResourceImage(getClass().getClassLoader(), path);
+            URL resource = getClass().getClassLoader().getResource(path);
+            return ImageIO.read(resource);
         } catch (IOException e) {
             e.printStackTrace(); // Для отладки ошибок чтения изображения
             return null;
@@ -59,44 +56,4 @@ public class FileUtils {
         }
     }
 
-    /**
-     * TODO : Optimise this part, it the longest process in World-Gen
-     */
-    public static BufferedImage blur(BufferedImage image, int brushSize, float ratio) {
-        // Create new expended image :
-        int width = image.getWidth();
-        int height = image.getHeight();
-        int newWidth = width + (2 * brushSize);
-        int newHeight = height + (2 * brushSize);
-
-        BufferedImage expendedImage = new BufferedImage(newWidth, newHeight, image.getType());
-        // Copy image content
-        for (int x = 0; x < width; x++) {
-            for (int y = 0; y < height; y++) {
-                expendedImage.setRGB(x + brushSize, y + brushSize, image.getRGB(x, y));
-            }
-        }
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < brushSize; x++) {
-                expendedImage.setRGB(x, y + brushSize, image.getRGB(0, y)); // Left edge
-                expendedImage.setRGB(width + brushSize + x, y + brushSize, image.getRGB(width - 1, y)); // Right edge
-            }
-        }
-
-        for (int x = 0; x < width + 2 * brushSize; x++) {
-            for (int y = 0; y < brushSize; y++) {
-                expendedImage.setRGB(x, y, expendedImage.getRGB(x, brushSize)); // Top edge
-                expendedImage.setRGB(x, height + brushSize + y, expendedImage.getRGB(x, height + brushSize - 1)); // Bottom edge
-            }
-        }
-
-        float[] blurKernel = new float[brushSize * brushSize];
-        Arrays.fill(blurKernel, ratio);
-        Kernel kernel = new Kernel(brushSize, brushSize, blurKernel);
-        ConvolveOp op = new ConvolveOp(kernel, ConvolveOp.EDGE_NO_OP, null);
-
-        expendedImage = op.filter(expendedImage, null);
-
-        return expendedImage.getSubimage(brushSize, brushSize, width, height);
-    }
 }

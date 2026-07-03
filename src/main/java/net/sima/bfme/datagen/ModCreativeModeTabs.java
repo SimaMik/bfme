@@ -1803,6 +1803,7 @@ public class ModCreativeModeTabs {
 //                        output.accept(ModBlocks.BIG_WOOD_SHELF.get());
 //                        output.accept(ModItems.RHINO_SPAWN_EGG.get());
 //                        output.accept(ModBlocks.OAK_CHEST.get());
+                        output.accept(ModItems.EAGLE_SPAWN_EGG.get());
                         output.accept(ModItems.GONDORIAN_HAMMER.get());
                         output.accept(ModBlocks.GONDORIAN_CRAFTING_TABLE.get());
                         output.accept(ModBlocks.HUMAN_FURNACE.get());
@@ -1850,10 +1851,33 @@ output.accept(ModItems.GONDORIAN_SWORD.get());
 output.accept(ModItems.GONDORIAN_SPEAR.get());
 output.accept(ModItems.GONDORIAN_PIKE.get());
 output.accept(ModItems.GONDORIAN_WARHAMMER.get());
+
+                        output.accept(ModBlocks.WHITE_LIMESTONE.get());
+                        output.accept(ModBlocks.WHITE_LIMESTONE_BRICKS.get());
+                        output.accept(ModBlocks.WHITE_LIMESTONE_BRICKWORK.get());
+                        output.accept(ModBlocks.POLISHED_WHITE_LIMESTONE.get());
+                        output.accept(ModBlocks.WHITE_LIMESTONE_PILLAR.get());
 //                        output.accept(ModBlocks.INKWELL.get());
                         output.accept(ModBlocks.GOLD_BARS.get());
                         output.accept(ModBlocks.SILVER_BARS.get());
 
+
+                        output.accept(ModItems.COTTON.get());
+                        output.accept(ModItems.PICKLE.get());
+                        output.accept(ModItems.TOMATO.get());
+                        output.accept(ModItems.CUCUMBER.get());
+                        output.accept(ModItems.ONION.get());
+                        output.accept(ModItems.CABBAGE.get());
+                        output.accept(ModItems.STRAWBERRY.get());
+                        output.accept(ModItems.GRAPE_RED.get());
+                        output.accept(ModItems.GRAPE_BLACK.get());
+                        output.accept(ModItems.GRAPE_WHITE.get());
+
+                        // Seeds
+                        output.accept(ModItems.TOMATO_SEEDS.get());
+                        output.accept(ModItems.CABBAGE_SEEDS.get());
+                        output.accept(ModItems.ONION_SEEDS.get());
+                        output.accept(ModItems.CUCUMBER_SEEDS.get());
 
                     }).withTabsBefore(ResourceLocation.fromNamespaceAndPath(BFME.MOD_ID, "food_tab")).build());
 

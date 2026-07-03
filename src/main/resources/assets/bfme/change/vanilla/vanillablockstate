@@ -1,18 +1,18 @@
 
-            vanillaRotatedSlab(ModBlocks.STRIPPED_CHERRY_LOG_SLAB.get());
+            slabVanillaRotated(ModBlocks.STRIPPED_CHERRY_LOG_SLAB.get());
             stairsVanillaRotated(ModBlocks.STRIPPED_CHERRY_LOG_STAIRS.get());
-            verticalVanillaHorizontalSlab(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.get());
+            verticalSlabHorizontalVanilla(ModBlocks.STRIPPED_CHERRY_LOG_VERTICAL_SLAB.get());
 
-            vanillaRotatedSlab(ModBlocks.CHERRY_LOG_SLAB.get());
+            slabVanillaRotated(ModBlocks.CHERRY_LOG_SLAB.get());
             stairsVanillaRotated(ModBlocks.CHERRY_LOG_STAIRS.get());
-            verticalVanillaHorizontalSlab(ModBlocks.CHERRY_LOG_VERTICAL_SLAB.get());
+            verticalSlabHorizontalVanilla(ModBlocks.CHERRY_LOG_VERTICAL_SLAB.get());
 
-            wvanillaRotatedSlab(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.get());
-            wstairsVanillaRotated(ModBlocks.STRIPPED_CHERRY_WOOD_STAIRS.get());
-            wverticalVanillaHorizontalSlab(ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.get());
+            slabWoodVanilla(ModBlocks.STRIPPED_CHERRY_WOOD_SLAB.get());
+            stairsWoodVanilla(ModBlocks.STRIPPED_CHERRY_WOOD_STAIRS.get());
+            woodVanillaVerticalSlab(ModBlocks.STRIPPED_CHERRY_WOOD_VERTICAL_SLAB.get());
 
-            wvanillaRotatedSlab(ModBlocks.CHERRY_WOOD_SLAB.get());
-            wstairsVanillaRotated(ModBlocks.CHERRY_WOOD_STAIRS.get());
-            wverticalVanillaHorizontalSlab(ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.get());
+            slabWoodVanilla(ModBlocks.CHERRY_WOOD_SLAB.get());
+            stairsWoodVanilla(ModBlocks.CHERRY_WOOD_STAIRS.get());
+            woodVanillaVerticalSlab(ModBlocks.CHERRY_WOOD_VERTICAL_SLAB.get());
 
-            verticalVanillaSlab(ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get());
+            verticalSlabVanilla(ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get());

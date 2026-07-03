@@ -24,8 +24,7 @@ import net.sima.bfme.worldgen.chunkgen.BFMEChunkGenerator;
 import java.util.List;
 import java.util.OptionalLong;
 
-import static net.minecraft.world.level.biome.Biomes.DRIPSTONE_CAVES;
-import static net.minecraft.world.level.biome.Biomes.LUSH_CAVES;
+// Cave biomes now custom: BFMEBiomeKeys.CAVE_LUSH, CAVE_DRIPSTONE, CAVE_CRYSTAL
 
 public class ModDimensions {
     public static final ResourceKey<LevelStem> BFME_KEY = ResourceKey.create(Registries.LEVEL_STEM,
@@ -48,8 +47,8 @@ public class ModDimensions {
                 1.0, // coordinateScale
                 true, // bedWorks
                 false, // respawnAnchorWorks
-                -128, // minY
-                576, // height
+                -192, // minY
+                640, // height
                 448, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
                 BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
@@ -57,10 +56,16 @@ public class ModDimensions {
                 new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
     }
 
+    // === Переключатель генераторов ===
+    // 0 = heightmap генератор (BFMEChunkGenerator + HeightMapV10)
+    // 1 = density-based генератор (BFMEDensityChunkGenerator)
+    public static final int GENERATOR_TYPE = 0;
+
     // Регистрация генератора чанков
     public static void registerChunkGenerator(RegisterEvent event) {
-        event.register(Registries.CHUNK_GENERATOR, helper ->
-                helper.register(BFME.resource("bfme_chunk_generator"), BFMEChunkGenerator.MAP_CODEC));
+        event.register(Registries.CHUNK_GENERATOR, helper -> {
+            helper.register(BFME.resource("bfme_chunk_generator"), BFMEChunkGenerator.MAP_CODEC);
+        });
     }
 
     // Регистрация источника биомов
@@ -77,33 +82,58 @@ public class ModDimensions {
         HolderGetter<Biome> biomeGetter = context.lookup(Registries.BIOME);
 
         List<Holder.Reference<Biome>> biomes = List.of(
+                // Gondor / Anórien / Pelennor
                 biomeGetter.getOrThrow(BFMEBiomeKeys.PELENNOR_PLAINS),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.FIRIEN_WOOD),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.DRUADAN_FOREST),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.GREYWOOD),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.ANDUIN_BANKS),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.ENTWASH),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.WHITE_MOUNTAINS),
-                biomeGetter.getOrThrow(BFMEBiomeKeys.WHITE_MOUNTAINS_FOOTHILLS),
-                biomeGetter.getOrThrow(LUSH_CAVES),
-                biomeGetter.getOrThrow(DRIPSTONE_CAVES)
+                biomeGetter.getOrThrow(BFMEBiomeKeys.LOSSARNACH_FARMLANDS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.ANORIEN_OPEN_LANDS),
 
+                // Ithilien + local forests
+                biomeGetter.getOrThrow(BFMEBiomeKeys.NORTH_ITHILIEN),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.SOUTH_ITHILIEN),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.DRUADAN_FOREST),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.GREY_WOOD),
+
+                // Rivers & lowlands
+                biomeGetter.getOrThrow(BFMEBiomeKeys.RIVER_ANDUIN),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.ANDUIN_BANKS),
+
+                // Hills / transitional
+                biomeGetter.getOrThrow(BFMEBiomeKeys.EILENACH_MOORLANDS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.AMON_DIN_HILLS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.EMYN_ARNEN_HILLS),
+
+                // White Mountains
+                biomeGetter.getOrThrow(BFMEBiomeKeys.WHITE_MOUNTAINS_FOOTHILLS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.WHITE_MOUNTAINS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.WHITE_MOUNTAINS_PEAKS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.WHITE_MOUNTAINS_HIGH_PEAKS),
+
+                // Special locations
+                biomeGetter.getOrThrow(BFMEBiomeKeys.CAIR_ANDROS),
+
+                // Mordor
+                biomeGetter.getOrThrow(BFMEBiomeKeys.DAGORLAD_WASTES),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.GORGOROTH_PLAINS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.EPHEL_DUATH),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.EPHEL_DUATH_PEAKS),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.EPHEL_DUATH_BLACK_PEAKS),
+
+                // Cave biomes
+                biomeGetter.getOrThrow(BFMEBiomeKeys.CAVE_LUSH),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.CAVE_DRIPSTONE),
+                biomeGetter.getOrThrow(BFMEBiomeKeys.CAVE_CRYSTAL)
         );
 
         HolderSet<Biome> biomeHolderSet = HolderSet.direct(biomes);
-
         BFMEBiomeSource biomeSource = new BFMEBiomeSource(biomeHolderSet);
 
-        // Создаем LevelStem
-        LevelStem bfmeLevelStem = new LevelStem(
-                dimensionTypeHolder,
-                new BFMEChunkGenerator(biomeSource)
-        );
+            System.out.println("[ModDimensions] Using heightmap chunk generator");
+        LevelStem bfmeLevelStem = new LevelStem(dimensionTypeHolder, new BFMEChunkGenerator(biomeSource));
+
 
         context.register(BFME_KEY, bfmeLevelStem);
     }
 
-    // Метод для телепортации игрока в измерение BFME
     public static void teleportPlayerToBFME(ServerPlayer player) {
         ServerLevel bfmeWorld = player.getServer().getLevel(BFME_LEVEL_KEY);
         if (bfmeWorld == null) {
@@ -123,7 +153,6 @@ public class ModDimensions {
         player.displayClientMessage(Component.literal("Добро пожаловать в BFME!"), true);
     }
 
-    // Проверка: находится ли игрок в измерении BFME
     public static boolean isInBFME(ServerLevel world) {
         return world.dimension().equals(BFME_LEVEL_KEY);
     }

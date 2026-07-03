@@ -1,23 +1,16 @@
 package net.sima.bfme.renderer;
 
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.tooltip.TooltipComponent;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.level.GameType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.RegisterGuiLayersEvent;
-import net.neoforged.neoforge.client.event.RenderGuiEvent;
 import net.neoforged.neoforge.client.event.RenderGuiLayerEvent;
-import net.neoforged.neoforge.client.event.RenderTooltipEvent;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 import net.sima.bfme.BFME;
 
@@ -38,6 +31,33 @@ public class HealthHUDRenderer {
     private static final int FRAME_OFFSET_X = 1;
     private static final int FRAME_OFFSET_Y = 1;
 
+    /**
+     * Проверяет, нужно ли рендерить HUD
+     */
+    private static boolean shouldRenderHUD() {
+        Minecraft mc = Minecraft.getInstance();
+
+        // Нет игрока
+        if (mc.player == null) return false;
+
+        // Спектатор — не показываем
+        if (mc.gameMode != null && mc.gameMode.getPlayerMode() == GameType.SPECTATOR) {
+            return false;
+        }
+
+        // Открыт какой-то экран (меню, карта, инвентарь и т.д.) — не показываем
+        if (mc.screen != null) {
+            return false;
+        }
+
+        // HUD скрыт (F1)
+        if (mc.options.hideGui) {
+            return false;
+        }
+
+        return true;
+    }
+
     @SubscribeEvent
     public static void offRenderGuiOverlay(RenderGuiLayerEvent.Pre event) {
         if (event.getName().equals(VanillaGuiLayers.PLAYER_HEALTH)
@@ -49,10 +69,9 @@ public class HealthHUDRenderer {
     }
 
     public static void renderBG(GuiGraphics guiGraphics) {
+        if (!shouldRenderHUD()) return;
+
         Player player = Minecraft.getInstance().player;
-        if (player == null) {
-            return;
-        }
 
         int scaledWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
         int scaledHeight = Minecraft.getInstance().getWindow().getGuiScaledHeight();
@@ -66,10 +85,9 @@ public class HealthHUDRenderer {
     }
 
     public static void renderFR(GuiGraphics guiGraphics) {
+        if (!shouldRenderHUD()) return;
+
         Player player = Minecraft.getInstance().player;
-        if (player == null) {
-            return;
-        }
 
         int scaledWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
         int scaledHeight = Minecraft.getInstance().getWindow().getGuiScaledHeight();
@@ -88,17 +106,18 @@ public class HealthHUDRenderer {
         guiGraphics.blit(BAR_BACKGROUND_TEXTURE, x, y, 0, 0, BAR_WIDTH, BAR_HEIGHT);
         RenderSystem.disableBlend();
     }
+
     private static void renderFrame(GuiGraphics guiGraphics, int x, int y){
         RenderSystem.setShaderTexture(0, BAR_FRAME_TEXTURE);
         RenderSystem.enableBlend();
         guiGraphics.blit(BAR_FRAME_TEXTURE, x, y, 0, 0, BAR_WIDTH, BAR_HEIGHT);
         RenderSystem.disableBlend();
     }
+
     public static void renderCustomHealth(GuiGraphics guiGraphics) {
+        if (!shouldRenderHUD()) return;
+
         Player player = Minecraft.getInstance().player;
-        if (player == null) {
-            return;
-        }
 
         int scaledWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
         int scaledHeight = Minecraft.getInstance().getWindow().getGuiScaledHeight();
@@ -119,6 +138,7 @@ public class HealthHUDRenderer {
         float saturationRatio = foodLevel / (float) maxFoodLevel;
         renderFill(guiGraphics, x, y, saturationRatio, foodLevel + " / " + maxFoodLevel);
     }
+
     private static void renderFill(GuiGraphics guiGraphics, int x, int y, float fillRatio, String text) {
         // Рисуем заполненную часть с учётом смещения
         int fillWidth = (int) (BAR_WIDTH * fillRatio);
@@ -130,7 +150,7 @@ public class HealthHUDRenderer {
         // Отрисовка текста с измененным размером
         Font font = Minecraft.getInstance().font;
         int textWidth = font.width(text);
-        float scale = 0.75f; // Измените масштаб (1.0f = оригинальный размер, 0.75f = меньше на 25%)
+        float scale = 0.75f;
 
         guiGraphics.pose().pushPose();
         guiGraphics.pose().scale(scale, scale, scale);
@@ -138,12 +158,11 @@ public class HealthHUDRenderer {
         guiGraphics.drawString(
                 font,
                 text,
-                (int) ((x + (BAR_WIDTH - textWidth) / 2 + 5) / scale), // Пересчет координат с учетом масштаба
+                (int) ((x + (BAR_WIDTH - textWidth) / 2 + 5) / scale),
                 (int) ((y + (BAR_HEIGHT / 2) - 2) / scale),
                 0xFFFFFF
         );
 
         guiGraphics.pose().popPose();
     }
-
 }

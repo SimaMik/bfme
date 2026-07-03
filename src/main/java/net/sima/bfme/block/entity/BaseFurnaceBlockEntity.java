@@ -102,10 +102,8 @@ public abstract class BaseFurnaceBlockEntity extends BaseContainerBlockEntity im
         boolean wasLit = blockEntity.isLit();
         boolean stateChanged = false;
 
-        // Обработка топлива
         blockEntity.handleFuel();
 
-        // Обработка готовки
         if (blockEntity.isLit() && blockEntity.canBurn()) {
             blockEntity.cookingProgress++;
             if (blockEntity.cookingProgress >= blockEntity.cookingTotalTime) {
@@ -117,7 +115,6 @@ public abstract class BaseFurnaceBlockEntity extends BaseContainerBlockEntity im
             blockEntity.cookingProgress = 0;
         }
 
-        // Обновление состояния блока
         if (wasLit != blockEntity.isLit()) {
             stateChanged = true;
             state = state.setValue(AbstractFurnaceBlock.LIT, blockEntity.isLit());
@@ -229,8 +226,6 @@ public abstract class BaseFurnaceBlockEntity extends BaseContainerBlockEntity im
             setRecipeUsed(optionalRecipe.get());
         }
     }
-
-
 
     Optional<RecipeHolder<BaseFurnaceRecipe>> getCurrentRecipe() {
         for (int i = 0; i < TOTAL_INPUT_SLOTS / 2; i++) {

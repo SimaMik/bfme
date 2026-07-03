@@ -20,7 +20,7 @@ import java.util.concurrent.CompletableFuture;
 import static net.sima.bfme.worldgen.dimension.ModDimensions.registerBiomeSource;
 import static net.sima.bfme.worldgen.dimension.ModDimensions.registerChunkGenerator;
 
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, modid = BFME.MOD_ID)
+@EventBusSubscriber(modid = BFME.MOD_ID)
 public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {

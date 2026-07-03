@@ -54,9 +54,9 @@
         column(ModBlocks.NUMENOREAN_COLUMN.get());
         column(ModBlocks.NUMENOREAN_MOSSY_COLUMN.get());
         column(ModBlocks.NUMENOREAN_CRACKED_COLUMN.get());
-        pillarSlab(ModBlocks.NUMENOREAN_PILLAR_SLAB.get());
-        pillarSlab(ModBlocks.NUMENOREAN_MOSSY_PILLAR_SLAB.get());
-        pillarSlab(ModBlocks.NUMENOREAN_CRACKED_PILLAR_SLAB.get());
+        slabPillar(ModBlocks.NUMENOREAN_PILLAR_SLAB.get());
+        slabPillar(ModBlocks.NUMENOREAN_MOSSY_PILLAR_SLAB.get());
+        slabPillar(ModBlocks.NUMENOREAN_CRACKED_PILLAR_SLAB.get());
 
         wall(ModBlocks.NUMENOREAN_STONE_WALL.get());
         wall(ModBlocks.NUMENOREAN_MOSSY_STONE_WALL.get());

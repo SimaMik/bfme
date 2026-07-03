@@ -23,12 +23,10 @@ public class ModMenuTypes {
             MENUS.register("gondorian_menu", () -> new MenuType(GondorianCraftingMenu::create, FeatureFlags.DEFAULT_FLAGS));
     public static final DeferredHolder<MenuType<?>, MenuType<PrivateBlockMenu>> PRIVATE_BLOCK_MENU =
             registerMenuType("pedestal_menu", PrivateBlockMenu::new);
-    public static final Supplier<MenuType<SmallPouchContainer>> SMALL_POUCH =
-            MENUS.register("small_pouch", () -> new MenuType(SmallPouchContainer::new, FeatureFlags.DEFAULT_FLAGS));
-    public static final Supplier<MenuType<MediumPouchContainer>> MEDIUM_POUCH =
-            MENUS.register("medium_pouch", () -> new MenuType(MediumPouchContainer::new, FeatureFlags.DEFAULT_FLAGS));
-    public static final Supplier<MenuType<LargePouchContainer>> LARGE_POUCH =
-            MENUS.register("large_pouch", () -> new MenuType(LargePouchContainer::new, FeatureFlags.DEFAULT_FLAGS));
+    public static final DeferredHolder<MenuType<?>, MenuType<PouchContainer>> POUCH =
+            registerMenuType("pouch", PouchContainer::new);
+    public static final DeferredHolder<MenuType<?>, MenuType<PouchChestMenu>> POUCH_CHEST =
+            registerMenuType("pouch_chest", PouchChestMenu::new);
     public static final Supplier<MenuType<HumanFurnaceMenu>> HUMAN_FURNACE =
             MENUS.register("human_furnace", () -> new MenuType(HumanFurnaceMenu::new, FeatureFlags.DEFAULT_FLAGS));
 

@@ -22,6 +22,10 @@ public class BFMEMapRuntime {
     private int latestValidationTick = 0;
     private int currentValidationBlockCount = 0;
 
+    // Кэш биомов для быстрого доступа (ключ = packed coords)
+    private final ConcurrentHashMap<Long, BFMEBiome> biomeCache = new ConcurrentHashMap<>();
+    private static final int BIOME_CACHE_MAX_SIZE = 500000;
+
     public static synchronized BFMEMapRuntime getInstance()
     {
         if (single_instance == null)
@@ -39,21 +43,47 @@ public class BFMEMapRuntime {
     }
 
     public BFMEBiome getBiome(int posX, int posZ) {
-        if(!bfmeMapUtils.isWorldCoordinateInBorder(posX, posZ)) return BFMEBiomesData.defaultBiome;
+        // Проверяем кэш сначала
+        long cacheKey = ((long) posX << 32) | (posZ & 0xFFFFFFFFL);
+        BFMEBiome cached = biomeCache.get(cacheKey);
+        if (cached != null) {
+            return cached;
+        }
 
-        BFMEMapRegion region = getRegionToUse(bfmeMapUtils.getRegionByWorldCoordinate(posX, posZ));
-        if(region == null) return BFMEBiomesData.defaultBiome;
+        // Вычисляем биом
+        BFMEBiome result;
+        if (!bfmeMapUtils.isWorldCoordinateInBorder(posX, posZ)) {
+            result = BFMEBiomesData.defaultBiome;
+        } else {
+            BFMEMapRegion region = getRegionToUseNoValidation(bfmeMapUtils.getRegionByWorldCoordinate(posX, posZ));
+            if (region == null) {
+                result = BFMEBiomesData.defaultBiome;
+            } else {
+                result = region.getBiome(getImageCoordinates(posX, posZ));
+            }
+        }
 
-        return region.getBiome(getImageCoordinates(posX, posZ));
+        // Кэшируем
+        if (biomeCache.size() >= BIOME_CACHE_MAX_SIZE) {
+            biomeCache.clear();
+        }
+        biomeCache.put(cacheKey, result);
+
+        return result;
     }
 
-    public Color getHeight(int posX, int posZ) {
-        if(!bfmeMapUtils.isWorldCoordinateInBorder(posX, posZ)) return null;
+    // Версия без purgeRegions для быстрого доступа во время генерации
+    private BFMEMapRegion getRegionToUseNoValidation(Vector2i regionCoordinate) {
+        BFMEMapRegion region = regions.get(regionCoordinate);
+        if (region != null) {
+            return region;
+        }
 
-        BFMEMapRegion region = getRegionToUse(bfmeMapUtils.getRegionByWorldCoordinate(posX, posZ));
-        if(region == null) return null;
+        // Создаём и кладём в map
+        BFMEMapRegion newRegion = new BFMEMapRegion(regionCoordinate);
+        regions.put(regionCoordinate, newRegion);
 
-        return region.getHeightColor(getImageCoordinates(posX, posZ));
+        return newRegion;
     }
 
     private Vector2i getImageCoordinates(int posX, int posZ){
@@ -67,12 +97,18 @@ public class BFMEMapRuntime {
 
         purgeRegions(); // Очистка регионов
 
-        if (regions.containsKey(regionCoordinate)) {
-            return regions.get(regionCoordinate);
+        BFMEMapRegion region = regions.get(regionCoordinate);
+        if (region != null) {
+            return region;
         }
 
-        return regions.put(regionCoordinate, new BFMEMapRegion(regionCoordinate));
+        // Создаём и кладём в map
+        BFMEMapRegion newRegion = new BFMEMapRegion(regionCoordinate);
+        regions.put(regionCoordinate, newRegion);
+
+        return newRegion;
     }
+
 
     private void purgeRegions() {
         // Block delay

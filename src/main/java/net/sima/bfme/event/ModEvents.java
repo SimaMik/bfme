@@ -148,6 +148,7 @@ public class ModEvents {
         new GetReputationCommand(event.getDispatcher());
         new TeleportToBFMECommand(event.getDispatcher());
         ConfigCommand.register(event.getDispatcher());
+        BFMEDebugCommand.register(event.getDispatcher());
     }
 
     @SubscribeEvent

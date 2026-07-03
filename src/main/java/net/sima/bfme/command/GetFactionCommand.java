@@ -25,7 +25,6 @@ public class GetFactionCommand {
             return 0;
         }
 
-        // Получаем данные игрока
         PlayerData playerData = player.getCapability(PlayerDataProvider.PLAYER_DATA_CAPABILITY, null);
 
         if (playerData != null) {

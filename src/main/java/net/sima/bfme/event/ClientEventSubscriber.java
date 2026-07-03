@@ -2,6 +2,7 @@
 
     import net.minecraft.client.model.BoatModel;
     import net.minecraft.client.model.ChestBoatModel;
+    import net.sima.bfme.entity.client.EagleModel;
     import net.neoforged.api.distmarker.Dist;
     import net.neoforged.bus.api.SubscribeEvent;
     import net.neoforged.fml.common.EventBusSubscriber;
@@ -17,15 +18,14 @@
 
     import static net.sima.bfme.renderer.HealthHUDRenderer.*;
 
-    @EventBusSubscriber(modid = BFME.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = BFME.MOD_ID, value = Dist.CLIENT)
     public class ClientEventSubscriber {
         @SubscribeEvent
         public static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
             event.register(ModMenuTypes.GONDORIAN_CRAFTING.get(), GondorianWorkbenchScreen::new);
             event.register(ModMenuTypes.HUMAN_FURNACE.get(), HumanFurnaceScreen::new);
-            event.register(ModMenuTypes.SMALL_POUCH.get(), SmallPouchScreen::new);
-            event.register(ModMenuTypes.MEDIUM_POUCH.get(), MediumPouchScreen::new);
-            event.register(ModMenuTypes.LARGE_POUCH.get(), LargePouchScreen::new);
+            event.register(ModMenuTypes.POUCH.get(), PouchScreen::new);
+            event.register(ModMenuTypes.POUCH_CHEST.get(), PouchChestScreen::new);
             event.register(ModMenuTypes.PRIVATE_BLOCK_MENU.get(), PrivateBlockScreen::new);
         }
 
@@ -113,5 +113,7 @@
             event.registerLayerDefinition(ModModelLayers.RED_MAHOGANY_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
             event.registerLayerDefinition(ModModelLayers.REDWOOD_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
             event.registerLayerDefinition(ModModelLayers.WILLOW_CHEST_BOAT_LAYER, ChestBoatModel::createBodyModel);
+
+            event.registerLayerDefinition(ModModelLayers.EAGLE_LAYER, EagleModel::createBodyLayer);
         }
     }

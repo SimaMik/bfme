@@ -421,6 +421,8 @@
   "block.bfme.sulfur_block" : "Sulfur Block",
   "block.bfme.glowstone_ore" : "Glowstone Ore",
   "block.bfme.deepslate_glowstone_ore" : "Deepslate Glowstone Ore",
+  "entity.bfme.eagle" : "Eagle",
+  "item.bfme.eagle_spawn_egg" : "Eagle Spawn Egg",
   "item.bfme.raw_amber" : "Raw Amber",
   "item.bfme.raw_amethyst" : "Raw Amethyst",
   "item.bfme.raw_diamond" : "Raw Diamond",
@@ -532,6 +534,15 @@
   "container.small_pouch": "Small Pouch",
   "container.medium_pouch" : "Medium Pouch",
   "container.large_pouch" : "Large Pouch",
+
+  "item.bfme.small_pouch": "Small Pouch",
+  "item.bfme.medium_pouch": "Medium Pouch",
+  "item.bfme.large_pouch": "Large Pouch",
+
+  "tooltip.bfme.pouch.empty": "Empty",
+  "tooltip.bfme.pouch.entry": "%1$s × %2$d",
+  "tooltip.bfme.pouch.more": "…and %1$d more",
+  "tooltip.bfme.pouch.summary": "%1$d/%2$d slots filled (%3$d total)",
 
   "creativetab.gondorian_tab": "Gondorian Building Blocks",
   "creativetab.durin_tab": "Durin Building Blocks",

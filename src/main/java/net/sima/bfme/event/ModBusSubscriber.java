@@ -16,7 +16,7 @@ import net.sima.bfme.BFME;
 import net.sima.bfme.item.ModItems;
 import net.sima.bfme.player.PlayerDataProvider;
 
-@EventBusSubscriber(modid = BFME.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = BFME.MOD_ID)
 public class ModBusSubscriber {
 
     @SubscribeEvent

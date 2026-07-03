@@ -1,12 +1,12 @@
-// 1.21.1	2025-01-10T19:58:41.1401842	Block Tags
+// 1.21.1	2026-06-11T15:05:41.8924221	Block Tags
 28664f209d59643cd660ffecc4ec013d2b0ccf68 data/bfme/tags/block/incorrect_for_gondorian_tool.json
 05f052357dc31ec497ce66b117370b9e1c4dbcfd data/bfme/tags/block/miner_blocks.json
 7eb9a4069e2f86d6e41094887b0f5ce87849f9bc data/bfme/tags/block/ores.json
 e41e8968773bc2062a460f5b6a877ef03b3ab327 data/minecraft/tags/block/fence_gates.json
-162474e9a16cda1e1ed8d909b44268ee4434e208 data/minecraft/tags/block/leaves.json
-59d3a2128c237996fefefd87afb7ed5d2ebf2030 data/minecraft/tags/block/logs.json
-9c33e761a4f23baa98bffcfaa4ee61dd4387bc46 data/minecraft/tags/block/logs_that_burn.json
-5a9403e9d8b5297fdd82e8f2f1629e7542963805 data/minecraft/tags/block/mineable/pickaxe.json
+cccb1aa84c79709296367915b9edd5176131a9e7 data/minecraft/tags/block/leaves.json
+6a53c50a419788553fa4f4018e055dff378f2122 data/minecraft/tags/block/logs.json
+562e04e035061c70c3455da0d6dfb4bd3bdb99b6 data/minecraft/tags/block/logs_that_burn.json
+5c7b888d8a3d8af76c4af1b315cbc2c95b84d9d4 data/minecraft/tags/block/mineable/pickaxe.json
 2851e5b07eb60e9bf1bb836585235d79c0ce1837 data/minecraft/tags/block/needs_iron_tool.json
 457ef51edbbc661f90049b0389bdcaf0c5c98233 data/minecraft/tags/block/planks.json
 d6b6547d8a75e6ae056c63eb6e376f56bfb3cdf3 data/minecraft/tags/block/saplings.json

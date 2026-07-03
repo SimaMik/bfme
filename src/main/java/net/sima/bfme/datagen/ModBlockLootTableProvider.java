@@ -25,6 +25,7 @@ import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.fml.common.Mod;
 import net.sima.bfme.block.ModBlocks;
+import net.sima.bfme.block.custom.ModCropBlock;
 import net.sima.bfme.block.custom.ModFruitLeaves;
 import net.sima.bfme.item.ModItems;
 
@@ -3087,6 +3088,36 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.add(ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CHERRY_PLANKS_VERTICAL_SLAB.get()));
 
+        // White limestone
+        this.dropSelf(ModBlocks.WHITE_LIMESTONE.get());
+        this.dropSelf(ModBlocks.WHITE_LIMESTONE_BRICKS.get());
+        this.dropSelf(ModBlocks.WHITE_LIMESTONE_BRICKWORK.get());
+        this.dropSelf(ModBlocks.POLISHED_WHITE_LIMESTONE.get());
+        this.dropSelf(ModBlocks.WHITE_LIMESTONE_PILLAR.get());
+
+        // Crops
+        this.add(ModBlocks.TOMATO_CROP.get(),
+                block -> createCropDrops((ModCropBlock) block, ModItems.TOMATO.get(), ModItems.TOMATO_SEEDS.get(), 3));
+        this.add(ModBlocks.CABBAGE_CROP.get(),
+                block -> createCropDrops((ModCropBlock) block, ModItems.CABBAGE.get(), ModItems.CABBAGE_SEEDS.get(), 3));
+        this.add(ModBlocks.ONION_CROP.get(),
+                block -> createCropDrops((ModCropBlock) block, ModItems.ONION.get(), ModItems.ONION_SEEDS.get(), 3));
+        this.add(ModBlocks.CUCUMBER_CROP.get(),
+                        block -> createCropDrops((ModCropBlock) block, ModItems.CUCUMBER.get(), ModItems.CUCUMBER_SEEDS.get(), 3));
+    }
+
+    protected LootTable.Builder createCropDrops(ModCropBlock cropBlock, Item cropItem, Item seedItem, int maxAge) {
+        HolderLookup.RegistryLookup<Enchantment> enchantmentLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        LootItemCondition.Builder fullyGrown = LootItemBlockStatePropertyCondition.hasBlockStateProperties(cropBlock)
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(cropBlock.getAgeProperty(), maxAge));
+
+        return this.applyExplosionDecay(cropBlock, LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .add(LootItem.lootTableItem(cropItem).when(fullyGrown)
+                                .otherwise(LootItem.lootTableItem(seedItem))))
+                .withPool(LootPool.lootPool().when(fullyGrown)
+                        .add(LootItem.lootTableItem(seedItem)
+                                .apply(ApplyBonusCount.addBonusBinomialDistributionCount(enchantmentLookup.getOrThrow(Enchantments.FORTUNE), 0.5714286F, 3)))));
     }
 
     @Override

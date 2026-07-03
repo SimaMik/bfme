@@ -40,7 +40,7 @@ public class ModWoodTypes {
     public static final WoodType PLUM = WoodType.register(new WoodType(BFME.MOD_ID + ":plum", BlockSetType.OAK)); // Слива
     public static final WoodType POMEGRANATE = WoodType.register(new WoodType(BFME.MOD_ID + ":pomegranate", BlockSetType.OAK)); // Гранат
     public static final WoodType RED_OAK = WoodType.register(new WoodType(BFME.MOD_ID + ":red_oak", BlockSetType.OAK)); // Краснодуб
-    public static final WoodType RED_WOOD = WoodType.register(new WoodType(BFME.MOD_ID + ":red_wood", BlockSetType.OAK)); // Красное дерево
+    public static final WoodType REDWOOD = WoodType.register(new WoodType(BFME.MOD_ID + ":red_wood", BlockSetType.OAK)); // Красное дерево
     public static final WoodType RED_MAHOGANY = WoodType.register(new WoodType(BFME.MOD_ID + ":red_mahogany", BlockSetType.OAK)); // Красное дерево
     public static final WoodType WILLOW = WoodType.register(new WoodType(BFME.MOD_ID + ":willow", BlockSetType.OAK)); // Ива
 
