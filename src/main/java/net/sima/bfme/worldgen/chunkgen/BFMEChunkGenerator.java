@@ -15,7 +15,6 @@ import net.minecraft.world.level.NoiseColumn;
 import net.minecraft.world.level.StructureManager;
 import net.minecraft.world.level.biome.BiomeManager;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SnowLayerBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -775,9 +774,10 @@ public class BFMEChunkGenerator extends ChunkGenerator {
 
         // === 8. Patch depth ===
         if (patchDepth > 1) {
-            for (int d = 1; d < patchDepth && d <= underLayers; d++) {
-                if (!isCaveAt(cavesEnabled, caveColumn, caveMinY,surfaceHeight - d)) {
-                    chunk.setBlockState(pos.set(localX, surfaceHeight - d, localZ), surfaceBlock, false);
+            for (int d = 1; d < patchDepth; d++) {
+                int y = surfaceHeight - d;
+                if (!isCaveAt(cavesEnabled, caveColumn, caveMinY, y)) {
+                    chunk.setBlockState(pos.set(localX, y, localZ), surfaceBlock, false);
                 }
             }
         }
